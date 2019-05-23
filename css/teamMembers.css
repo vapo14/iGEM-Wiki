@@ -12,22 +12,23 @@
 }
 .card-link{
     background-color: inherit;
-    transition: background 1s;
+    /* transition: background 1s; */
     margin: 0 2rem 0 2rem;
 }
 .card-link+.card-link {
     margin-left: 2rem;
 }
-.card-link:hover{
+/* .card-link:hover{
     background-color:  rgba(47, 122, 47, 0.6);
-}
+    
+} */
 .titleH{
     margin-top: 2rem;
     border-bottom: 2px solid rgba(94, 69, 15, 0.7);
     max-width: 100%;
     align-content: left;
-    margin-left: 10%;
-    width: 30%;
+    margin-left: 15%;
+    width: 20%;
     
 }
 h1{
@@ -47,4 +48,21 @@ ul{
     text-decoration: none;
     display: inline;
     list-style-type: none;
+}
+li{
+    display: inline;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+}
+.names{
+    padding: 0;
+}
+.name+.name{
+    margin-left: 6%;
+}
+.name{
+    margin-left: 4%;
+    opacity: 0;
+    transition: opacity 1s;
+
 }
