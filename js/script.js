@@ -1,5 +1,5 @@
 $('ul.nav li.active').hover(function () {
-    $('div.collapse').toggleClass('show')
+    $('div.collapse').stop(true, false).toggleClass('show')
 });
 
 $(document).click(function (e) {
@@ -9,16 +9,20 @@ $(document).click(function (e) {
 });
 
 
+var color;
+
+
+
 //------------------------NAVIGATION BAR ANIMATIONS-------------------------------
 $(document).ready(function () {
     //$('.cont').css("opacity", 1)
     $('.cont').css({
-        "background-color": "rgba(94, 69, 15, 0"
+        "background-color": "rgba(12, 117, 68, 0"
     })
     $(window).scroll(function () {
         if ($(window).scrollTop() >= 900) {
             $('.cont').css({
-                "background-color": "rgba(94, 69, 15, 1)"
+                "background-color": "rgba(12, 117, 68, 1)"
             })
         } else if ($(window).scrollTop() < 900) {
             $('nav').css({
@@ -28,7 +32,7 @@ $(document).ready(function () {
                 "left": ($(window).scrollTop() / 100) + "%"
             });
             $('.cont').css({
-                "background-color": "rgba(94, 69, 15," + 0 + $(window).scrollTop() / 1000
+                "background-color": "rgba(12, 117, 68," + 0 + $(window).scrollTop() / 1000
             })
             //$('.cont').css("opacity", 0 + $(window).scrollTop() / 1000)
             if ($(window).scrollTop() / 256 < 2) {
@@ -49,10 +53,10 @@ $(document).ready(function () {
     })
     $(".dropdown").hover(
         function () {
-            $(this).children(".dropdown-content").slideDown('medium');
+            $(this).children(".dropdown-content").stop(true, false).slideDown('medium');
         },
         function () {
-            $(this).children(".dropdown-content").slideUp('medium');
+            $(this).children(".dropdown-content").stop(true, false).slideUp('medium');
         }
     )
 });
