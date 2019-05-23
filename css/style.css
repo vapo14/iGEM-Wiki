@@ -159,7 +159,7 @@ nav ul li:hover::after {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: rgb(12, 117, 68);
+    background: rgb(15, 150, 87);
     border-radius: 10px;
 }
 

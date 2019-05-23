@@ -9,7 +9,7 @@ $(document).click(function (e) {
 });
 
 
-var color;
+var color = "rgba(15, 150, 87, 0";
 
 
 
