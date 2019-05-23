@@ -9,7 +9,7 @@ $(document).click(function (e) {
 });
 
 
-var color;
+var color = "rgba(15, 150, 87,";
 
 
 
@@ -17,12 +17,12 @@ var color;
 $(document).ready(function () {
     //$('.cont').css("opacity", 1)
     $('.cont').css({
-        "background-color": "rgba(12, 117, 68, 0"
+        "background-color": color + "0)"
     })
     $(window).scroll(function () {
         if ($(window).scrollTop() >= 900) {
             $('.cont').css({
-                "background-color": "rgba(12, 117, 68, 1)"
+                "background-color": color + "1)"
             })
         } else if ($(window).scrollTop() < 900) {
             $('nav').css({
@@ -32,7 +32,7 @@ $(document).ready(function () {
                 "left": ($(window).scrollTop() / 100) + "%"
             });
             $('.cont').css({
-                "background-color": "rgba(12, 117, 68," + 0 + $(window).scrollTop() / 1000
+                "background-color": color + 0 + $(window).scrollTop() / 1000
             })
             //$('.cont').css("opacity", 0 + $(window).scrollTop() / 1000)
             if ($(window).scrollTop() / 256 < 2) {
