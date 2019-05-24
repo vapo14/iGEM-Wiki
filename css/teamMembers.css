@@ -3,97 +3,117 @@
     margin-bottom: 1rem;
     padding-bottom: 3rem;
 }
-.characterCard{
+
+.characterCard {
     margin-top: 7rem
 }
-.card-header{
+
+.card-header {
     background-color: inherit;
     border: 0;
     padding: 0.75rem 0 0.75rem 0;
     border-radius: 1.5rem 0.5rem 1.5rem 0.5rem;
 }
-.card-link{
+
+.card-link {
     background-color: inherit;
     transition: background 1s;
     margin: 0 2rem 0 2rem;
     margin-bottom: 4rem;
 }
+
 .card-link+.card-link {
     margin-left: 2rem;
 }
-.card-link:hover{
-    background-color:  rgba(47, 122, 47, 0.6);
+
+.card-link:hover {
+    background-color: rgba(47, 122, 47, 0.6);
 }
-.titleH{
+
+.titleH {
     margin-top: 2rem;
     border-bottom: 2px solid rgba(94, 69, 15, 0.7);
     max-width: 50%;
     align-content: left;
     margin-left: 15%;
     width: 30%;
-    
+
 }
-h1{
+
+h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 4rem;
 }
-.cardContainer{
-    
+
+.cardContainer {
+
     padding-left: 1.1rem;
     padding-right: 1.1rem;
     align-content: center;
 }
-.card-header:first-child{
+
+.card-header:first-child {
     border-radius: 1.5rem 0.5rem 1.5rem 0.5rem;
 }
-ul{
+
+.names ul {
     text-decoration: none;
     display: inline;
     list-style-type: none;
     justify-items: auto;
 }
-li{
+
+.name li {
     position: absolute;
     display: inline;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2rem;
     text-align: center;
 }
-.names{
+
+.names {
     padding: 0;
 }
-.name{
+
+.name {
     margin-left: 4%;
 }
-.row{
+
+.row {
     margin-right: 0;
 }
-img.foto{
+
+img.foto {
     width: 100%;
     height: 150%;
 }
-div.cardContainer{
+
+div.cardContainer {
     justify-items: auto;
     width: 18rem;
 }
-.modal{
+
+.modal {
     display: none;
     max-width: 80%;
     max-height: 70%;
     top: 20%;
     left: 10%;
 }
-.fade{
+
+.fade {
     transition: opacity 0.5s linear;
 }
-#pe1Mod-img{
+
+#pe1Mod-img {
     display: inline-block;
     max-width: 30%;
     max-height: 45%;
     right: 70%;
     margin-right: 0;
 }
-#pe1Mod-body{
+
+#pe1Mod-body {
     display: inline-block;
     right: 0;
     margin-right: 0;
