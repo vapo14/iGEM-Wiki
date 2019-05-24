@@ -12,14 +12,15 @@
     background-color: inherit;
     border: 0;
     padding: 0.75rem 0 0.75rem 0;
-    border-radius: 1.5rem 0.5rem 1.5rem 0.5rem;
+    border-radius: 1.5rem 0.3rem 1.5rem 0.3rem;
 }
 
 .card-link {
     background-color: inherit;
     transition: background 1s;
     margin: 0 2rem 0 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
 }
 
 .card-link+.card-link {
@@ -53,10 +54,10 @@ h1 {
 }
 
 .card-header:first-child {
-    border-radius: 1.5rem 0.5rem 1.5rem 0.5rem;
+    border-radius: 1.5rem 0.3rem 1.5rem 0.3rem;
 }
 
-.names ul {
+ul.names {
     text-decoration: none;
     display: inline;
     justify-items: auto;
@@ -64,10 +65,10 @@ h1 {
 
 }
 
-.name li {
+li.name {
     position: absolute;
     display: inline;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Verdana', sans-serif;
     font-size: 2rem;
     text-align: center;
     list-style: none;
@@ -107,19 +108,33 @@ div.cardContainer {
     transition: opacity 0.5s linear;
 }
 
-#pe1Mod-img {
-    display: inline-block;
+div.modal-img{
+    display: block;
     max-width: 30%;
     max-height: 45%;
-    right: 70%;
-    margin-right: 0;
+    left: 0;
+    float: left;
+    background-color: rgba(47, 122, 47, 0.6);
+    border-radius: 1.5rem 0.3rem 1.5rem 0.3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
-#pe1Mod-body {
-    display: inline-block;
-    right: 0;
-    margin-right: 0;
-    margin-left: 0;
-    left: 30%;
+div.detalles {
+    float: right;
+    display: block;
     top: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+}
+
+h2.modal-title{
+    padding-left: 10%;
+    font-size: 4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.modal-body{
+    padding-top: 0;
+    padding-bottom: 0;
 }
