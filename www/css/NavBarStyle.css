@@ -54,6 +54,12 @@ nav {
     width: 100%;
 }
 
+#VertNav {
+    position: absolute;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
 /* If the screen size is x wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 1230px) {
     nav li {
