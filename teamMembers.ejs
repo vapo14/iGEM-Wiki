@@ -35,7 +35,7 @@
                     </div>
                 </div>
                 <div class="card-header card-link" id="card2">
-                    <div class="cardContainer col-md-12" target="#pe2">
+                    <div class="cardContainer col-md-12" target="#pe2" data-toggle='modal' data-target="#pe2Modal">
                         <img src="img/portrait_placeolder.png" class="foto">
                     </div>
                     <div class="container-fluid row col-md-12">
@@ -124,37 +124,61 @@
 </div>
 
 <!-- The Modal -->
-<div class="modal fade" id="pe1Modal">
+<div class="modal" id="pe1Modal">
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
 
             <!-- Modal Header -->
             <div class="modal-header">
-                <h2 class="modal-title">Modal Heading</h2>
+                <h2 class="modal-title">Nombre persona 1</h2>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
-
             <!-- Modal body -->
             <div class="modal-body">
-                <div class="container-fluid col-md-12" id="pe1Mod-img">
+                <div class="container-fluid col-md-12 modal-img" id="pe1Mod-img">
                     <img src="img/portrait_placeolder.png" class="foto">
-                    <div class="container-fluid col-md-8" id="pe1Mod-body">
-                        Modal body...
-                    </div>
                 </div>
-
-
+                <div class="container-fluid col-md-8 detalles" id="pe1Mod-body">
+                    Detalles de la persona 1 ... etc.
+                </div>
             </div>
 
             <!-- Modal footer -->
             <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
             </div>
 
         </div>
     </div>
 </div>
 
+<div class="modal" id="pe2Modal">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h2 class="modal-title">Nombre persona 2</h2>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="container-fluid col-md-12 modal-img" id="pe2Mod-img">
+                    <img src="img/portrait_placeolder.png" class="foto">
+                </div>
+                <div class="container-fluid col-md-8 detalles" id="pe2Mod-body">
+                    Detalles de la persona 1 ... etc.
+                </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
