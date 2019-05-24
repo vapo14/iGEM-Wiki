@@ -59,8 +59,9 @@ h1 {
 .names ul {
     text-decoration: none;
     display: inline;
-    list-style-type: none;
     justify-items: auto;
+    list-style: none;
+
 }
 
 .name li {
