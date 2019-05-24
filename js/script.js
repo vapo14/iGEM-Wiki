@@ -9,6 +9,13 @@ $(document).click(function (e) {
 });
 
 
+
+// $('.navbar-toggler').click(function () {
+//     $('#VertNav').css({
+//         "top": $('nav').offset().top
+//     });
+// })
+
 var color = "rgba(15, 150, 87,";
 
 

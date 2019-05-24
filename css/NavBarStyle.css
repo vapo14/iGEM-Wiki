@@ -55,9 +55,10 @@ nav {
 }
 
 #VertNav {
-    position: absolute;
     font-size: 2rem;
     font-weight: 300;
+    background-color: rgb(51, 51, 51);
+    margin-bottom: -1rem;
 }
 
 /* If the screen size is x wide or more, set the font-size of <div> to 80px */
@@ -190,7 +191,7 @@ nav ul li:hover::after {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #004203;
+    background: rgb(8, 73, 43);
 }
 
 /*----------------------------------*/
