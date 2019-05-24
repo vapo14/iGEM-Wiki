@@ -38,12 +38,21 @@ $(document).ready(function () {
             $('nav').css({
                 "left": ($(window).scrollTop() / 100) + "%"
             });
+            $('#VertNav').css({
+                "width": 100 - ($(window).scrollTop() / 50) + "%"
+            });
+            $('#VertNav').css({
+                "left": ($(window).scrollTop() / 100) + "%"
+            });
             $('.cont').css({
                 "background-color": color + 0 + $(window).scrollTop() / 1000
             })
             //$('.cont').css("opacity", 0 + $(window).scrollTop() / 1000)
             if ($(window).scrollTop() / 256 < 2) {
                 $('nav').css({
+                    top: $(window).scrollTop() / 256 + 'rem'
+                });
+                $('#VertNav').css({
                     top: $(window).scrollTop() / 256 + 'rem'
                 });
             } else {

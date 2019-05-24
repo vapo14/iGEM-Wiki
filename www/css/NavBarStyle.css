@@ -29,8 +29,8 @@ a:hover {
 }
 
 header {
-    padding-top: 10rem;
     height: 100rem;
+    padding-top: 10rem;
     margin-bottom: 10rem;
     background: linear-gradient(to bottom, rgba(15, 150, 87, .78), rgba(0, 0, 0, 0.3)), url(../img/vert.jpg);
     background-size: cover;
@@ -40,10 +40,12 @@ header {
     position: fixed;
 }
 
+
 nav {
     /* top: 2rem;
     left: 5%; */
     height: 10rem;
+    border-radius: 40px;
     display: flex;
     padding-left: -20px;
     justify-content: space-between;
@@ -51,20 +53,29 @@ nav {
     text-transform: uppercase;
     font-size: 1.6rem;
     background-color: transparent;
-    z-index: 1;
+    z-index: 2;
     width: 100%;
 }
 
 #VertNav {
-    padding-top: 10rem;
+    border-radius: 40px;
+    position: fixed;
+    padding-top: 12rem;
+    width: 100%;
     font-size: 2rem;
     font-weight: 300;
     background-color: rgb(51, 51, 51);
     margin-bottom: -1rem;
+    z-index: 1;
+}
+
+#VertNav ul {
+
+    overflow-y: scroll;
 }
 
 /* If the screen size is x wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 1230px) {
+@media screen and (min-width: 1265px) {
     nav li {
         padding: 0;
         margin: 0;
@@ -102,7 +113,7 @@ nav ul {
 
 nav ul li {
     padding: -6rem;
-    margin: 0;
+    margin: -2rem;
     list-style: none;
     transform: translateX(100rem);
     animation: slideIn .5s forwards;
@@ -122,6 +133,7 @@ nav ul:nth-child(3) {
 
 nav ul:nth-child(4) {
     animation-delay: 1.5s;
+    margin-right: 0;
 }
 
 nav ul li {
