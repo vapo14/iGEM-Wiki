@@ -1,5 +1,7 @@
 .card {
     border: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 3rem;
 }
 .characterCard{
     margin-top: 7rem
@@ -48,11 +50,12 @@ ul{
     text-decoration: none;
     display: inline;
     list-style-type: none;
+    justify-items: auto;
 }
 li{
     position: absolute;
     display: inline;
-    font-family: 'Roboto', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2rem;
     text-align: center;
 }
@@ -72,4 +75,29 @@ img.foto{
 div.cardContainer{
     justify-items: auto;
     width: 18rem;
+}
+.modal{
+    display: none;
+    max-width: 80%;
+    max-height: 70%;
+    top: 20%;
+    left: 10%;
+}
+.fade{
+    transition: opacity 0.5s linear;
+}
+#pe1Mod-img{
+    display: inline-block;
+    max-width: 30%;
+    max-height: 45%;
+    right: 70%;
+    margin-right: 0;
+}
+#pe1Mod-body{
+    display: inline-block;
+    right: 0;
+    margin-right: 0;
+    margin-left: 0;
+    left: 30%;
+    top: 1rem;
 }
