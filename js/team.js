@@ -6,6 +6,7 @@ $('document').ready(function(){
     $(cards).hover(function()
     {
         var t = $(this).attr('target');
+        $(t).stop();
         $(t).fadeToggle();
     });
 

@@ -14,6 +14,7 @@
     background-color: inherit;
     transition: background 1s;
     margin: 0 2rem 0 2rem;
+    margin-bottom: 4rem;
 }
 .card-link+.card-link {
     margin-left: 2rem;
@@ -53,13 +54,22 @@ li{
     display: inline;
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
+    text-align: center;
 }
 .names{
     padding: 0;
 }
-.name+.name{
-    margin-left: 6%;
-}
 .name{
     margin-left: 4%;
+}
+.row{
+    margin-right: 0;
+}
+img.foto{
+    width: 100%;
+    height: 150%;
+}
+div.cardContainer{
+    justify-items: auto;
+    width: 18rem;
 }
