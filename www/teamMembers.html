@@ -18,15 +18,13 @@
     <link rel="stylesheet" href="../css/NavBarStyle.css">
 
 
-<nav class="shadow navbar navbar-default navbar-expand-lg cont rounded" id="accordion">
+<nav class="shadow navbar navbar-default navbar-expand-lg cont" id="accordion">
     <h1 class="brand"><a href="index.html"><span>V</span>&#8209;tion</a></h1>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#VertNav"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="navham">
+    <button class="navbar-toggler" type="button" aria-label="Toggle navigation" id="navham">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse">
-
-        <ul class="nav navbar-nav mr-auto">
+        <ul class="nav navbar-nav">
             <li>
                 <div id="teamdropbtn" class="dropdown">
                     <img src="/img/1696684-university/png/030-discuss.png" width="15px" height="10px">
@@ -45,7 +43,12 @@
                         <a href="#">Description</a>
                         <a href="#">Design</a>
                         <a href="#">Experiments</a>
-                        <a href="#">Notebook</a>
+                        <div class="dropdown">
+                            <a class="dropbtn" href="">Notebook</a>
+                            <div class="dropdown-content side-content">
+                                <a href="brainstorming.html"> Brainstroming </a>
+                            </div>
+                        </div>
                         <a href="#">Contribution</a>
                         <a href="#">Results</a>
                         <a href="#">Demonstrate</a>
@@ -88,33 +91,32 @@
         </ul>
     </div>
 </nav>
-
 <div class="collapse" id="VertNav">
-    <div class="container-fluid">
+    <div class="container-fluid sc">
         <ul style="list-style: none">
             <li class="text-left">
                 <img src="/img/1696684-university/png/030-discuss.png" width="15px" height="10px">
                 <a href="teamMembers.html">Team Members</a><br>
-                <a href="#">Collaborators</a><br>
+                &nbsp; &nbsp; <a href="#">Collaborators</a><br>
             </li>
             <li class="text-left">
                 <img src="/img/1696684-university/png/043-documents.png" width="15px" height="10px">
                 <a href="#">Description</a> <br>
-                <a href="#">Design</a><br>
-                <a href="#">Experiments</a><br>
-                <a href="#">Notebook</a><br>
-                <a href="#">Contribution</a><br>
-                <a href="#">Results</a><br>
-                <a href="#">Demonstrate</a><br>
-                <a href="#">Improve</a><br>
-                <a href="#">Attributions</a><br>
+                &nbsp; &nbsp; <a href="#">Design</a><br>
+                &nbsp; &nbsp; <a href="#">Experiments</a><br>
+                &nbsp; &nbsp; <a href="#">Notebook</a><br>
+                &nbsp; &nbsp; <a href="#">Contribution</a><br>
+                &nbsp; &nbsp; <a href="#">Results</a><br>
+                &nbsp; &nbsp; <a href="#">Demonstrate</a><br>
+                &nbsp; &nbsp; <a href="#">Improve</a><br>
+                &nbsp; &nbsp; <a href="#">Attributions</a><br>
             </li>
             <li class="text-left">
                 <img src="/img/1696684-university/png/041-telescope.png" width="15px" height="10px">
                 <a href="#">Parts Overview</a> <br>
-                <a href="#">Basic Parts</a><br>
-                <a href="#">Composite Parts</a><br>
-                <a href="#">Part Collection</a><br>
+                &nbsp; &nbsp;<a href="#">Basic Parts</a><br>
+                &nbsp; &nbsp;<a href="#">Composite Parts</a><br>
+                &nbsp; &nbsp;<a href="#">Part Collection</a><br>
             </li>
             <li class="text-left">
                 <img src="/img/1696684-university/png/018-test tubes.png" width="15px" height="10px">
@@ -123,7 +125,7 @@
             <li class="text-left">
                 <img src="/img/1696684-university/png/020-mask.png" width="15px" height="10px">
                 <a href="#">Human Practices</a> <br>
-                <a href="#">Education & Engagement</a><br>
+                &nbsp; &nbsp;<a href="#">Education & Engagement</a><br>
             </li>
         </ul>
     </div>
@@ -148,7 +150,6 @@
     <div class="container col-md-6 titleH">
         <h1>Team Members</h1>
     </div>
-    <div class="container col-md-6"></div>
     <!--Character card group-->
     <div class="container characterCard col-md-8" id="accordion">
         <div class="card">
@@ -166,7 +167,7 @@
                     </div>
                 </div>
                 <div class="card-header card-link" id="card2">
-                    <div class="cardContainer col-md-12" target="#pe2">
+                    <div class="cardContainer col-md-12" target="#pe2" data-toggle="modal" data-target="#pe2Modal">
                         <img src="img/portrait_placeolder.png" class="foto">
                     </div>
                     <div class="container-fluid row col-md-12">
@@ -178,7 +179,7 @@
                     </div>
                 </div>
                 <div class="card-header card-link" id="card3">
-                    <div class="cardContainer col-md-12" target="#pe3">
+                    <div class="cardContainer col-md-12" target="#pe3" data-toggle="modal" data-target="#pe3Modal">
                         <img src="img/portrait_placeolder.png" class="foto">
                     </div>
                     <div class="container-fluid row col-md-12">
@@ -190,7 +191,7 @@
                     </div>
                 </div>
                 <div class="card-header card-link" id="card4">
-                    <div class="cardContainer col-md-12" target="#pe4">
+                    <div class="cardContainer col-md-12" target="#pe4" data-toggle="modal" data-target="#pe4Modal">
                         <img src="img/portrait_placeolder.png" class="foto">
                     </div>
                     <div class="container-fluid row col-md-12">
@@ -202,7 +203,7 @@
                     </div>
                 </div>
                 <div class="card-header card-link" id="card5">
-                    <div class="cardContainer col-md-12" target="#pe5">
+                    <div class="cardContainer col-md-12" target="#pe5" data-toggle="modal" data-target="#pe5Modal">
                         <img src="img/portrait_placeolder.png" class="foto">
                     </div>
                     <div class="container-fluid row col-md-12">
@@ -214,7 +215,7 @@
                     </div>
                 </div>
                 <div class="card-header card-link" id="card6">
-                    <div class="cardContainer col-md-12" target="#pe6">
+                    <div class="cardContainer col-md-12" target="#pe6" data-toggle="modal" data-target="#pe6Modal">
                         <img src="img/portrait_placeolder.png" class="foto">
                     </div>
                     <div class="container-fluid row col-md-12">
@@ -226,7 +227,7 @@
                     </div>
                 </div>
                 <div class="card-header card-link" id="card7">
-                    <div class="cardContainer col-md-12" target="#pe7">
+                    <div class="cardContainer col-md-12" target="#pe7" data-toggle="modal" data-target="#pe7Modal">
                         <img src="img/portrait_placeolder.png" class="foto">
                     </div>
                     <div class="container-fluid row col-md-12">
@@ -238,7 +239,7 @@
                     </div>
                 </div>
                 <div class="card-header card-link" id="card8">
-                    <div class="cardContainer col-md-12" target="#pe8">
+                    <div class="cardContainer col-md-12" target="#pe8" data-toggle="modal" data-target="#pe8Modal">
                         <img src="img/portrait_placeolder.png" class="foto">
                     </div>
                     <div class="container-fluid row col-md-12">
@@ -251,41 +252,550 @@
                 </div>
             </div>
         </div>
+
+    </div>
+     <!--Title : Advisors & Collaborators-->
+    <div class="container col-md-6 titleH">
+        <h1>Our Advisors & Collaborators</h1>
+    </div>
+
+    <div class="container characterCard col-md-8" id="accordion2">
+        <div class="card">
+            <div class="row col-md-12">
+                <div class="card-header card-link" id="carda1">
+                    <div class="cardContainer col-md-12" target="#ad1" data-toggle="modal" data-target="#ad1Modal">
+                        <img src="img/portrait_placeolder.png" class="foto">
+                    </div>
+                    <div class="container-fluid row col-md-12">
+                        <ul class="names col-md-12">
+                            <li class="container-fluid col-md-12 name" id="ad1">
+                                Advisor 1.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card-header card-link" id="carda2">
+                    <div class="cardContainer col-md-12" target="#ad2" data-toggle="modal" data-target="#ad2Modal">
+                        <img src="img/portrait_placeolder.png" class="foto">
+                    </div>
+                    <div class="container-fluid row col-md-12">
+                        <ul class="names col-md-12">
+                            <li class="container-fluid col-md-12 name" id="ad2">
+                                Advisor 2.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card-header card-link" id="carda3">
+                    <div class="cardContainer col-md-12" target="#ad3" data-toggle="modal" data-target="#ad3Modal">
+                        <img src="img/portrait_placeolder.png" class="foto">
+                    </div>
+                    <div class="container-fluid row col-md-12">
+                        <ul class="names col-md-12">
+                            <li class="container-fluid col-md-12 name" id="ad3">
+                                Advisor 3.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-md-12">
+                    <div class="card-header card-link" id="carda4">
+                        <div class="cardContainer col-md-12" target="#ad4" data-toggle="modal" data-target="#ad4Modal">
+                            <img src="img/portrait_placeolder.png" class="foto">
+                        </div>
+                        <div class="container-fluid row col-md-12">
+                            <ul class="names col-md-12">
+                                <li class="container-fluid col-md-12 name" id="ad4">
+                                    Advisor 4.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="card-header card-link" id="carda5">
+                        <div class="cardContainer col-md-12" target="#ad5" data-toggle="modal" data-target="#ad5Modal">
+                            <img src="img/portrait_placeolder.png" class="foto">
+                        </div>
+                        <div class="container-fluid row col-md-12">
+                            <ul class="names col-md-12">
+                                <li class="container-fluid col-md-12 name" id="ad5">
+                                    Advisor 5.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card-header card-link" id="carda8-2">
+                        <div class="cardContainer col-md-12" target="#ad8-2" data-toggle="modal" data-target="#ad8-2Modal">
+                            <img src="img/portrait_placeolder.png" class="foto">
+                        </div>
+                        <div class="container-fluid row col-md-12">
+                            <ul class="names col-md-12">
+                                <li class="container-fluid col-md-12 name" id="ad8-2">
+                                    Advisor 6.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- <div class="row col-md-12">
+                    <div class="card-header card-link" id="carda7">
+                        <div class="cardContainer col-md-12" target="#ad7" data-toggle='modal' data-target="#ad7Modal">
+                            <img src="img/portrait_placeolder.png" class="foto">
+                        </div>
+                        <div class="container-fluid row col-md-12">
+                            <ul class="names col-md-12">
+                                <li class="container-fluid col-md-12 name" id="ad7">
+                                    Advisor 7.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> -->
+
+        </div>
     </div>
 </div>
 
+
 <!-- The Modal -->
-<div class="modal fade" id="pe1Modal">
+<div class="modal fades" id="pe1Modal">
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
 
             <!-- Modal Header -->
             <div class="modal-header">
-                <h2 class="modal-title">Modal Heading</h2>
+                <h2 class="modal-title">Nombre persona 1</h2>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
-
             <!-- Modal body -->
             <div class="modal-body">
-                <div class="container-fluid col-md-12" id="pe1Mod-img">
+                <div class="container-fluid col-md-12 modal-img" id="pe1Mod-img">
                     <img src="img/portrait_placeolder.png" class="foto">
-                    <div class="container-fluid col-md-8" id="pe1Mod-body">
-                        Modal body...
-                    </div>
                 </div>
-
-
+                <div class="container-fluid col-md-8 detalles" id="pe1Mod-body">
+                    Detalles de la persona 1 ... etc.
+                </div>
             </div>
 
             <!-- Modal footer -->
             <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
             </div>
 
         </div>
     </div>
 </div>
 
+<div class="modal fades" id="pe2Modal">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h2 class="modal-title">Nombre persona 2</h2>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="container-fluid col-md-12 modal-img" id="pe2Mod-img">
+                    <img src="img/portrait_placeolder.png" class="foto">
+                </div>
+                <div class="container-fluid col-md-8 detalles" id="pe2Mod-body">
+                    Detalles de la persona 1 ... etc.
+                </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fades" id="pe3Modal">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h2 class="modal-title">Nombre persona 2</h2>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="container-fluid col-md-12 modal-img" id="pe3Mod-img">
+                    <img src="img/portrait_placeolder.png" class="foto">
+                </div>
+                <div class="container-fluid col-md-8 detalles" id="pe3Mod-body">
+                    Detalles de la persona 1 ... etc.
+                </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fades" id="pe4Modal">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h2 class="modal-title">Nombre persona 4</h2>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="container-fluid col-md-12 modal-img" id="pe4Mod-img">
+                    <img src="img/portrait_placeolder.png" class="foto">
+                </div>
+                <div class="container-fluid col-md-8 detalles" id="pe4Mod-body">
+                    Detalles de la persona 1 ... etc.
+                </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fades" id="pe5Modal">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h2 class="modal-title">Nombre persona 5</h2>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="container-fluid col-md-12 modal-img" id="pe5Mod-img">
+                    <img src="img/portrait_placeolder.png" class="foto">
+                </div>
+                <div class="container-fluid col-md-8 detalles" id="pe5Mod-body">
+                    Detalles de la persona 1 ... etc.
+                </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fades" id="pe6Modal">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h2 class="modal-title">Nombre persona 6</h2>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="container-fluid col-md-12 modal-img" id="pe6Mod-img">
+                    <img src="img/portrait_placeolder.png" class="foto">
+                </div>
+                <div class="container-fluid col-md-8 detalles" id="pe6Mod-body">
+                    Detalles de la persona 1 ... etc.
+                </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fades" id="pe7Modal">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h2 class="modal-title">Nombre persona 7</h2>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="container-fluid col-md-12 modal-img" id="pe7Mod-img">
+                    <img src="img/portrait_placeolder.png" class="foto">
+                </div>
+                <div class="container-fluid col-md-8 detalles" id="pe7Mod-body">
+                    Detalles de la persona 1 ... etc.
+                </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fades" id="pe8Modal">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h2 class="modal-title">Nombre persona 8</h2>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="container-fluid col-md-12 modal-img" id="pe8Mod-img">
+                    <img src="img/portrait_placeolder.png" class="foto">
+                </div>
+                <div class="container-fluid col-md-8 detalles" id="pe8Mod-body">
+                    Detalles de la persona 1 ... etc.
+                </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fades" id="ad1Modal">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h2 class="modal-title">Nombre del Advisor</h2>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="container-fluid col-md-12 modal-img" id="ad1Mod-img">
+                    <img src="img/portrait_placeolder.png" class="foto">
+                </div>
+                <div class="container-fluid col-md-8 detalles" id="ad1Mod-body">
+                    Detalles de advisor 1. ... etc.
+                </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fades" id="ad2Modal">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h2 class="modal-title">Nombre del Advisor</h2>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="container-fluid col-md-12 modal-img" id="ad2Mod-img">
+                    <img src="img/portrait_placeolder.png" class="foto">
+                </div>
+                <div class="container-fluid col-md-8 detalles" id="ad2Mod-body">
+                    Detalles de advisor 1. ... etc.
+                </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fades" id="ad3Modal">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h2 class="modal-title">Nombre del Advisor</h2>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="container-fluid col-md-12 modal-img" id="ad3Mod-img">
+                    <img src="img/portrait_placeolder.png" class="foto">
+                </div>
+                <div class="container-fluid col-md-8 detalles" id="ad3Mod-body">
+                    Detalles de advisor 1. ... etc.
+                </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fades" id="ad4Modal">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h2 class="modal-title">Nombre del Advisor</h2>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="container-fluid col-md-12 modal-img" id="ad4Mod-img">
+                    <img src="img/portrait_placeolder.png" class="foto">
+                </div>
+                <div class="container-fluid col-md-8 detalles" id="ad4Mod-body">
+                    Detalles de advisor 1. ... etc.
+                </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fades" id="ad5Modal">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h2 class="modal-title">Nombre del Advisor</h2>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="container-fluid col-md-12 modal-img" id="ad5Mod-img">
+                    <img src="img/portrait_placeolder.png" class="foto">
+                </div>
+                <div class="container-fluid col-md-8 detalles" id="ad5Mod-body">
+                    Detalles de advisor 1. ... etc.
+                </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fades" id="ad6Modal">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h2 class="modal-title">Nombre del Advisor</h2>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="container-fluid col-md-12 modal-img" id="ad6Mod-img">
+                    <img src="img/portrait_placeolder.png" class="foto">
+                </div>
+                <div class="container-fluid col-md-8 detalles" id="ad6Mod-body">
+                    Detalles de advisor 1. ... etc.
+                </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fades" id="ad7Modal">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h2 class="modal-title">Nombre del Advisor</h2>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="container-fluid col-md-12 modal-img" id="ad7Mod-img">
+                    <img src="img/portrait_placeolder.png" class="foto">
+                </div>
+                <div class="container-fluid col-md-8 detalles" id="ad7Mod-body">
+                    Detalles de advisor 1. ... etc.
+                </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
