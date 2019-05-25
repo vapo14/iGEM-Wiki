@@ -29,11 +29,13 @@ div.sub-footer{
     margin-left: 0;
     margin-right: 0;
     float: left;
-    
+    padding-left: 3rem;
 }
 div#cr-credit *{
-    font-size: 1rem !important;
+    font-size: 1.5rem !important;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    text-align: left;
+    
 }
 div#cr-credit a{
     transition-property: font;
@@ -41,7 +43,7 @@ div#cr-credit a{
     transition-duration: 0.5s;
 }
 #cr-credit a:hover{
-    font-size: 1.5rem !important;
+    font-size: 1.8rem !important;
     /* vertical-align: middle; */
     text-decoration-line: underline;
 }
