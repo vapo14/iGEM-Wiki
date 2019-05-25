@@ -2,12 +2,16 @@ $('ul.nav li.active').hover(function () {
     $('div.collapse').stop(true, false).toggleClass('show')
 });
 
-$(document).click(function (e) {
-    if (!$(e.target).is('.drpdown')) {
-        $('.collapse').collapse('hide');
-    }
-});
+// $(document).click(function (e) {
+//     if (!$(e.target).is('.drpdown')) {
+//         $('.collapse').fadeOut();
+//     }
+// });
 
+
+$('#navham').click(function () {
+    $('#VertNav').toggle(500);
+})
 
 
 // $('.navbar-toggler').click(function () {
