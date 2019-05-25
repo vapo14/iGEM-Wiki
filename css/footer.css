@@ -1,0 +1,20 @@
+#cr-credit{
+    margin-left: 0;
+    margin-right: 0;
+    float: left;
+}
+#cr-credit a{
+    font-size: 1rem !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    
+}
+#cr-credit a:hover{
+    font-size: +20% !important;
+    text-decoration-line: underline;
+    text-decoration-color: orangered;
+}
+p.nani{
+    display: inline !important;
+    margin: .3rem !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
