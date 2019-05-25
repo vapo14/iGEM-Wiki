@@ -4,5 +4,8 @@
     },
     "teamMembers": {
         "pageTitle": "Members"
+    },
+    "brainstorming": {
+        "pageTitle": "Brainstorming"
     }
 }
