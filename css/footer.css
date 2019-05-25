@@ -1,11 +1,17 @@
+
+@font-face{
+    font-family: 'Foobar';
+    src: url('../fonts/Foobar\ Pro-Regular.otf');
+}
+
 footer div div.ft-tec {
-    color: darkblue;
-    font-size: 4rem;
+    margin: 2rem 2rem 0 2rem;    
     border-radius: 2rem 2rem 0 0;
-    
 }
 .ft-tec h1{
-    margin: 2rem 2rem 0 2rem;
+    color: darkblue;
+    font-size: 3.5rem;
+    font-family: 'Foobar', sans-serif;
 }
 footer{
     border-radius: 3rem 3rem 0 0 !important;
