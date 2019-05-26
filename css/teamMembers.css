@@ -134,3 +134,14 @@ h2.modal-title{
     padding-top: 0;
     padding-bottom: 0;
 }
+.centered-row{
+    display: inline;
+}
+.row.col-md-12.c{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.row.col-md-12.b{
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+}

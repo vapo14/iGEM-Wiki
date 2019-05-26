@@ -9,11 +9,12 @@
 }
 
 footer div div.ft-tec {
-    margin: 2rem 2rem 0 2rem;    
+    margin: 2rem 2rem 1rem 2rem;    
     border-radius: 2rem 2rem 0 0;
+    padding: 0 10rem 0 10rem;
 }
 .ft-tec h1{
-    color: darkblue;
+    color: black;
     font-size: 3.5rem;
     font-family: 'Lato', sans-serif;
 }
@@ -37,8 +38,8 @@ div.sub-footer{
 }
 div#cr-credit {
     font-size: 1.5rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
-    text-align: left;
+    font-family: 'Lato', sans-serif !important;
+    text-align: left;   
     
 }
 div#cr-credit a{
@@ -54,8 +55,23 @@ div#cr-credit a{
 span.ft-nani{
     display: inline !important;
     margin: .3rem !important;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-family: 'Lato', sans-serif !important;
 }
 p.ft-copy{
     font-size: 1.5rem !important;
+
 }
+#ft-img{
+    max-height: 3rem;
+    max-width: 3rem;
+    height: 100%;
+    width: calc(height);
+    min-height: 1rem;
+    min-width: 1rem;
+    float: right;
+}
+.ft-tec *{
+    display: inline;
+}
+
+/*  */
