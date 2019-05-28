@@ -25,6 +25,19 @@ p{
     color: #2D5940;
     
 }
+#FinalDecision{
+    font-size: 5rem;
+    font-family: 'Lato', sans-serif;
+    color: #2D5940;
+    border-bottom: 2px solid #DCC17B;
+}
+.nb-banner-top{
+    padding: 0 !important;
+    background-color: rgba(15, 150, 87);
+    height: 6rem;
+    border-radius: 100px 100px 100px 100px;
+}
+
 .nb-title{
     padding: 1rem;
     margin: 2rem 0 2rem 0;
