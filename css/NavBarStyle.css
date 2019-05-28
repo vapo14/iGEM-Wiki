@@ -248,9 +248,9 @@ nav ul li:hover::after {
 
 .side-content {
     cursor: pointer;
-    left: 13rem;
+    left: 12rem;
     padding-top: 0;
-    margin-top: -7rem;
+    margin-top: -5.5rem;
 }
 
 /* 
