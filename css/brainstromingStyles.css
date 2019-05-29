@@ -3,16 +3,19 @@ p{
     font-size: 2.4rem;
     text-indent: 5%;
 }
+header{
+    cursor: default;
+}
 .brainstorming-main-content {
     padding-top: 6rem;
     font-size: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 200;
 }
-div.brainstorming-main-content{
+/* div.brainstorming-main-content{
     background: linear-gradient(to bottom, rgba(15, 150, 87, 0.78), rgba(0, 0, 0, 0.0));
     background-size: cover;
-}
+} */
 .description-text {
     margin-bottom: 10%;
     padding: 1rem;
@@ -20,11 +23,11 @@ div.brainstorming-main-content{
 #InitialIdeas{
     font-size: 5rem;
     font-family: 'Lato', sans-serif;
-    color: #ffffff;
+    color: #f3e9d2;
     border-bottom: 2px solid #DCC17B;
 }
 #s-aureus{
-    font-size: 3rem;
+    font-size: 3.6rem;
     font-family: 'Lato', sans-serif;
     color: #2D5940;
     
@@ -44,9 +47,11 @@ div.brainstorming-main-content{
     height: 20rem;
     margin-bottom: 0;
     padding-top: 8rem;
-    background: linear-gradient(to bottom, rgba(220, 193, 123, 0.5), rgba(0, 0, 0, 0.3)), url(../img/vert.jpg);
-    background-size: cover;
-    border-bottom:  1rem solid #2D5940;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)), url(../img/verticillium.jpg);
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-size: 33% 100%;
+    border-bottom:  3px solid #2D5940;
 }
 /*
 .nb-banner-top{
@@ -67,19 +72,33 @@ div.brainstorming-main-content{
 .nb-subtitle{    
     padding: 1rem;
     margin: 0;
-    border-bottom: 2px solid rgb(100,100,100);
-
+    border-bottom: 2px solid #3D0B37;
 }
 .nb-img{
     margin-top: 1rem;
     max-height: 100%;
     height: 50%;
+    float: left;
 
 }
 .nb-description{
     margin-top: 1rem;
     padding-left: 3rem;
+    float: right;
 }
 .nb-description p{
     vertical-align: middle;
+}
+.wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: linear-gradient(to right,#C0D684, #62C370, rgba(15, 150, 87, 0.78), #6bbf59 ,#EDDBAF, #f3e9d2);
+    background-size: 600% 200%;
+    animation: gradient 20s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes gradient {
+    0% {background-position: 0% 0%}
+    100% {background-position: 100% 100%}
 }
