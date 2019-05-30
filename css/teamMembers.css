@@ -23,11 +23,12 @@ div.characterCard#accordion{
 }
 
 .card-link {
-    background-color: inherit;
-    transition: background 1s;
+    background-color: transparent;
+    transition: 1s;
     margin: 0 2rem 0 2rem;
     margin-bottom: 2rem;
     padding-bottom: 2rem;
+    
 }
 
 .card-link+.card-link {
@@ -35,7 +36,11 @@ div.characterCard#accordion{
 }
 
 .card-link:hover {
-    background-color: rgba(47, 122, 47, 0.6);
+    background:  linear-gradient(to top ,#C0D684, #62C370, rgba(15, 150, 87, 0.78), #6bbf59 ,#EDDBAF, #f3e9d2);
+    background-size: 300% 300%;
+    animation: sidebar 25s linear infinite;
+    animation-direction: alternate;
+    transform: scale(1.1);
 }
 
 .titleH {
@@ -52,6 +57,11 @@ div.characterCard#accordion{
     font-size: 4rem;
 }
 
+.row.col-md-12.b,.row.col-md-12.c{
+    margin: 2rem 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
 .cardContainer {
 
     padding-left: 1.1rem;
@@ -115,25 +125,42 @@ div.modal-img{
     max-height: 45%;
     left: 0;
     float: left;
-    background-color: rgba(47, 122, 47, 0.6);
+    align-items: center;
+    background:  linear-gradient(to top ,#C0D684, #f3e9d2);
     border-radius: 1.5rem 0.3rem 1.5rem 0.3rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 2rem;
 }
-
+.modal-header, .modal-footer{
+    border: 0;
+}
+button.close{
+    font-size: 3rem;
+    color: rgb(19, 95, 60);
+    opacity: 1;
+}
+div.modal-footer>button.btn{
+    font-size: 2rem;
+    background-color: #3D0B37;
+    border: 0;
+    border-radius: 2px;
+}
 div.detalles {
     float: right;
     display: block;
     top: 1rem;
     font-family: 'Lato', sans-serif;
     font-size: 2rem;
+    text-indent: 2rem;
 }
 
 h2.modal-title{
-    padding-left: 10%;
     font-size: 4rem;
     font-family: 'Lato', sans-serif;
-
+    text-align: center !important;
+    margin-left: 35%;
+}
+.modal-header{
+    text-align: center !important;
 }
 .modal-body{
     padding-top: 0;
@@ -176,7 +203,7 @@ h2.modal-title{
 .sideAnimation{
     background: linear-gradient(to bottom,#C0D684, #62C370, rgba(15, 150, 87, 0.78), #6bbf59 ,#EDDBAF, #f3e9d2);
     background-size: 300% 200%;
-    animation: sidebar 5s linear infinite;
+    animation: sidebar 20s linear infinite;
     animation-direction: alternate;
 }
 .carousel-caption{
