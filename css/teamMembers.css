@@ -1,3 +1,6 @@
+html,body{
+    height: 100%;
+}
 .card {
     border: 0;
     margin-bottom: 1rem;
@@ -6,7 +9,10 @@
 }
 
 .characterCard {
-    margin-top: 7rem
+    margin-top: 0rem;
+}
+div.characterCard#accordion{
+    margin-top: 7rem;
 }
 
 .card-header {
@@ -36,8 +42,7 @@
     
     border-bottom: 3px solid #DCC17B;
     align-content: left;
-    margin: auto;
-    margin-top: 2rem;
+    margin: 2rem auto;
     /* width: 30%; */
 
 }
@@ -145,16 +150,51 @@ h2.modal-title{
     padding-left: 3.5%;
     padding-right: 3.5%;
 }
-.container.col-md-2.sidebarL{
-    float: left;
-    background-color: yellowgreen;
-    height: 1000px;
-    width: 100%;    
-    
+#obo{
+    height: auto;
 }
-.container.col-md-2.sidebarR{
-    float: right;
-    background-color: yellowgreen;
-    height: 1000px;
+.sidebarL{
+    float: left;
+    height: 100%;
     width: 100%;
+    margin-top: 1rem;    
+    padding: 0;
+    border-radius: 0px 15px 15px 0px;
+}
+.sidebarR{
+    float: right;
+    height: calc(auto + 100px);
+    text-align-last: end;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0;
+    border-radius: 15px 0 0 15px;
+}
+.sidebarL,.sidebarR{
+    color: rgba(0, 0, 0, 0.01);
+}
+.sideAnimation{
+    background: linear-gradient(to bottom,#C0D684, #62C370, rgba(15, 150, 87, 0.78), #6bbf59 ,#EDDBAF, #f3e9d2);
+    background-size: 300% 200%;
+    animation: sidebar 5s linear infinite;
+    animation-direction: alternate;
+}
+.carousel-caption{
+    bottom: 0%;
+}
+.carousel-caption h1{
+    font-family: 'Monterey', sans-serif;
+    font-size: 7rem;
+    z-index: 3;
+}
+/* .blured-border{
+    height: inherit;
+    margin: 0.0rem 0 0.0rem 0;
+    padding: 0.0rem;
+    background-color: rgba(255, 255, 255, 1);
+    filter: blur(5px);
+} */
+@keyframes sidebar {
+    0% {background-position: 0% 0%}
+    100%{background-position: 300% 100%}
 }
