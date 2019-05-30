@@ -7,7 +7,7 @@ header{
     cursor: default;
 }
 .brainstorming-main-content {
-    padding-top: 6rem;
+    padding-top: 0;
     font-size: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 200;
@@ -17,8 +17,8 @@ header{
     background-size: cover;
 } */
 .description-text {
-    margin-bottom: 10%;
     padding: 1rem;
+    margin: auto 0 !important;
 }
 #InitialIdeas{
     font-size: 5rem;
@@ -33,6 +33,7 @@ header{
     
 }
 #FinalDecision{
+    margin-top: 1rem;
     font-size: 5rem;
     font-family: 'Lato', sans-serif;
     color: #2D5940;
@@ -76,9 +77,10 @@ header{
 }
 .nb-img{
     margin-top: 1rem;
-    max-height: 100%;
-    height: 50%;
+    max-height: 25rem;
     float: left;
+    height: 100%;
+    width: 100%;
 
 }
 .nb-description{
@@ -89,14 +91,25 @@ header{
 .nb-description p{
     vertical-align: middle;
 }
-.wrapper {
-    width: 100%;
+.nb-wrapper {
+    color: transparent;
+    border-radius: 2rem;
+    margin: 0 calc(-15rem + 8%) !important;
+    max-width: 150%;
+    width: calc(100% + 15rem) !important;
     height: 100%;
     position: relative;
     background: linear-gradient(to right,#C0D684, #62C370, rgba(15, 150, 87, 0.78), #6bbf59 ,#EDDBAF, #f3e9d2);
     background-size: 600% 200%;
     animation: gradient 20s linear infinite;
     animation-direction: alternate;
+}
+.nb-wtop{
+    padding-top: 4rem;
+    border-radius: 0 0 1rem 1rem !important;
+}
+.description-text{
+    margin-bottom: 3rem !important;
 }
 @keyframes gradient {
     0% {background-position: 0% 0%}

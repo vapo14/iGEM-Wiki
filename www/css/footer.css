@@ -23,7 +23,7 @@ footer{
     height: 15rem;
     min-height: 14rem !important;
     background-image: linear-gradient(to bottom,#6BBF59, rgba(15, 150, 87), #2D5940 ) ;
-
+    bottom: 0 !important;
 
 }
 div.sub-footer{
