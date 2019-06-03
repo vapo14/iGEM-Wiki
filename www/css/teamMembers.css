@@ -10,6 +10,7 @@ html,body{
 
 .characterCard {
     margin-top: 0rem;
+    align-content: center;
 }
 div.characterCard#accordion{
     margin-top: 7rem;
