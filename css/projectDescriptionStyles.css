@@ -6,7 +6,7 @@
 }
 
 .descriptionTitle {
-    padding: 10%;
+    padding-top: 8rem;
     color: white;
     font-size: 10vw;
     font-weight: 100;
@@ -19,7 +19,6 @@ body .descriptionPage {
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    background: #efefef;
     line-height: 170%;
 }
 
@@ -111,10 +110,7 @@ i.fa {
     float: left;
     width: 100%;
     margin: 0% 1.5% 3% 1.5%;
-    background: #F5F5F5;
     padding: 15px;
-    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
-    border: solid 1px #EAEAEA;
 }
 
 .animation-element.slide-left.cardContent:hover,
@@ -147,12 +143,12 @@ i.fa {
     float: left;
 }
 
-.animation-element.slide-left.cardContent img {
+/* .animation-element.slide-left.cardContent img {
     width: 65px;
     height: 65px;
     border-radius: 50%;
     box-shadow: 0px 1px 3px rgba(51, 51, 51, 0.5);
-}
+} */
 
 .animation-element.slide-left.cardContent h3 {
     margin: 0px 0px 5px 0px;
@@ -197,8 +193,8 @@ i.fa {
     }
 
     .animation-element.slide-left.cardContent img {
-        width: 85px;
-        height: 85px;
+        width: 100%;
+        height: 100%;
         margin-bottom: 5px;
     }
 
