@@ -64,15 +64,15 @@ $(document).ready(function () {
             })
             //$('.cont').css("opacity", 0 + $(window).scrollTop() / 1000)
             if ($(window).scrollTop() / 256 < 2) {
-                $('nav').css({
-                    top: $(window).scrollTop() / 256 + 'rem'
-                });
-                $('#VertNav').css({
-                    top: $(window).scrollTop() / 256 + 'rem'
-                });
+                // $('nav').css({
+                //     top: $(window).scrollTop() / 256 + 'rem'
+                // });
+                // $('#VertNav').css({
+                //     top: $(window).scrollTop() / 256 + 'rem'
+                // });
             } else {
                 $('nav').css({
-                    top: '2rem'
+                    top: '0'
                 });
                 $('nav').css({
                     "width": "90%",
