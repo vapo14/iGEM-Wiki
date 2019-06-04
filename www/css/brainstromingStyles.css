@@ -1,17 +1,14 @@
-p{
-    font-family: 'Lato', sans-serif;
-    font-size: 2.4rem;
-    text-indent: 5%;
-}
-header{
+header {
     cursor: default;
 }
+
 .brainstorming-main-content {
     padding-top: 0;
     font-size: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 200;
 }
+
 /* div.brainstorming-main-content{
     background: linear-gradient(to bottom, rgba(15, 150, 87, 0.78), rgba(0, 0, 0, 0.0));
     background-size: cover;
@@ -20,40 +17,46 @@ header{
     padding: 1rem;
     margin: auto 0 !important;
 }
-#InitialIdeas{
-    font-size: 5rem;
-    font-family: 'Lato', sans-serif;
-    color: #f3e9d2;
-    border-bottom: 2px solid #DCC17B;
+
+#InitialIdeas {
+    color: white;
+    font-size: 10vw;
+    font-weight: 100;
+    text-transform: uppercase;
 }
-#s-aureus{
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 3.6rem;
-    font-family: 'Lato', sans-serif;
-    color: #2D5940;
-    
+    color: #c64949;
 }
-#FinalDecision{
+
+#FinalDecision {
     margin-top: 1rem;
     font-size: 5rem;
     font-family: 'Lato', sans-serif;
-    color: #2D5940;
-    border-bottom: 2px solid #DCC17B;
+    color: #0f9657;
+    margin-bottom: 5rem;
 }
-.mainContent h1{
-    bottom: 1rem;
+
+
+.BrainHeader {
+    width: 100%;
+    height: 50rem;
+    margin-bottom: 15rem;
+    background: linear-gradient(to bottom, rgba(15, 150, 87, 0.78), rgba(0, 0, 0, 0.3)), url(../img/vertda.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.mainContent{
-    max-height: 25rem;
-    min-height: 15rem;
-    height: 20rem;
-    margin-bottom: 0;
-    padding-top: 8rem;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)), url(../img/verticillium.jpg);
-    background-size: contain;
-    background-repeat: repeat-x;
-    background-size: 33% 100%;
-    border-bottom:  3px solid #2D5940;
+
+.DivisionLine {
+    height: 2px;
+    width: 100%;
+    background-color: #333333;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
+
 /*
 .nb-banner-top{
     padding: 0 !important;
@@ -62,35 +65,43 @@ header{
     border-radius: 100px 100px 100px 100px;
 } */
 
-.nb-title{
+.nb-title {
     padding: 1rem;
     margin: 2rem 0 2rem 0;
     width: 50%;
     left: 25%;
-    background-blend-mode: darken; 
+    background-blend-mode: darken;
     bottom: 3rem;
 }
-.nb-subtitle{    
+
+.nb-subtitle {
     padding: 1rem;
     margin: 0;
     border-bottom: 2px solid #3D0B37;
 }
-.nb-img{
-    margin-top: 1rem;
-    max-height: 25rem;
-    float: left;
-    height: 100%;
-    width: 100%;
 
+.nb-img {
+    padding-left: 4rem;
+    height: 400px;
+    width: 400px;
 }
-.nb-description{
+
+.nb-description {
     margin-top: 1rem;
     padding-left: 3rem;
     float: right;
 }
-.nb-description p{
+
+.nb-description p {
     vertical-align: middle;
 }
+
+.nb-text {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
 .nb-wrapper {
     color: transparent;
     border-radius: 2rem;
@@ -99,19 +110,27 @@ header{
     width: calc(100% + 15rem) !important;
     height: 100%;
     position: relative;
-    background: linear-gradient(to right,#C0D684, #62C370, rgba(15, 150, 87, 0.78), #6bbf59 ,#EDDBAF, #f3e9d2);
+    background: linear-gradient(to right, #C0D684, #62C370, rgba(15, 150, 87, 0.78), #6bbf59, #EDDBAF, #f3e9d2);
     background-size: 600% 200%;
     animation: gradient 20s linear infinite;
     animation-direction: alternate;
 }
-.nb-wtop{
+
+.nb-wtop {
     padding-top: 4rem;
     border-radius: 0 0 1rem 1rem !important;
 }
-.description-text{
+
+.description-text {
     margin-bottom: 3rem !important;
 }
+
 @keyframes gradient {
-    0% {background-position: 0% 0%}
-    100% {background-position: 100% 100%}
+    0% {
+        background-position: 0% 0%
+    }
+
+    100% {
+        background-position: 100% 100%
+    }
 }

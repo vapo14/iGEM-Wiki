@@ -27,6 +27,17 @@ var color = "rgba(15, 150, 87,";
 //------------------------NAVIGATION BAR ANIMATIONS-------------------------------
 $(document).ready(function () {
     //$('.cont').css("opacity", 1)
+    $('li.name').hide();
+    //$('ul.names').css('list-style','none');
+
+
+    var cards = document.getElementsByClassName('cardContainer');
+    $(cards).hover(function () {
+        var t = $(this).attr('target');
+        $(t).stop();
+        $(t).fadeToggle();
+    });
+
     $('.cont').css({
         "background-color": color + "0)"
     })
