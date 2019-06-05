@@ -271,7 +271,7 @@ nav ul li:hover::after {
 } */
 
 .PageTitle h1 {
-    padding-top: 20%;
+    padding-top: 10%;
 }
 
 /*-----------TEAM PAGE ------------------*/
@@ -290,4 +290,23 @@ footer {
     color: white;
     height: 10rem;
     background-color: rgba(15, 150, 87);
+}
+
+#BackToTopButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #0f9657;
+    color: white;
+    cursor: pointer;
+    /* border-radius: 20rem; */
+}
+
+#BackToTopButton:hover {
+    background-color: #0a683c;
 }
