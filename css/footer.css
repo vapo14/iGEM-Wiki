@@ -20,7 +20,7 @@ footer div div.ft-tec {
 }
 
 footer {
-    border-radius: 3rem 3rem 0 0 !important;
+    /* border-radius: 3rem 3rem 0 0 !important; */
     height: 100%;
     max-height: 40rem;
     margin-top: 10rem;
@@ -33,7 +33,7 @@ footer {
 }
 
 div.sub-footer {
-    border-radius: 3rem 3rem 0 0 !important;
+    /* border-radius: 3rem 3rem 0 0 !important; */
     /* background-image: linear-gradient(to bottom, #6BBF59, rgba(15, 150, 87) ) ; */
 }
 

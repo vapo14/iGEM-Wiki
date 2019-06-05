@@ -14,6 +14,23 @@ $('#navham').click(function () {
 })
 
 
+
+//for the project description page, or any other page that
+//requires to change content depending on screen size
+function UpdateResponsive() {
+    var width = window.innerWidth;
+    var height = window.innerHeight;
+    if (width > 1300) {
+        // Mobile code
+        $('#brainMobileContent').hide();
+        $('#brainDesktopContent').show();
+    } else {
+        // Other code
+        $('#brainDesktopContent').hide();
+        $('#brainMobileContent').show();
+    }
+}
+
 // $('.navbar-toggler').click(function () {
 //     $('#VertNav').css({
 //         "top": $('nav').offset().top
@@ -27,6 +44,7 @@ var color = "rgba(15, 150, 87,";
 //------------------------NAVIGATION BAR ANIMATIONS-------------------------------
 $(document).ready(function () {
     //$('.cont').css("opacity", 1)
+    UpdateResponsive();
     $('li.name').hide();
     //$('ul.names').css('list-style','none');
 
@@ -42,6 +60,7 @@ $(document).ready(function () {
         "background-color": color + "0)"
     })
     $(window).scroll(function () {
+
         if ($(window).scrollTop() >= 900) {
             $('.cont').css({
                 "background-color": color + "1)"
@@ -64,15 +83,15 @@ $(document).ready(function () {
             })
             //$('.cont').css("opacity", 0 + $(window).scrollTop() / 1000)
             if ($(window).scrollTop() / 256 < 2) {
-                $('nav').css({
-                    top: $(window).scrollTop() / 256 + 'rem'
-                });
-                $('#VertNav').css({
-                    top: $(window).scrollTop() / 256 + 'rem'
-                });
+                // $('nav').css({
+                //     top: $(window).scrollTop() / 256 + 'rem'
+                // });
+                // $('#VertNav').css({
+                //     top: $(window).scrollTop() / 256 + 'rem'
+                // });
             } else {
                 $('nav').css({
-                    top: '2rem'
+                    top: '0'
                 });
                 $('nav').css({
                     "width": "90%",
@@ -148,7 +167,7 @@ $(document).ready(function () {
             if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
                 element.addClass('in-view');
             } else {
-                element.removeClass('in-view');
+                // element.removeClass('in-view');
             }
         });
 
