@@ -295,10 +295,9 @@ footer {
 #BackToTopButton {
     display: none;
     position: fixed;
-    bottom: 20px;
-    right: 30px;
+    bottom: 5rem;
+    right: 3rem;
     z-index: 99;
-    font-size: 18px;
     border: none;
     outline: none;
     background-color: #0f9657;

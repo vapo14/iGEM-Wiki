@@ -162,3 +162,19 @@ $(document).ready(function () {
     $(window).trigger('scroll');
 
 });
+
+
+//for the project description page, or any other page that
+//requires to change content depending on screen size, in this case: 1210px.
+var width = window.innerWidth;
+var height = window.innerHeight;
+
+if (width > 1210) {
+    // Mobile code
+    $('#brainMobileContent').hide();
+    $('#brainDesktopContent').show();
+} else {
+    // Other code
+    $('#brainDesktopContent').hide();
+    $('#brainMobileContent').show();
+}
