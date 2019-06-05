@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/NavBarStyle.css">
 </head>
 
-<body id="top">
+<body id="top" onresize="UpdateResponsive()">
 
     <link rel="stylesheet" href="../css/NavBarStyle.css">
 
@@ -132,12 +132,11 @@
         </ul>
     </div>
 </div>
-<button onclick="topFunction()" id="BackToTopButton" title="Go to top"><img src="/img/arrowUP.png" width="70px"
-        height="70px"></button>
+<button onclick="topFunction()" class="btn-sm" id="BackToTopButton" title="Go to top"><img src="/img/arrowUP.png"
+        width="100%" height="100%"></button>
 
     <link rel="stylesheet" href="/css/brainstromingStyles.css">
 <!-- <div class="container-fluid nb-banner-top">
-
 </div> -->
 <header class="BrainHeader">
     <div class="container-fluid col-md-12 text-center">
@@ -148,124 +147,375 @@
 </header>
 
 
-<div class="container">
+<div class="container-fluid" id="brainDesktopContent">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="animation-element slide-left timeline-body" style="margin-top: 5%">
+                <h2><i>Staphylococcus aureus</i> biofilm</h2>
+
+                <p>
+                    <i>S. aureus</i> is a Gram-positive bacterium that creates a biofilm which sticks to
+                    tissues and
+                    implanted medical materials. Due to this, <i>S. aureus</i> is resistant to
+                    antibiotics
+                    and less
+                    vulnerable* to antimicrobial and immune defenses. Our plan was to produce and purify
+                    recombinant enzymes
+                    that have shown antimicrobial activity against the biofilm and, in that way, offer a
+                    therapeutic
+                    solution.
+                </p>
+            </div>
+            <div class="animation-element slide-left timeline-body" style="margin-top: 50%">
+                <h2>Ulcer treatment via <i>L. Sericata larvae</i></h2>
+                <p>
+                    We identified the problem of hard-to-treat wounds such as diabetic ulcers and other
+                    chronic wounds. An
+                    alternative treatment based on the use of larvae of the green bottle fly (<i>Lucilia
+                        sericata</i>) has
+                    shown effectiveness on healing these wounds due to the peptides and enzymes released
+                    in
+                    the insect's
+                    secretions. Our objective was to produce a hydrogel that contained three of these
+                    proteins to accelerate
+                    the debridement process and prevent bacterial infections.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <ul class="timeline">
+                <li class="animation-element slide-left row">
+                    <div class="timeline-image">
+                        <img class="img-circle img-fluid" src="/img/Brainstorm Biofilm.PNG" alt="">
+                    </div>
+                </li>
+                <div class="line">
+                </div>
+                <li class="animation-element slide-right row" style="top: 8rem">
+                    <div class="timeline-image">
+                        <img class="img-circle img-fluid" src="/img/Brainstorm Acumulacion de Plomo.PNG" alt="">
+                    </div>
+                </li>
+                <li class="animation-element slide-left" style="top: 16rem">
+                    <div class="timeline-image">
+                        <img class="img-circle img-fluid" src="/img/Brainstorm Larvas.PNG" alt="">
+                    </div>
+                </li>
+                <li class="animation-element slide-right" style="top: 32rem">
+                    <div class="timeline-image">
+                        <img class="img-circle img-fluid" src="" alt="">
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="animation-element slide-right timeline-body" style="margin-top: 80%">
+                <h2>Lead accumulation</h2>
+
+                <p>
+                    In our state there are a lot of water bodies contaminated by this heavy metal, which
+                    is
+                    extremely
+                    polluted and harmful for people’s health. This idea consisted of taking a protein
+                    from
+                    <i>Cupriavidus
+                        metallidurans</i> called <i>PbrR</i>, which has lead affinity and therefore,
+                    modify
+                    <i>E. coli
+                        C41</i> (DE3) to remove lead from water. This way, the water quality in our
+                    state
+                    could improve and
+                    also improve the lives of people affected by this contaminant.
+                </p>
+            </div>
+            <div class="animation-element slide-right timeline-body" style="margin-top: 80%">
+                <h1 class="text-center" id="FinalDecision">
+                    Our final decision:
+                </h1>
+                <h2>Treatment of crops for the <i>---</i> fungi via the <i>---</i> protein.</h2>
+                <p>
+                    --Sample text--We identified the problem of hard-to-treat wounds such as
+                    diabetic
+                    ulcers
+                    and other
+                    chronic wounds. An alternative treatment based on the use of larvae of the green
+                    bottle
+                    fly (Lucilia
+                    sericata) has shown effectiveness on healing these wounds due to the peptides
+                    and
+                    enzymes released in
+                    the insect´s secretions. Our objective was to produce a hydrogel that contained
+                    three of
+                    these proteins
+                    to accelerate the debridement process and prevent bacterial infections.--sample
+                    text--
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <div class="row">
+                <div class="col-lg-12">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum.
+                    </p>
+                    <ul class="timeline">
+                        <li class="animation-element slide-left">
+                            <div class="timeline-image">
+                                <img class="img-circle img-fluid" src="/img/Brainstorm Biofilm.PNG" alt="">
+                            </div>
+                            <div class="timeline-panel ">
+                                <div class="timeline-heading">
+                                    <h2><i>Staphylococcus aureus</i> biofilm</h2>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>
+                                        <i>S. aureus</i> is a Gram-positive bacterium that creates a biofilm which
+                                        sticks to
+                                        tissues and
+                                        implanted medical materials. Due to this, <i>S. aureus</i> is resistant to
+                                        antibiotics
+                                        and less
+                                        vulnerable* to antimicrobial and immune defenses. Our plan was to produce and
+                                        purify
+                                        recombinant enzymes
+                                        that have shown antimicrobial activity against the biofilm and, in that way,
+                                        offer a
+                                        therapeutic
+                                        solution.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="line"></div>
+                        </li>
+                        <li class="timeline-inverted animation-element slide-right">
+                            <div class="timeline-image">
+                                <img class="img-circle img-fluid" src="/img/Brainstorm Acumulacion de Plomo.PNG" alt=""
+                                    style="margin-top: 3rem"> </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h2>Lead accumulation</h2>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>
+                                        In our state there are a lot of water bodies contaminated by this heavy metal,
+                                        which
+                                        is
+                                        extremely
+                                        polluted and harmful for people’s health. This idea consisted of taking a
+                                        protein
+                                        from
+                                        <i>Cupriavidus
+                                            metallidurans</i> called <i>PbrR</i>, which has lead affinity and therefore,
+                                        modify
+                                        <i>E. coli
+                                            C41</i> (DE3) to remove lead from water. This way, the water quality in our
+                                        state
+                                        could improve and
+                                        also improve the lives of people affected by this contaminant.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="line"></div>
+                        </li>
+                        <li class="animation-element slide-left">
+                            <div class="timeline-image">
+                                <img class="img-circle img-fluid" src="/img/Brainstorm Larvas.PNG" alt=""> </div>
+                            <div class="timeline-panel" style="margin-top: 5rem">
+                                <div class="timeline-heading">
+                                    <h2>Ulcer treatment via <i>L. Sericata larvae</i></h2>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>
+                                        We identified the problem of hard-to-treat wounds such as diabetic ulcers and
+                                        other
+                                        chronic wounds. An
+                                        alternative treatment based on the use of larvae of the green bottle fly
+                                        (<i>Lucilia
+                                            sericata</i>) has
+                                        shown effectiveness on healing these wounds due to the peptides and enzymes
+                                        released
+                                        in
+                                        the insect's
+                                        secretions. Our objective was to produce a hydrogel that contained three of
+                                        these
+                                        proteins to accelerate
+                                        the debridement process and prevent bacterial infections.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="line"></div>
+                        </li>
+                        <li class="timeline-inverted animation-element slide-right">
+                            <div class="timeline-image">
+                                <img class="rounded-circle img-fluid" src="" alt=""> </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h1 class="text-center" id="FinalDecision">
+                                        Our final decision:
+                                    </h1>
+                                    <h2>Treatment of crops for the <i>---</i> fungi via the <i>---</i> protein.</h2>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>
+                                        --Sample text--We identified the problem of hard-to-treat wounds such as
+                                        diabetic
+                                        ulcers
+                                        and other
+                                        chronic wounds. An alternative treatment based on the use of larvae of the green
+                                        bottle
+                                        fly (Lucilia
+                                        sericata) has shown effectiveness on healing these wounds due to the peptides
+                                        and
+                                        enzymes released in
+                                        the insect´s secretions. Our objective was to produce a hydrogel that contained
+                                        three of
+                                        these proteins
+                                        to accelerate the debridement process and prevent bacterial infections.--sample
+                                        text--
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div> -->
+
+
+<!-- -------------------------------MOBILE CONTENT---------------------------------------
+
+THIS ONLY APPEARS ON SCREEN RESOLUTIONS LOWER TO 1210 -->
+
+<div class="container" id="brainMobileContent">
+    <div class="row">
+        <div class="col-sm-12">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                ut
+                labore
+                et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                ut
+                aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum
+                dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                officia
+                deserunt mollit anim id est laborum.
+            </p>
+        </div>
+    </div>
     <div class="row">
         <h2><i>Staphylococcus aureus</i> biofilm</h2>
     </div>
-    <div class="row DivisionLine text-center">
-    </div>
     <div class="row">
-        <div class="col-sm-6 nb-text">
-            <p>
-                <i>S. aureus</i> is a Gram-positive bacterium that creates a biofilm which sticks to tissues and
-                implanted medical materials. Due to this, <i>S. aureus</i> is resistant to antibiotics and less
-                vulnerable* to antimicrobial and immune defenses. Our plan was to produce and purify recombinant enzymes
-                that have shown antimicrobial activity against the biofilm and, in that way, offer a therapeutic
-                solution.
-            </p>
+        <div class="col-sm-6 text-center">
+            <img class="img-circle img-fluid" src="/img/Brainstorm Biofilm.PNG" alt="">
         </div>
         <div class="col-sm-6">
-            <img src="/img/Brainstorm Biofilm.PNG" class="nb-img img-fluid">
+            <p>
+                <i>S. aureus</i> is a Gram-positive bacterium that creates a biofilm which sticks to
+                tissues and
+                implanted medical materials. Due to this, <i>S. aureus</i> is resistant to
+                antibiotics
+                and less
+                vulnerable* to antimicrobial and immune defenses. Our plan was to produce and purify
+                recombinant enzymes
+                that have shown antimicrobial activity against the biofilm and, in that way, offer a
+                therapeutic
+                solution.
+            </p>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-md-12">
-            <h2>Lead accumulation</h2>
-        </div>
-    </div>
-    <div class="row DivisionLine text-center">
+        <h2>Lead accumulation</h2>
     </div>
     <div class="row">
-        <div class="col-sm-6">
-            <img src="/img/Brainstorm Acumulacion de Plomo.PNG" class="nb-img img-fluid">
+        <div class="col-sm-6 text-center">
+            <img class="img-circle img-fluid" src="/img/Brainstorm Acumulacion de Plomo.PNG" alt="">
         </div>
-        <div class="col-sm-6 nb-text">
+        <div class="col-sm-6">
             <p>
-                In our state there are a lot of water bodies contaminated by this heavy metal, which is extremely
-                polluted and harmful for people’s health. This idea consisted of taking a protein from <i>Cupriavidus
-                    metallidurans</i> called <i>PbrR</i>, which has lead affinity and therefore, modify <i>E. coli
-                    C41</i> (DE3) to remove lead from water. This way, the water quality in our state could improve and
+                In our state there are a lot of water bodies contaminated by this heavy metal, which
+                is
+                extremely
+                polluted and harmful for people’s health. This idea consisted of taking a protein
+                from
+                <i>Cupriavidus
+                    metallidurans</i> called <i>PbrR</i>, which has lead affinity and therefore,
+                modify
+                <i>E. coli
+                    C41</i> (DE3) to remove lead from water. This way, the water quality in our
+                state
+                could improve and
                 also improve the lives of people affected by this contaminant.
             </p>
         </div>
     </div>
-
-
-
     <div class="row">
-        <div class="col-md-12">
-            <h2>Ulcer treatment via <i>L. Sericata larvae</i></h2>
+        <h2>Ulcer treatment via <i>L. Sericata larvae</i></h2>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 text-center">
+            <img class="img-circle img-fluid" src="/img/Brainstorm Larvas.PNG" alt="">
         </div>
-    </div>
-    <div class="row DivisionLine text-center">
-    </div>
-    <div class="row">
-
-        <div class="col-sm-6 nb-text">
+        <div class="col-sm-6">
             <p>
-                We identified the problem of hard-to-treat wounds such as diabetic ulcers and other chronic wounds. An
-                alternative treatment based on the use of larvae of the green bottle fly (<i>Lucilia sericata</i>) has
-                shown effectiveness on healing these wounds due to the peptides and enzymes released in the insect's
-                secretions. Our objective was to produce a hydrogel that contained three of these proteins to accelerate
+                We identified the problem of hard-to-treat wounds such as diabetic ulcers and other
+                chronic wounds. An
+                alternative treatment based on the use of larvae of the green bottle fly (<i>Lucilia
+                    sericata</i>) has
+                shown effectiveness on healing these wounds due to the peptides and enzymes released
+                in
+                the insect's
+                secretions. Our objective was to produce a hydrogel that contained three of these
+                proteins to accelerate
                 the debridement process and prevent bacterial infections.
             </p>
         </div>
-        <div class="col-sm-6">
-            <img src="/img/Brainstorm Larvas.PNG" class="nb-img img-fluid">
-        </div>
-    </div>
-
-
-    <div class="row">
-        <div class="col-md-12">
-            <h1 class="text-center" id="FinalDecision">
-                Our final decision:
-            </h1>
-        </div>
     </div>
 
     <div class="row">
+        <h1 class="text-center" id="FinalDecision">
+            Our final decision:
+        </h1>
         <h2>Treatment of crops for the <i>---</i> fungi via the <i>---</i> protein.</h2>
     </div>
-    <div class="row DivisionLine"></div>
     <div class="row">
-        <div class="col-sm-12 nb-text">
+        <div class="col-sm-6 text-center">
+            <img class="img-circle img-fluid" src="https://via.placeholder.com/300" alt="">
+        </div>
+        <div class="col-sm-6">
             <p>
-                --Sample text--We identified the problem of hard-to-treat wounds such as diabetic ulcers and other
-                chronic wounds. An alternative treatment based on the use of larvae of the green bottle fly (Lucilia
-                sericata) has shown effectiveness on healing these wounds due to the peptides and enzymes released in
-                the insect´s secretions. Our objective was to produce a hydrogel that contained three of these proteins
-                to accelerate the debridement process and prevent bacterial infections.--sample text--
+                --Sample text--We identified the problem of hard-to-treat wounds such as diabetic
+                ulcers
+                and other
+                chronic wounds. An alternative treatment based on the use of larvae of the green
+                bottle
+                fly (Lucilia
+                sericata) has shown effectiveness on healing these wounds due to the peptides and
+                enzymes released in
+                the insect´s secretions. Our objective was to produce a hydrogel that contained
+                three of
+                these proteins
+                to accelerate the debridement process and prevent bacterial infections.--sample
+                text--
             </p>
         </div>
     </div>
 </div>
-
-
-
-<!-- 
-
-    <div class="container-fluid col-md-12 text-center nb-title">
-        <h1 id="FinalDecision">
-            Our final decision:
-        </h1>
-    </div>
-    <div class="row description-text nb-finald">
-        <div class="conatiner col-md-12 text-center nb-subtitle">
-            <h2 id="s-aureus">Treatment of crops for the <i>---</i> fungi via the <i>---</i> protein.</h2>
-        </div>
-        <div class="container col-sm-10 nb-description">
-            <p>
-                --Sample text--We identified the problem of hard-to-treat wounds such as diabetic ulcers and other
-                chronic wounds. An alternative treatment based on the use of larvae of the green bottle fly (Lucilia
-                sericata) has shown effectiveness on healing these wounds due to the peptides and enzymes released in
-                the insect´s secretions. Our objective was to produce a hydrogel that contained three of these proteins
-                to accelerate the debridement process and prevent bacterial infections.--sample text--
-            </p>
-        </div>
-    </div>
-</div> -->
 
     <link rel="stylesheet" href="../css/footer.css">
 <footer>

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/NavBarStyle.css">
 </head>
 
-<body id="top">
+<body id="top" onresize="UpdateResponsive()">
 
     <link rel="stylesheet" href="../css/NavBarStyle.css">
 
@@ -132,8 +132,8 @@
         </ul>
     </div>
 </div>
-<button onclick="topFunction()" id="BackToTopButton" title="Go to top"><img src="/img/arrowUP.png" width="70px"
-        height="70px"></button>
+<button onclick="topFunction()" class="btn-sm" id="BackToTopButton" title="Go to top"><img src="/img/arrowUP.png"
+        width="100%" height="100%"></button>
 
     <link rel="stylesheet" href="/css/projectDescriptionStyles.css">
 <div class="descriptionPage">
@@ -146,7 +146,7 @@
         <p>This animation will focus on sliding an element from the left once it enters the view of the user</p>
     </div>
     <div class="container cf">
-        <div class="animation-element slide-left cardContent">
+        <div class="animation-element slide-left">
             <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus quae facere dolore maxime
                 necessitatibus
@@ -167,7 +167,7 @@
         </div>
     </div>
     <div class="container cf">
-        <div class="animation-element slide-left cardContent">
+        <div class="animation-element slide-right cardContent">
             <img src="/img/create.png" class="img-fluid">
         </div>
     </div>
@@ -193,7 +193,7 @@
         </div>
     </div>
     <div class="container cf">
-        <div class="animation-element slide-left cardContent text-center">
+        <div class="animation-element slide-right cardContent text-center">
             <img src="https://via.placeholder.com/1000x500" class="img-fluid">
         </div>
     </div>
