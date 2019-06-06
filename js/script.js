@@ -8,10 +8,26 @@ $('ul.nav li.active').hover(function () {
 //     }
 // });
 
+var onScreen = false;
 
-$('#navham').click(function () {
-    $('#VertNav').toggle(500);
-})
+function openMobile(x) {
+    x.classList.toggle("change");
+    if (!onScreen) {
+        $('#VertNav').slideDown(500);
+        onScreen = true;
+    } else {
+        $('#VertNav').slideUp(500);
+        onScreen = false;
+
+    }
+
+}
+
+
+
+// $('#navham').click(function () {
+//     $('#VertNav').toggle(500);
+// })
 
 
 $(function () {

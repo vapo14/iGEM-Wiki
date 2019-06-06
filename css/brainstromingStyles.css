@@ -29,11 +29,11 @@ svg.intro.go .text-stroke {
     fill: none;
     stroke: #0fe782;
     stroke-width: 4.5px;
-    stroke-dashoffset: -900;
-    stroke-dasharray: 900;
+    stroke-dashoffset: -200;
+    stroke-dasharray: 200;
     stroke-linecap: butt;
     stroke-linejoin: round;
-    animation: dash 2.5s ease-in-out forwards;
+    animation: dash 5s forwards;
 }
 
 svg.intro.go .text-stroke:nth-child(2) {

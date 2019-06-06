@@ -18,19 +18,10 @@ body .descriptionPage {
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    background-size: cover;
+    margin-bottom: 100rem;
 }
 
-/*clearfixes*/
-
-.cf:before,
-.cf:after {
-    content: " ";
-    display: table;
-}
-
-.cf:after {
-    clear: both;
-}
 
 .main-container {
     background: #fff;
@@ -39,7 +30,7 @@ body .descriptionPage {
 }
 
 .container {
-    position: relative;
+    position: static;
     padding: 25px;
 }
 

@@ -64,7 +64,6 @@ nav {
 /*----------------MOBILE NAVBAR--------------------------*/
 
 #VertNav {
-    border-radius: 30px;
     position: fixed;
     padding-top: 12rem;
     padding-bottom: 5rem;
@@ -79,7 +78,35 @@ nav {
     overflow-y: scroll;
 }
 
+.hamb {
+    display: inline-block;
+    cursor: pointer;
+}
 
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
 
 
 /*---------------------------READING POSITION INDICATOR----------------------------*/
@@ -104,9 +131,9 @@ nav {
 }
 
 
-.navbar-toggler-icon {
+/* .navbar-toggler-icon {
     background-image: url("../img/ham\ white.png");
-}
+} */
 
 .brand {
     font-size: 3rem;
