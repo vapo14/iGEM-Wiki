@@ -27,13 +27,13 @@ svg.intro.go .text {
 
 svg.intro.go .text-stroke {
     fill: none;
-    stroke: #0f9657;
-    stroke-width: 2.8px;
-    stroke-dashoffset: -900;
-    stroke-dasharray: 900;
+    stroke: #0fe782;
+    stroke-width: 4.5px;
+    stroke-dashoffset: -200;
+    stroke-dasharray: 200;
     stroke-linecap: butt;
     stroke-linejoin: round;
-    animation: dash 2.5s ease-in-out forwards;
+    animation: dash 5s forwards;
 }
 
 svg.intro.go .text-stroke:nth-child(2) {
@@ -137,43 +137,6 @@ h2 {
     margin-bottom: 0;
     color: #808080;
 }
-
-/*Style for even div.line*/
-.timeline .line:before {
-    content: "";
-    position: absolute;
-    top: 160px;
-    bottom: 0;
-    left: 650px;
-    width: 4px;
-    height: 110px;
-    background-color: #0f9657c7;
-    -ms-transform: rotate(-44deg);
-    /* IE 9 */
-    -webkit-transform: rotate(-44deg);
-    /* Safari */
-    transform: rotate(-44deg);
-    box-shadow: 0 0 5px #2ee992c7;
-}
-
-/*Style for odd div.line*/
-.timeline>li:nth-child(even) .line:before {
-    content: "";
-    position: absolute;
-    top: 160px;
-    bottom: 0;
-    left: 450px;
-    width: 4px;
-    height: 110px;
-    background-color: #0f9657c7;
-    -ms-transform: rotate(44deg);
-    /* IE 9 */
-    -webkit-transform: rotate(44deg);
-    /* Safari */
-    transform: rotate(44deg);
-    box-shadow: 0 0 5px #2ee992c7;
-}
-
 
 /*-----------------------SLIDE LEFT ANIMATION--------------------------*/
 
