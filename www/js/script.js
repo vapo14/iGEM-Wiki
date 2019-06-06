@@ -8,11 +8,56 @@ $('ul.nav li.active').hover(function () {
 //     }
 // });
 
+var onScreen = false;
 
-$('#navham').click(function () {
-    $('#VertNav').toggle(500);
+function openMobile(x) {
+    x.classList.toggle("change");
+    if (!onScreen) {
+        $('#VertNav').slideDown(500);
+        onScreen = true;
+    } else {
+        $('#VertNav').slideUp(500);
+        onScreen = false;
+
+    }
+
+}
+
+
+
+// $('#navham').click(function () {
+//     $('#VertNav').toggle(500);
+// })
+
+
+$(function () {
+    $('.intro').addClass('go');
+
+    $('.reload').click(function () {
+        $('.intro').removeClass('go').delay(50).queue(function (next) {
+            $('.intro').addClass('go');
+            next();
+        });
+
+    });
 })
 
+
+//for the project description page, or any other page that
+//requires to change content depending on screen size
+function UpdateResponsive() {
+    var width = window.innerWidth;
+    var height = window.innerHeight;
+    if (width > 1300) {
+        // Mobile code
+        $('#brainMobileContent').hide();
+        $('#brainDesktopContent').show();
+    } else {
+        // Other code
+        $('#brainDesktopContent').hide();
+        $('#brainMobileContent').show();
+    }
+}
 
 // $('.navbar-toggler').click(function () {
 //     $('#VertNav').css({
@@ -27,6 +72,17 @@ var color = "rgba(15, 150, 87,";
 //------------------------NAVIGATION BAR ANIMATIONS-------------------------------
 $(document).ready(function () {
     //$('.cont').css("opacity", 1)
+    UpdateResponsive();
+    $('li.name').hide();
+    //$('ul.names').css('list-style','none');
+
+    var cards = document.getElementsByClassName('cardContainer');
+    $(cards).hover(function () {
+        var t = $(this).attr('target');
+        $(t).stop();
+        $(t).fadeToggle();
+    });
+
     $('.cont').css({
         "background-color": color + "0)"
     })
@@ -53,15 +109,15 @@ $(document).ready(function () {
             })
             //$('.cont').css("opacity", 0 + $(window).scrollTop() / 1000)
             if ($(window).scrollTop() / 256 < 2) {
-                $('nav').css({
-                    top: $(window).scrollTop() / 256 + 'rem'
-                });
-                $('#VertNav').css({
-                    top: $(window).scrollTop() / 256 + 'rem'
-                });
+                // $('nav').css({
+                //     top: $(window).scrollTop() / 256 + 'rem'
+                // });
+                // $('#VertNav').css({
+                //     top: $(window).scrollTop() / 256 + 'rem'
+                // });
             } else {
                 $('nav').css({
-                    top: '2rem'
+                    top: '0'
                 });
                 $('nav').css({
                     "width": "90%",
@@ -79,4 +135,75 @@ $(document).ready(function () {
             $(this).children(".dropdown-content").stop(true, false).slideUp('medium');
         }
     )
+});
+
+
+
+//BACK TO TOP BUTTON
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+    scrollFunction()
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        $("#BackToTopButton").fadeIn() = "block";
+    } else {
+        $("#BackToTopButton").fadeOut() = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+
+
+
+
+
+//SLIDE RIGHT ANIMATION ON PROJECT DESCRIPTION PAGE
+
+$(document).ready(function () {
+
+    //window and animation items
+    var animation_elements = $.find('.animation-element');
+    var web_window = $(window);
+
+    //check to see if any animation containers are currently in view
+    function check_if_in_view() {
+        //get current window information
+        var window_height = web_window.height();
+        var window_top_position = web_window.scrollTop();
+        var window_bottom_position = (window_top_position + window_height);
+
+        //iterate through elements to see if its in view
+        $.each(animation_elements, function () {
+
+            //get the element sinformation
+            var element = $(this);
+            var element_height = $(element).outerHeight();
+            var element_top_position = $(element).offset().top;
+            var element_bottom_position = (element_top_position + element_height);
+
+            //check to see if this current container is visible (its viewable if it exists between the viewable space of the viewport)
+            if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
+                element.addClass('in-view');
+            } else {
+                // element.removeClass('in-view');
+            }
+        });
+
+    }
+
+    //on or scroll, detect elements in view
+    $(window).on('scroll resize', function () {
+        check_if_in_view()
+    })
+    //trigger our scroll event on initial load
+    $(window).trigger('scroll');
+
 });
