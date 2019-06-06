@@ -60,7 +60,6 @@ $(document).ready(function () {
     $('li.name').hide();
     //$('ul.names').css('list-style','none');
 
-
     var cards = document.getElementsByClassName('cardContainer');
     $(cards).hover(function () {
         var t = $(this).attr('target');
@@ -72,7 +71,6 @@ $(document).ready(function () {
         "background-color": color + "0)"
     })
     $(window).scroll(function () {
-
         if ($(window).scrollTop() >= 900) {
             $('.cont').css({
                 "background-color": color + "1)"
@@ -133,7 +131,7 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
         $("#BackToTopButton").fadeIn() = "block";
     } else {
         $("#BackToTopButton").fadeOut() = "none";
