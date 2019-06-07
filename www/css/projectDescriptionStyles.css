@@ -12,15 +12,17 @@
     text-transform: uppercase;
 }
 
+
+/* Gears */
+
+.gear_md {
+    width: 145px;
+    height: 145px;
+}
+
+
 /*These styles contain basic styles for fomatting along with our animation css*/
 
-body .descriptionPage {
-    font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    background-size: cover;
-    margin-bottom: 100rem;
-}
 
 
 .main-container {
