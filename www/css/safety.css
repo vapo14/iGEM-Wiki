@@ -1,13 +1,26 @@
-.descriptionHeader {
-    height: 50rem;
+@font-face{
+    font-family: Lato;
+    src: url(/fonts/Lato/Lato-Regular.ttf);
+    
+}
+.safety-header {
+    height: 100%;
     width: 100%;
-    background: linear-gradient(to bottom, rgba(15, 150, 87, 0.726), rgba(0, 0, 0, .2)), url(/img/sphere.gif);
+    background: linear-gradient(to bottom, rgba(15, 150, 87, 0.726), rgba(0, 0, 0, .2)), url(/img/lab-safety.jpg)/*temporary*/;
     background-size: cover;
+    background-position-y: 20%;
 }
 
-.descriptionTitle {
+.safety-title {
     padding-top: 8rem;
-    font-family:  sans-serif;
+    font-family:  'Lato', sans-serif;
     color: white;
     text-transform: uppercase;
+}
+q.title-quote{
+    color: #ffffff;
+    font-family: 'Lato', sans-serif !important;
+    font-size: 2rem;
+    margin-top: 4rem;
+    padding-bottom: 2rem;
 }

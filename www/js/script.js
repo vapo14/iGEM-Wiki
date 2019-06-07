@@ -42,18 +42,6 @@ $(function () {
     });
 })
 
-$(function () {
-    $('.intro').addClass('go');
-
-    $('.reload').click(function () {
-        $('.intro').removeClass('go').delay(50).queue(function (next) {
-            $('.intro').addClass('go');
-            next();
-        });
-
-    });
-})
-
 
 //for the project description page, or any other page that
 //requires to change content depending on screen size
