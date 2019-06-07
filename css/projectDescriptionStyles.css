@@ -32,7 +32,9 @@ header {
 }
 
 .descriptionPage h2 {
-    font-size: 70px;
+    font-family: vapoFont;
+    font-size: 5rem;
+    color: whitesmoke;
 }
 
 .description-first-content {
@@ -50,16 +52,12 @@ header {
 }
 
 .description-third-content {
-    background-color: #d69e6d;
+    background-color: #a77951;
     color: white;
     padding: 4rem;
     text-align: justify;
 }
 
-.container {
-    position: static;
-    padding: 25px;
-}
 
 
 .animation-element.slide-left.cardContent:nth-of-type(odd) {

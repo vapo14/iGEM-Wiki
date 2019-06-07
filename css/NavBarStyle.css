@@ -5,10 +5,15 @@
 }
 
 
+@font-face {
+    font-family: vapoFont;
+    src: url(/fonts/NotoSans/NotoSansJP-Regular.otf)
+}
+
 
 html {
     font-size: 10px;
-    font-family: "Roboto Cn", sans-serif;
+    font-family: vapoFont;
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
@@ -410,7 +415,7 @@ footer {
 }
 
 #BackToTopButton:hover {
-    background-color: #0a683c;
+    background-color: rgb(105, 13, 56);
 }
 
 /*animation element sliding left*/
