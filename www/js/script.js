@@ -81,13 +81,21 @@ $(document).ready(function () {
     //$('.cont').css("opacity", 1)
     UpdateResponsive();
     $('li.name').hide();
+    var toggled = true;
     //$('ul.names').css('list-style','none');
 
     var cards = document.getElementsByClassName('cardContainer');
     $(cards).hover(function () {
         var t = $(this).attr('target');
         $(t).stop();
-        $(t).fadeToggle();
+        if(toggled){
+            $(t).fadeIn();
+            toggled = false;
+        }
+        else{
+            $(t).fadeOut();
+            toggled = true;
+        }
     });
 
     $('.cont').css({
