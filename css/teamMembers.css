@@ -66,6 +66,8 @@ div.characterCard#accordion {
     margin: 2rem 0;
     flex-wrap: wrap;
     flex-direction: row;
+    overflow-x: auto;
+    
 }
 
 .cardContainer {
