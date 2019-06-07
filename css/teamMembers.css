@@ -1,6 +1,8 @@
-html,body{
+html,
+body {
     height: 100%;
 }
+
 .card {
     border: 0;
     margin-bottom: 1rem;
@@ -12,7 +14,8 @@ html,body{
     margin-top: 0rem;
     align-content: center;
 }
-div.characterCard#accordion{
+
+div.characterCard#accordion {
     margin-top: 7rem;
 }
 
@@ -29,7 +32,7 @@ div.characterCard#accordion{
     margin: 0 2rem 0 2rem;
     margin-bottom: 2rem;
     padding-bottom: 2rem;
-    
+
 }
 
 .card-link+.card-link {
@@ -37,7 +40,7 @@ div.characterCard#accordion{
 }
 
 .card-link:hover {
-    background:  linear-gradient(to top ,#C0D684, #62C370, rgba(15, 150, 87, 0.78), #6bbf59 ,#EDDBAF, #f3e9d2);
+    background: linear-gradient(to top, #C0D684, #62C370, rgba(15, 150, 87, 0.78), #6bbf59, #EDDBAF, #f3e9d2);
     background-size: 300% 300%;
     animation: sidebar 25s linear infinite;
     animation-direction: alternate;
@@ -45,7 +48,7 @@ div.characterCard#accordion{
 }
 
 .titleH {
-    
+
     border-bottom: 3px solid #DCC17B;
     align-content: left;
     margin: 2rem auto;
@@ -58,13 +61,15 @@ div.characterCard#accordion{
     font-size: 4rem;
 }
 
-.row.col-md-12.b,.row.col-md-12.c{
+.row.col-md-12.b,
+.row.col-md-12.c {
     margin: 2rem 0;
     flex-wrap: wrap;
     flex-direction: row;
     overflow-x: auto;
     
 }
+
 .cardContainer {
 
     padding-left: 1.1rem;
@@ -87,7 +92,7 @@ li.name {
     font-family: 'Lato', sans-serif;
     font-size: 2rem;
     text-align: center;
-    
+
 }
 
 .names {
@@ -122,31 +127,36 @@ div.cardContainer {
     transition: opacity 2s linear;
 }
 
-div.modal-img{
+div.modal-img {
     display: block;
     max-width: 30%;
     max-height: 45%;
     left: 0;
     float: left;
     align-items: center;
-    background:  linear-gradient(to top ,#C0D684, #f3e9d2);
+    background: linear-gradient(to top, #C0D684, #f3e9d2);
     border-radius: 1.5rem 0.3rem 1.5rem 0.3rem;
     padding: 2rem;
 }
-.modal-header, .modal-footer{
+
+.modal-header,
+.modal-footer {
     border: 0;
 }
-button.close{
+
+button.close {
     font-size: 3rem;
     color: rgb(19, 95, 60);
     opacity: 1;
 }
-div.modal-footer>button.btn{
+
+div.modal-footer>button.btn {
     font-size: 2rem;
     background-color: #3D0B37;
     border: 0;
     border-radius: 2px;
 }
+
 div.detalles {
     float: right;
     display: block;
@@ -156,42 +166,50 @@ div.detalles {
     text-indent: 2rem;
 }
 
-h2.modal-title{
+h2.modal-title {
     font-size: 4rem;
     font-family: 'Lato', sans-serif;
     text-align: center !important;
     margin-left: 35%;
 }
-.modal-header{
+
+.modal-header {
     text-align: center !important;
 }
-.modal-body{
+
+.modal-body {
     padding-top: 0;
     padding-bottom: 0;
 }
-.centered-row{
+
+.centered-row {
     display: inline;
 }
-.row.col-md-12.c{
+
+.row.col-md-12.c {
     padding-left: 15%;
     padding-right: 15%;
 }
-.row.col-md-12.b{
+
+.row.col-md-12.b {
     padding-left: 3.5%;
     padding-right: 3.5%;
 }
-#obo{
+
+#obo {
     height: auto;
 }
-.sidebarL{
+
+.sidebarL {
     float: left;
     height: 100%;
     width: 100%;
-    margin-top: 1rem;    
+    margin-top: 1rem;
     padding: 0;
     border-radius: 0px 15px 15px 0px;
 }
-.sidebarR{
+
+.sidebarR {
     float: right;
     height: calc(auto + 100px);
     text-align-last: end;
@@ -200,23 +218,28 @@ h2.modal-title{
     padding: 0;
     border-radius: 15px 0 0 15px;
 }
-.sidebarL,.sidebarR{
+
+.sidebarL,
+.sidebarR {
     color: rgba(0, 0, 0, 0.01);
 }
-.sideAnimation{
-    background: linear-gradient(to bottom,#C0D684, #62C370, rgba(15, 150, 87, 0.78), #6bbf59 ,#EDDBAF, #f3e9d2);
+
+.sideAnimation {
+    background: linear-gradient(to bottom, #C0D684, #62C370, rgba(15, 150, 87, 0.78), #6bbf59, #EDDBAF, #f3e9d2);
     background-size: 300% 200%;
     animation: sidebar 20s linear infinite;
     animation-direction: alternate;
 }
-.carousel-caption{
+
+.carousel-caption {
     bottom: 0%;
 }
-.carousel-caption h1{
+
+.carousel-caption h1 {
     font-family: 'Monterey', sans-serif;
     font-size: 7rem;
-    z-index: 3;
 }
+
 /* .blured-border{
     height: inherit;
     margin: 0.0rem 0 0.0rem 0;
@@ -225,6 +248,11 @@ h2.modal-title{
     filter: blur(5px);
 } */
 @keyframes sidebar {
-    0% {background-position: 0% 0%}
-    100%{background-position: 300% 100%}
+    0% {
+        background-position: 0% 0%
+    }
+
+    100% {
+        background-position: 300% 100%
+    }
 }

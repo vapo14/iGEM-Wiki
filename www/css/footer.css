@@ -1,67 +1,79 @@
-
-@font-face{
+@font-face {
     font-family: 'Lato';
     src: url('../fonts/Lato/Lato-Regular.ttf');
 }
-@font-face{
+
+@font-face {
     font-family: 'Monterey';
     src: url('../fonts/Monterey/MontereyFLF.ttf');
 }
 
 footer div div.ft-tec {
-    margin: 2rem 2rem 1rem 2rem;    
+    margin: 2rem 2rem 1rem 2rem;
     border-radius: 2rem 2rem 0 0;
-    padding: 0 10rem 0 10rem;
 }
-.ft-tec h1{
+
+.ft-tec h1 {
     color: black;
     font-size: 3.5rem;
     font-family: 'Monterey', sans-serif;
 }
-footer{
-    border-radius: 3rem 3rem 0 0 !important;
-    height: 15rem;
+
+footer {
+    /* border-radius: 3rem 3rem 0 0 !important; */
+    height: 100%;
+    margin-top: 10rem;
     min-height: 14rem !important;
-    background-image: linear-gradient(to bottom,#6BBF59, rgba(15, 150, 87), #2D5940 ) ;
+    background-image: linear-gradient(to bottom, #7ae9b5ad, #0f9657), url(/img/vert.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     bottom: 0 !important;
 
 }
-div.sub-footer{
-    border-radius: 3rem 3rem 0 0 !important;
+
+div.sub-footer {
+    /* border-radius: 3rem 3rem 0 0 !important; */
     /* background-image: linear-gradient(to bottom, #6BBF59, rgba(15, 150, 87) ) ; */
 }
-#cr-credit{
+
+#cr-credit {
     margin-left: 0;
     margin-right: 0;
     float: left;
     padding-left: 3rem;
 }
+
 div#cr-credit {
     font-size: 1.5rem;
     font-family: 'Lato', sans-serif !important;
-    text-align: left;   
-    
+    text-align: left;
+
 }
-div#cr-credit a{
+
+div#cr-credit a {
     transition-property: font;
     /* transition-property: vertical-align; */
     transition-duration: 0.5s;
 }
-#cr-credit a:hover{
+
+#cr-credit a:hover {
     font-size: 1.8rem !important;
     /* vertical-align: middle; */
     text-decoration-line: underline;
 }
-span.ft-nani{
+
+span.ft-nani {
     display: inline !important;
     margin: .3rem !important;
     font-family: 'Lato', sans-serif !important;
 }
-p.ft-copy{
+
+p.ft-copy {
     font-size: 1.5rem !important;
 
 }
-#ft-img{
+
+#ft-img {
     max-height: 3rem;
     max-width: 3rem;
     height: 100%;
@@ -70,11 +82,34 @@ p.ft-copy{
     min-width: 1rem;
     float: right;
 }
-.ft-tec *{
+
+.ft-tec * {
     display: inline;
 }
+<<<<<<< HEAD
 #cr-creditss img.logo{
     height: 45%;
     width: 30%;
 }
+=======
+
+#cr-creditss img.logo {
+    height: 45%;
+    width: 30%;
+}
+
+#SNAPGENELOGO {
+    width: 24rem;
+    height: 6rem;
+}
+
+.SocialLogos img {
+    height: 64px;
+    width: 64px;
+    margin-right: 3rem;
+    /* background-color: #333333;
+    border-radius: 10rem; */
+}
+
+>>>>>>> 9db4c93491ecc597611a8e41305e916fb3da539c
 /*  */

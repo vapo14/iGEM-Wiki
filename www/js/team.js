@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $('document').ready(function(){
     $('li.name').hide();
     //$('ul.names').css('list-style','none');
@@ -12,3 +13,5 @@ $('document').ready(function(){
 
 
 });
+=======
+>>>>>>> 9db4c93491ecc597611a8e41305e916fb3da539c
