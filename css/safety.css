@@ -3,14 +3,15 @@
     src: url(/fonts/Lato/Lato-Regular.ttf);
     
 }
-.descriptionHeader {
+.safety-header {
     height: 100%;
     width: 100%;
-    background: linear-gradient(to bottom, rgba(15, 150, 87, 0.726), rgba(0, 0, 0, .2)), url(/img/sphere.gif)/*temporary*/;
+    background: linear-gradient(to bottom, rgba(15, 150, 87, 0.726), rgba(0, 0, 0, .2)), url(/img/lab-safety.jpg)/*temporary*/;
     background-size: cover;
+    background-position-y: 20%;
 }
 
-.descriptionTitle {
+.safety-title {
     padding-top: 8rem;
     font-family:  'Lato', sans-serif;
     color: white;
