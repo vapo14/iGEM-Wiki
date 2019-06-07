@@ -1,0 +1,35 @@
+{
+  "name": "igem-wiki",
+  "version": "1.0.0",
+  "description": "iGEM Tec-Chihuahua 2019",
+  "main": "index.ejs",
+  "dependencies": {
+    "chart.js": "^2.8.0",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0",
+    "bootstrap": "^4.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vapo14/iGEM-Wiki.git"
+  },
+  "keywords": [
+    "igem",
+    "iGEM",
+    "Tec",
+    "itesm",
+    "ITESM",
+    "Chihuahua",
+    "CUU"
+  ],
+  "author": "Tec-Chihuahua",
+  "license": "CDLA-Sharing-1.0",
+  "bugs": {
+    "url": "https://github.com/vapo14/iGEM-Wiki/issues"
+  },
+  "homepage": "https://github.com/vapo14/iGEM-Wiki#readme"
+}
