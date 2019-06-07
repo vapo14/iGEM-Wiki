@@ -83,6 +83,22 @@ $(document).ready(function () {
     $('li.name').hide();
     //$('ul.names').css('list-style','none');
 
+    //progress indicator
+    var winHeight = $(window).height(),
+        docHeight = $(document).height(),
+        progressBar = $('progress'),
+        max, value;
+
+    /* Set the max scrollable area */
+    max = docHeight - winHeight;
+    progressBar.attr('max', max);
+
+    $(document).on('scroll', function () {
+        value = $(window).scrollTop();
+        progressBar.attr('value', value);
+    });
+
+
     var cards = document.getElementsByClassName('cardContainer');
     $(cards).hover(function () {
         var t = $(this).attr('target');

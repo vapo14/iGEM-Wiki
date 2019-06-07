@@ -12,23 +12,29 @@
     text-transform: uppercase;
 }
 
-
-/* Gears */
-
-.gear_md {
-    width: 145px;
-    height: 145px;
+.descriptionPage h2 {
+    font-size: 70px;
 }
 
+.description-first-content {
+    background-color: #333333;
+    color: white;
+    padding: 4rem;
+    text-align: justify;
+}
 
-/*These styles contain basic styles for fomatting along with our animation css*/
+.description-second-content {
+    background-color: #960f4e;
+    color: white;
+    padding: 4rem;
+    text-align: justify;
+}
 
-
-
-.main-container {
-    background: #fff;
-    max-width: 1000px;
-    margin: 25px auto 25px auto;
+.description-third-content {
+    background-color: #0f9296;
+    color: white;
+    padding: 4rem;
+    text-align: justify;
 }
 
 .container {
