@@ -163,7 +163,7 @@ progress {
     background-color: #333333;
 
     /* Progress bar value for IE10+ */
-    color: #0f9657;
+    color: #960F4E;
 }
 
 progress::-webkit-progress-bar {
@@ -171,11 +171,11 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-    background-color: #0f9657;
+    background-color: #960F4E;
 }
 
 progress::-moz-progress-bar {
-    background-color: #0f9657;
+    background-color: #960F4E;
 }
 
 
