@@ -8,10 +8,26 @@ $('ul.nav li.active').hover(function () {
 //     }
 // });
 
+var onScreen = false;
 
-$('#navham').click(function () {
-    $('#VertNav').toggle(500);
-})
+function openMobile(x) {
+    x.classList.toggle("change");
+    if (!onScreen) {
+        $('#VertNav').slideDown(500);
+        onScreen = true;
+    } else {
+        $('#VertNav').slideUp(500);
+        onScreen = false;
+
+    }
+
+}
+
+
+
+// $('#navham').click(function () {
+//     $('#VertNav').toggle(500);
+// })
 
 
 $(function () {
@@ -51,6 +67,13 @@ function UpdateResponsive() {
 
 var color = "rgba(15, 150, 87,";
 
+function browser_transform(transTarget, transValue) {
+    $(transTarget).css('-ms-transform', 'rotate(' + transValue + 'deg)');
+    $(transTarget).css('-moz-transform', 'rotate(' + transValue + 'deg)');
+    $(transTarget).css('-webkit-transform', 'rotate(' + transValue + 'deg)');
+    $(transTarget).css('-o-transform', 'rotate(' + transValue + 'deg)');
+    $(transTarget).css('transform', 'rotate(' + transValue + 'deg)');
+}
 
 
 //------------------------NAVIGATION BAR ANIMATIONS-------------------------------
@@ -59,7 +82,6 @@ $(document).ready(function () {
     UpdateResponsive();
     $('li.name').hide();
     //$('ul.names').css('list-style','none');
-
 
     var cards = document.getElementsByClassName('cardContainer');
     $(cards).hover(function () {
@@ -72,7 +94,6 @@ $(document).ready(function () {
         "background-color": color + "0)"
     })
     $(window).scroll(function () {
-
         if ($(window).scrollTop() >= 900) {
             $('.cont').css({
                 "background-color": color + "1)"
@@ -121,6 +142,49 @@ $(document).ready(function () {
             $(this).children(".dropdown-content").stop(true, false).slideUp('medium');
         }
     )
+
+    var containerPos = $('#container').offset();
+
+    // Get the initial scroll position. This will be needed later when determining
+    // if we are scrolling up or down.
+    var scrollPos = $(window).scrollTop();
+    var degreeRotate = 0;
+
+    // We will use these to track how much we are rotating our gears. Need to track
+    // the gears separately since they will not be going the same direction
+    var gear1Rotate = 0;
+    var gear2Rotate = 0;
+    var gear3Rotate = 0;
+
+    $('#gears').css('display', 'block');
+    $('#gears').css('left', containerPos.left + "px");
+    browser_transform('#gear2', 11);
+    browser_transform('#gear3', 90);
+
+    $(document).scroll(function () {
+        // Are we moving up or down?
+        var newScroll = $(window).scrollTop();
+
+        if (scrollPos > newScroll) {
+            degreeRotate -= 5;
+        } else {
+            degreeRotate += 5;
+        }
+
+        // Calculate rotations. These will be slightly different for each gear, even
+        // for the ones spinning the same direction, in order to line up the teeth of
+        // the gears.
+        gear1Rotate = degreeRotate;
+        gear2Rotate = ((degreeRotate + 11) * -1);
+        gear3Rotate = ((degreeRotate + 90) * -1);
+
+        // Store the current scroll for comparison next scroll event.
+        scrollPos = newScroll;
+
+        browser_transform('#gear1', gear1Rotate);
+        browser_transform('#gear2', gear2Rotate);
+        browser_transform('#gear3', gear3Rotate);
+    });
 });
 
 
@@ -133,7 +197,7 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
         $("#BackToTopButton").fadeIn() = "block";
     } else {
         $("#BackToTopButton").fadeOut() = "none";

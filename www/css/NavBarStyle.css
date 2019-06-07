@@ -33,8 +33,13 @@ header {
     height: 70rem;
     padding-top: 10rem;
     margin-bottom: 10rem;
-    background: linear-gradient(to bottom, rgba(15, 150, 87, 0.78), rgba(0, 0, 0, 0.3)), url(../img/vert.jpg);
+    background: linear-gradient(to bottom, #0f9657c7, rgba(0, 0, 0, 0.3)), url(../img/vert.jpg);
     background-size: cover;
+}
+
+.mainHeader {
+    font-size: calc(40px + (120 - 14) * ((100vw - 300px) / (1200 - 300)));
+    font-weight: 100;
 }
 
 .navbar {
@@ -43,16 +48,14 @@ header {
 
 
 nav {
-    /* top: 2rem;
-    left: 5%; */
+    font-weight: 600;
     height: 6rem;
-    /* border-radius: 40px; */
     display: flex;
     padding-left: -20px;
     justify-content: space-between;
     align-items: center;
     text-transform: uppercase;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     background-color: transparent;
     z-index: 4;
     width: 100%;
@@ -61,7 +64,6 @@ nav {
 /*----------------MOBILE NAVBAR--------------------------*/
 
 #VertNav {
-    border-radius: 30px;
     position: fixed;
     padding-top: 12rem;
     padding-bottom: 5rem;
@@ -76,15 +78,46 @@ nav {
     overflow-y: scroll;
 }
 
+.hamb {
+    display: inline-block;
+    cursor: pointer;
+}
 
 
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+/*---------------------------READING POSITION INDICATOR----------------------------*/
 
 
 /* If the screen size is x wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 1265px) {
+@media screen and (min-width: 1280px) {
     nav li {
         padding: 0;
         margin: 0;
+        font-size: 1.6rem;
     }
 
     .brand {
@@ -98,12 +131,13 @@ nav {
 }
 
 
-.navbar-toggler-icon {
+/* .navbar-toggler-icon {
     background-image: url("../img/ham\ white.png");
-}
+} */
 
 .brand {
     font-size: 3rem;
+    margin-right: 0;
     font-weight: 300;
     transform: translateX(-100rem);
     animation: slideIn .5s forwards;

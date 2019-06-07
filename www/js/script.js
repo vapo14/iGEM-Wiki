@@ -8,11 +8,39 @@ $('ul.nav li.active').hover(function () {
 //     }
 // });
 
+var onScreen = false;
 
-$('#navham').click(function () {
-    $('#VertNav').toggle(500);
+function openMobile(x) {
+    x.classList.toggle("change");
+    if (!onScreen) {
+        $('#VertNav').slideDown(500);
+        onScreen = true;
+    } else {
+        $('#VertNav').slideUp(500);
+        onScreen = false;
+
+    }
+
+}
+
+
+
+// $('#navham').click(function () {
+//     $('#VertNav').toggle(500);
+// })
+
+
+$(function () {
+    $('.intro').addClass('go');
+
+    $('.reload').click(function () {
+        $('.intro').removeClass('go').delay(50).queue(function (next) {
+            $('.intro').addClass('go');
+            next();
+        });
+
+    });
 })
-
 
 $(function () {
     $('.intro').addClass('go');
@@ -60,7 +88,6 @@ $(document).ready(function () {
     $('li.name').hide();
     //$('ul.names').css('list-style','none');
 
-
     var cards = document.getElementsByClassName('cardContainer');
     $(cards).hover(function () {
         var t = $(this).attr('target');
@@ -72,7 +99,6 @@ $(document).ready(function () {
         "background-color": color + "0)"
     })
     $(window).scroll(function () {
-
         if ($(window).scrollTop() >= 900) {
             $('.cont').css({
                 "background-color": color + "1)"
@@ -133,7 +159,7 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
         $("#BackToTopButton").fadeIn() = "block";
     } else {
         $("#BackToTopButton").fadeOut() = "none";

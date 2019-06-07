@@ -22,7 +22,6 @@ footer div div.ft-tec {
 footer {
     /* border-radius: 3rem 3rem 0 0 !important; */
     height: 100%;
-    max-height: 40rem;
     margin-top: 10rem;
     min-height: 14rem !important;
     background-image: linear-gradient(to bottom, #7ae9b5ad, #0f9657), url(/img/vert.jpg);
@@ -94,8 +93,8 @@ p.ft-copy {
 }
 
 #SNAPGENELOGO {
-    width: 20vw;
-    height: 5vw;
+    width: 24rem;
+    height: 6rem;
 }
 
 .SocialLogos img {
