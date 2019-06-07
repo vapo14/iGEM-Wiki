@@ -9,6 +9,7 @@ $('ul.nav li.active').hover(function () {
 // });
 
 var onScreen = false;
+var velvet = "#960F4E";
 
 function openMobile(x) {
     x.classList.toggle("change");
@@ -128,7 +129,7 @@ $(document).ready(function () {
                 "left": ($(window).scrollTop() / 100) + "%"
             });
             $('.cont').css({
-                "background-color": color + 0 + $(window).scrollTop() / 1000
+                "background-color": color + 0 + $(window).scrollTop() / 700
             })
             //$('.cont').css("opacity", 0 + $(window).scrollTop() / 1000)
             if ($(window).scrollTop() / 256 < 2) {

@@ -34,7 +34,7 @@ header {
 }
 
 #bannersection {
-    background: linear-gradient(to bottom, #960f4ea1, rgba(100, 100, 100, 0.3));
+    background: linear-gradient(to bottom, #960f4e, #960f4e4b, rgba(100, 100, 100, 0.3));
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
