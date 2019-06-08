@@ -21,15 +21,6 @@ footer div div.ft-tec {
 
 footer {
     /* border-radius: 3rem 3rem 0 0 !important; */
-    height: 100%;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    max-height: 30rem;
-=======
-    max-height: 40rem;
->>>>>>> 2b2d619c553e782206884683706c7e1670592963
-=======
->>>>>>> 2c3c4b09b48dc5b76ff289bc30ab1b9a6f05fa30
     margin-top: 10rem;
     min-height: 14rem !important;
     background-image: linear-gradient(to bottom, #7ae9b5ad, #0f9657), url(/img/vert.jpg);
