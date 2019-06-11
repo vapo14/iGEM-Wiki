@@ -141,7 +141,7 @@ $(document).ready(function () {
             }
 
         }
-    })
+    });
     $(".dropdown").hover(
         function () {
             $(this).children(".dropdown-content").stop(true, false).slideDown('medium');
@@ -149,7 +149,7 @@ $(document).ready(function () {
         function () {
             $(this).children(".dropdown-content").stop(true, false).slideUp('medium');
         }
-    )
+    );
 
     var containerPos = $('#container').offset();
 
@@ -193,6 +193,8 @@ $(document).ready(function () {
         browser_transform('#gear2', gear2Rotate);
         browser_transform('#gear3', gear3Rotate);
     });
+
+
 });
 
 
@@ -263,5 +265,6 @@ $(document).ready(function () {
     })
     //trigger our scroll event on initial load
     $(window).trigger('scroll');
-
+    
+    
 });

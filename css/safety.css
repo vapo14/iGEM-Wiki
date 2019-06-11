@@ -60,4 +60,15 @@ q.title-quote{
     float: right;
     margin: 1rem; 
 }
+.safety-certificates{
+    background: linear-gradient(to right, crimson,  white, crimson);
+    background-size: cover;
+    height: 100%;
+    width: calc(100% + 4rem);
+    margin-left: -2rem;
+    padding: 2rem;
+}
+#Flag-of-Canada{
+    margin-left: 15%;
+}
 
