@@ -24,6 +24,7 @@ footer {
     height: 100%;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     max-height: 30rem;
 =======
     max-height: 40rem;
@@ -31,6 +32,8 @@ footer {
 =======
 >>>>>>> 50c1f9ae62c0299b68644eda5a1b82e0f827abf6
     margin-top: 10rem;
+=======
+>>>>>>> GRDO-branch
     min-height: 14rem !important;
     background-image: linear-gradient(to bottom, #7ae9b5ad, #0f9657), url(/img/vert.jpg);
     background-repeat: no-repeat;
@@ -108,7 +111,7 @@ p.ft-copy {
 .SocialLogos img {
     height: 64px;
     width: 64px;
-    margin-right: 3rem;
+    margin: 3rem;
     /* background-color: #333333;
     border-radius: 10rem; */
 }

@@ -10,7 +10,19 @@
     background-size: cover;
     background-position-y: 20%;
 }
-
+.safety-page{
+    position: relative;
+}
+.safety-alert{
+    border-radius: 20px;
+    border: 2px solid rgb(198, 73, 73);
+    margin: 1rem 0;
+    float: center;
+    position: relative;
+    max-width: 80%;
+    /* width: calc() */
+    left: 10%;
+}
 .safety-title {
     padding-top: 8rem;
     font-family:  'Lato', sans-serif;
