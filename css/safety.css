@@ -21,7 +21,8 @@
     position: relative;
     max-width: 80%;
     /* width: calc() */
-    left: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 .safety-title {
     padding-top: 8rem;
@@ -30,9 +31,11 @@
     text-transform: uppercase;
 }
 .safety-alert div p{
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: black;
-    text-indent: 2rem;
+    text-indent: 3rem;
+    font-family: 'Lato', sans-serif;
+    text-align: justify;
 }
 .safety-alert div h1{
     font-size: 4rem;
@@ -46,3 +49,15 @@ q.title-quote{
     margin-top: 4rem;
     padding-bottom: 2rem;
 }
+.warning{
+   height: 5rem;
+   width: 5rem;
+   margin-bottom: 1rem;
+}
+.close-menu{
+    height: 3rem;
+    width: 3rem;
+    float: right;
+    margin: 1rem; 
+}
+
