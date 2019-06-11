@@ -29,6 +29,16 @@
     color: white;
     text-transform: uppercase;
 }
+.safety-alert div p{
+    font-size: 1.5rem;
+    color: black;
+    text-indent: 2rem;
+}
+.safety-alert div h1{
+    font-size: 4rem;
+    font-family: 'Lato', sans-serif;
+
+}
 q.title-quote{
     color: #ffffff;
     font-family: 'Lato', sans-serif !important;
