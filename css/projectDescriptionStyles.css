@@ -5,6 +5,8 @@ header {
     height: 100%;
 }
 
+
+
 #bannersection {
     background: linear-gradient(to bottom, #960f4e, #960f4e4b, rgba(100, 100, 100, 0.3)), url(/img/sphere.gif);
     background-size: cover;
@@ -34,31 +36,62 @@ header {
 .descriptionPage h2 {
     font-family: vapoFont;
     font-size: 5rem;
-    color: whitesmoke;
+    color: #960f4e;
 }
 
 .description-first-content {
-    background-color: #333333;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 4rem;
     text-align: justify;
 }
 
 .description-second-content {
-    background-color: #960F4E;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 4rem;
     text-align: justify;
 }
 
 .description-third-content {
-    background-color: #a77951;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 4rem;
     text-align: justify;
 }
 
+.hoverImageContainer {
+    position: relative;
+}
 
+.descriptionImageOverlay {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #0f9657;
+}
+
+.hoverImageContainer:hover .descriptionImageOverlay {
+    opacity: 1;
+}
+
+.descriptionImageOverlayText {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
 
 .animation-element.slide-left.cardContent:nth-of-type(odd) {
     width: 100%;

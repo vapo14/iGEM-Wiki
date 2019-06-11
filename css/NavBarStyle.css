@@ -154,7 +154,7 @@ progress {
 
     /* Dimensions */
     width: 100%;
-    height: 5px;
+    height: 8px;
 
     /* Reset the appearance */
     -webkit-appearance: none;
@@ -306,7 +306,7 @@ nav ul li:hover::after {
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #dddddd;
+    background: #960f4e3f;
 }
 
 /* Handle */
@@ -395,7 +395,7 @@ nav ul li:hover::after {
 footer {
     color: white;
     height: 10rem;
-    background-color: rgba(15, 150, 87);
+    background-color: #0f9657;
 }
 
 #BackToTopButton {
