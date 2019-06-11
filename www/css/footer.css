@@ -20,13 +20,16 @@ footer div div.ft-tec {
 }
 
 footer {
-    border-radius: 3rem 3rem 0 0 !important;
+    /* border-radius: 3rem 3rem 0 0 !important; */
     height: 100%;
+<<<<<<< HEAD
 <<<<<<< HEAD
     max-height: 30rem;
 =======
     max-height: 40rem;
 >>>>>>> 2b2d619c553e782206884683706c7e1670592963
+=======
+>>>>>>> 50c1f9ae62c0299b68644eda5a1b82e0f827abf6
     margin-top: 10rem;
     min-height: 14rem !important;
     background-image: linear-gradient(to bottom, #7ae9b5ad, #0f9657), url(/img/vert.jpg);
@@ -37,7 +40,7 @@ footer {
 }
 
 div.sub-footer {
-    border-radius: 3rem 3rem 0 0 !important;
+    /* border-radius: 3rem 3rem 0 0 !important; */
     /* background-image: linear-gradient(to bottom, #6BBF59, rgba(15, 150, 87) ) ; */
 }
 
@@ -98,8 +101,8 @@ p.ft-copy {
 }
 
 #SNAPGENELOGO {
-    width: 20vw;
-    height: 5vw;
+    width: 24rem;
+    height: 6rem;
 }
 
 .SocialLogos img {

@@ -1,122 +1,64 @@
-.descriptionHeader {
-    height: 75rem;
-    width: 100%;
-    background: linear-gradient(to bottom, rgba(15, 150, 87, 0.726), rgba(0, 0, 0, .5)), url(/img/sphere.gif);
+header {
+    padding: 0;
+    cursor: default;
+    background: none;
+    height: 100%;
+}
+
+#bannersection {
+    background: linear-gradient(to bottom, #960f4e, #960f4e4b, rgba(100, 100, 100, 0.3)), url(/img/sphere.gif);
     background-size: cover;
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 100vh;
+}
+
+.bannercontent {
+    display: table-cell;
+    vertical-align: middle;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 0 3%;
 }
 
 .descriptionTitle {
     padding-top: 8rem;
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
-    font-size: 10vw;
-    font-weight: 100;
     text-transform: uppercase;
 }
 
-/*These styles contain basic styles for fomatting along with our animation css*/
-
-body .descriptionPage {
-    font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    line-height: 170%;
+.descriptionPage h2 {
+    font-family: vapoFont;
+    font-size: 5rem;
+    color: whitesmoke;
 }
 
-strong,
-b {
-    font-weight: 600
+.description-first-content {
+    background-color: #333333;
+    color: white;
+    padding: 4rem;
+    text-align: justify;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 300;
-    line-height: 150%;
+.description-second-content {
+    background-color: #960F4E;
+    color: white;
+    padding: 4rem;
+    text-align: justify;
 }
 
-i.fa {
-    color: #333;
+.description-third-content {
+    background-color: #a77951;
+    color: white;
+    padding: 4rem;
+    text-align: justify;
 }
 
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-}
 
-/*clearfixes*/
-
-.cf:before,
-.cf:after {
-    content: " ";
-    display: table;
-}
-
-.cf:after {
-    clear: both;
-}
-
-.main-container {
-    background: #fff;
-    max-width: 1000px;
-    margin: 25px auto 25px auto;
-    position: relative;
-}
-
-.container {
-    position: relative;
-    padding: 25px;
-}
-
-/*animation element*/
-
-.animation-element {
-    opacity: 0;
-    position: relative;
-}
-
-/*animation element sliding left*/
-
-.animation-element.slide-left {
-    opacity: 0;
-    -moz-transition: all 500ms linear;
-    -webkit-transition: all 500ms linear;
-    -o-transition: all 500ms linear;
-    transition: all 500ms linear;
-    -moz-transform: translate3d(-100px, 0px, 0px);
-    -webkit-transform: translate3d(-100px, 0px, 0px);
-    -o-transform: translate(-100px, 0px);
-    -ms-transform: translate(-100px, 0px);
-    transform: translate3d(-100px, 0px, 0px);
-}
-
-.animation-element.slide-left.in-view {
-    opacity: 1;
-    -moz-transform: translate3d(0px, 0px, 0px);
-    -webkit-transform: translate3d(0px, 0px, 0px);
-    -o-transform: translate(0px, 0px);
-    -ms-transform: translate(0px, 0px);
-    transform: translate3d(0px, 0px, 0px);
-}
-
-/*animation slide left styled for cards*/
-
-.animation-element.slide-left.cardContent {
-    float: left;
-    width: 100%;
-    margin: 0% 1.5% 3% 1.5%;
-    padding: 15px;
-}
-
-.animation-element.slide-left.cardContent:hover,
-.animation-element.slide-left.cardContent:active {
-    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
-}
 
 .animation-element.slide-left.cardContent:nth-of-type(odd) {
     width: 100%;
@@ -164,38 +106,7 @@ i.fa {
     margin-bottom: 10px;
 }
 
-.animation-element.slide-left.cardContent .rating {}
-
 .animation-element.slide-left.cardContent i {
     color: #aaa;
     margin-right: 5px;
-}
-
-
-
-/*media queries for small devices*/
-@media screen and (max-width: 678px) {
-
-    /*cardContents*/
-    .animation-element.slide-left.cardContent,
-    .animation-element.slide-left.cardContent:nth-of-type(odd),
-    .animation-element.slide-left.cardContent:nth-of-type(even) {
-        width: 100%;
-        margin: 0px 0px 20px 0px;
-    }
-
-    .animation-element.slide-left.cardContent .right,
-    .animation-element.slide-left.cardContent .left,
-    .animation-element.slide-left.cardContent .content,
-    .animation-element.slide-left.cardContent .rating {
-        text-align: center;
-        float: none;
-    }
-
-    .animation-element.slide-left.cardContent img {
-        width: 100%;
-        height: 100%;
-        margin-bottom: 5px;
-    }
-
 }

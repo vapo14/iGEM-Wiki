@@ -1,0 +1,38 @@
+@font-face{
+    font-family: Lato;
+    src: url(/fonts/Lato/Lato-Regular.ttf);
+    
+}
+.safety-header {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(15, 150, 87, 0.726), rgba(0, 0, 0, .2)), url(/img/lab-safety.jpg)/*temporary*/;
+    background-size: cover;
+    background-position-y: 20%;
+}
+.safety-page{
+    position: relative;
+}
+.safety-alert{
+    border-radius: 20px;
+    border: 2px solid rgb(198, 73, 73);
+    margin: 1rem 0;
+    float: center;
+    position: relative;
+    max-width: 80%;
+    /* width: calc() */
+    left: 10%;
+}
+.safety-title {
+    padding-top: 8rem;
+    font-family:  'Lato', sans-serif;
+    color: white;
+    text-transform: uppercase;
+}
+q.title-quote{
+    color: #ffffff;
+    font-family: 'Lato', sans-serif !important;
+    font-size: 2rem;
+    margin-top: 4rem;
+    padding-bottom: 2rem;
+}

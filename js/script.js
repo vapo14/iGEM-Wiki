@@ -8,11 +8,57 @@ $('ul.nav li.active').hover(function () {
 //     }
 // });
 
+var onScreen = false;
+var velvet = "#960F4E";
 
-$('#navham').click(function () {
-    $('#VertNav').toggle(500);
+function openMobile(x) {
+    x.classList.toggle("change");
+    if (!onScreen) {
+        $('#VertNav').slideDown(500);
+        onScreen = true;
+    } else {
+        $('#VertNav').slideUp(500);
+        onScreen = false;
+
+    }
+
+}
+
+
+
+// $('#navham').click(function () {
+//     $('#VertNav').toggle(500);
+// })
+
+
+$(function () {
+    $('.intro').addClass('go');
+
+    $('.reload').click(function () {
+        $('.intro').removeClass('go').delay(50).queue(function (next) {
+            $('.intro').addClass('go');
+            next();
+        });
+
+    });
 })
 
+
+//for the project description page, or any other page that
+//requires to change content depending on screen size
+function UpdateResponsive() {
+    var width = window.innerWidth;
+    var height = window.innerHeight;
+    if (width > 1300) {
+        // Mobile code
+        $('#brainMobileContent').hide();
+        $('#brainDesktopContent').show();
+    } else {
+        // Other code
+        $('#brainDesktopContent').hide();
+        $('#brainMobileContent').show();
+    }
+}
 
 // $('.navbar-toggler').click(function () {
 //     $('#VertNav').css({
@@ -22,20 +68,51 @@ $('#navham').click(function () {
 
 var color = "rgba(15, 150, 87,";
 
+function browser_transform(transTarget, transValue) {
+    $(transTarget).css('-ms-transform', 'rotate(' + transValue + 'deg)');
+    $(transTarget).css('-moz-transform', 'rotate(' + transValue + 'deg)');
+    $(transTarget).css('-webkit-transform', 'rotate(' + transValue + 'deg)');
+    $(transTarget).css('-o-transform', 'rotate(' + transValue + 'deg)');
+    $(transTarget).css('transform', 'rotate(' + transValue + 'deg)');
+}
 
 
 //------------------------NAVIGATION BAR ANIMATIONS-------------------------------
 $(document).ready(function () {
     //$('.cont').css("opacity", 1)
+    UpdateResponsive();
     $('li.name').hide();
+    var toggled = true;
     //$('ul.names').css('list-style','none');
+
+    //progress indicator
+    var winHeight = $(window).height(),
+        docHeight = $(document).height(),
+        progressBar = $('progress'),
+        max, value;
+
+    /* Set the max scrollable area */
+    max = docHeight - winHeight;
+    progressBar.attr('max', max);
+
+    $(document).on('scroll', function () {
+        value = $(window).scrollTop();
+        progressBar.attr('value', value);
+    });
 
 
     var cards = document.getElementsByClassName('cardContainer');
     $(cards).hover(function () {
         var t = $(this).attr('target');
         $(t).stop();
-        $(t).fadeToggle();
+        if(toggled){
+            $(t).fadeIn();
+            toggled = false;
+        }
+        else{
+            $(t).fadeOut();
+            toggled = true;
+        }
     });
 
     $('.cont').css({
@@ -60,19 +137,19 @@ $(document).ready(function () {
                 "left": ($(window).scrollTop() / 100) + "%"
             });
             $('.cont').css({
-                "background-color": color + 0 + $(window).scrollTop() / 1000
+                "background-color": color + 0 + $(window).scrollTop() / 700
             })
             //$('.cont').css("opacity", 0 + $(window).scrollTop() / 1000)
             if ($(window).scrollTop() / 256 < 2) {
-                $('nav').css({
-                    top: $(window).scrollTop() / 256 + 'rem'
-                });
-                $('#VertNav').css({
-                    top: $(window).scrollTop() / 256 + 'rem'
-                });
+                // $('nav').css({
+                //     top: $(window).scrollTop() / 256 + 'rem'
+                // });
+                // $('#VertNav').css({
+                //     top: $(window).scrollTop() / 256 + 'rem'
+                // });
             } else {
                 $('nav').css({
-                    top: '2rem'
+                    top: '0'
                 });
                 $('nav').css({
                     "width": "90%",
@@ -90,6 +167,49 @@ $(document).ready(function () {
             $(this).children(".dropdown-content").stop(true, false).slideUp('medium');
         }
     )
+
+    var containerPos = $('#container').offset();
+
+    // Get the initial scroll position. This will be needed later when determining
+    // if we are scrolling up or down.
+    var scrollPos = $(window).scrollTop();
+    var degreeRotate = 0;
+
+    // We will use these to track how much we are rotating our gears. Need to track
+    // the gears separately since they will not be going the same direction
+    var gear1Rotate = 0;
+    var gear2Rotate = 0;
+    var gear3Rotate = 0;
+
+    $('#gears').css('display', 'block');
+    $('#gears').css('left', containerPos.left + "px");
+    browser_transform('#gear2', 11);
+    browser_transform('#gear3', 90);
+
+    $(document).scroll(function () {
+        // Are we moving up or down?
+        var newScroll = $(window).scrollTop();
+
+        if (scrollPos > newScroll) {
+            degreeRotate -= 5;
+        } else {
+            degreeRotate += 5;
+        }
+
+        // Calculate rotations. These will be slightly different for each gear, even
+        // for the ones spinning the same direction, in order to line up the teeth of
+        // the gears.
+        gear1Rotate = degreeRotate;
+        gear2Rotate = ((degreeRotate + 11) * -1);
+        gear3Rotate = ((degreeRotate + 90) * -1);
+
+        // Store the current scroll for comparison next scroll event.
+        scrollPos = newScroll;
+
+        browser_transform('#gear1', gear1Rotate);
+        browser_transform('#gear2', gear2Rotate);
+        browser_transform('#gear3', gear3Rotate);
+    });
 });
 
 
@@ -102,7 +222,7 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
         $("#BackToTopButton").fadeIn() = "block";
     } else {
         $("#BackToTopButton").fadeOut() = "none";
@@ -148,7 +268,7 @@ $(document).ready(function () {
             if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
                 element.addClass('in-view');
             } else {
-                element.removeClass('in-view');
+                // element.removeClass('in-view');
             }
         });
 
