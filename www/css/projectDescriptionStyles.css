@@ -49,6 +49,7 @@ header {
     color: white;
     padding: 4rem;
     text-align: justify;
+<<<<<<< HEAD
 }
 
 .description-third-content {
@@ -78,6 +79,15 @@ header {
 
 .hoverImageContainer:hover .descriptionImageOverlay {
     opacity: 1;
+=======
+}
+
+.description-third-content {
+    background-color: #a77951;
+    color: white;
+    padding: 4rem;
+    text-align: justify;
+>>>>>>> master
 }
 
 .descriptionImageOverlayText {
@@ -91,6 +101,7 @@ header {
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
 
 .animation-element.slide-left.cardContent:nth-of-type(odd) {
     width: 100%;
