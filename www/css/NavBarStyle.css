@@ -48,14 +48,11 @@ header {
     height: 100vh;
 }
 
-<<<<<<< HEAD
-=======
 /* SE PUEDE RECORTAR EL VIDEO CON JS: [maybe]
     if (VidHeight > ViewPortHeight) 
         VidHeight -= ViewPortHeight - VidHeight;
  */
 
->>>>>>> master
 .bannercontent {
     display: table-cell;
     vertical-align: middle;
@@ -68,11 +65,7 @@ header {
 
 video {
     width: 100%;
-<<<<<<< HEAD
-    height: 100%;
-=======
     height: 100vh;
->>>>>>> master
     position: absolute;
     object-fit: cover;
     -webkit-filter: blur(10px);
@@ -80,15 +73,7 @@ video {
     -o-filter: blur(10px);
     -ms-filter: blur(10px);
     filter: blur(10px);
-<<<<<<< HEAD
-=======
 }
-
-#fitToView{
-    margin-bottom: 6rem;
->>>>>>> master
-}
-
 
 .mainHeader {
     color: white;
@@ -111,7 +96,7 @@ nav {
     text-transform: uppercase;
     font-size: 1.3rem;
     background-color: transparent;
-    z-index: 4;
+    z-index: 99;
     width: 100%;
 }
 
@@ -173,7 +158,7 @@ progress {
 
     /* Dimensions */
     width: 100%;
-    height: 5px;
+    height: 8px;
 
     /* Reset the appearance */
     -webkit-appearance: none;
@@ -325,7 +310,7 @@ nav ul li:hover::after {
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #dddddd;
+    background: #960f4e3f;
 }
 
 /* Handle */
@@ -414,7 +399,7 @@ nav ul li:hover::after {
 footer {
     color: white;
     height: 10rem;
-    background-color: rgba(15, 150, 87);
+    background-color: #0f9657;
 }
 
 #BackToTopButton {

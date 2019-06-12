@@ -7,13 +7,18 @@
 
 @font-face {
     font-family: vapoFont;
-    src: url(/fonts/NotoSans/NotoSansJP-Regular.otf)
+    src: url(/fonts/CocoGoose/Cocogoose\ Pro\ Light-trial.ttf)
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(/fonts/Roboto/Roboto-Light.ttf)
 }
 
 
 html {
     font-size: 10px;
-    font-family: vapoFont;
+    font-family: 'Roboto';
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
@@ -24,7 +29,7 @@ body {
 
 p {
     font-size: 22px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto';
 }
 
 a,
@@ -79,6 +84,7 @@ video {
     color: white;
     font-size: calc(40px + (120 - 14) * ((100vw - 300px) / (1200 - 300)));
     font-weight: 100;
+    text-transform: uppercase;
 }
 
 .navbar {
