@@ -5,10 +5,15 @@
 }
 
 
+@font-face {
+    font-family: vapoFont;
+    src: url(/fonts/NotoSans/NotoSansJP-Regular.otf)
+}
+
 
 html {
     font-size: 10px;
-    font-family: "Roboto Cn", sans-serif;
+    font-family: vapoFont;
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
@@ -30,14 +35,48 @@ a:hover {
 }
 
 header {
-    height: 70rem;
-    padding-top: 10rem;
     margin-bottom: 10rem;
-    background: linear-gradient(to bottom, #0f9657c7, rgba(0, 0, 0, 0.3)), url(../img/vert.jpg);
+}
+
+#bannersection {
+    background: linear-gradient(to bottom, #960f4e, #960f4e4b, rgba(100, 100, 100, 0.3));
+    background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 100vh;
+}
+
+/* SE PUEDE RECORTAR EL VIDEO CON JS: [maybe]
+    if (VidHeight > ViewPortHeight) 
+        VidHeight -= ViewPortHeight - VidHeight;
+ */
+
+.bannercontent {
+    display: table-cell;
+    vertical-align: middle;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 0 3%;
+}
+
+video {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    object-fit: cover;
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
 }
 
 .mainHeader {
+    color: white;
     font-size: calc(40px + (120 - 14) * ((100vw - 300px) / (1200 - 300)));
     font-weight: 100;
 }
@@ -57,7 +96,7 @@ nav {
     text-transform: uppercase;
     font-size: 1.3rem;
     background-color: transparent;
-    z-index: 4;
+    z-index: 99;
     width: 100%;
 }
 
@@ -110,6 +149,44 @@ nav {
 
 
 /*---------------------------READING POSITION INDICATOR----------------------------*/
+progress {
+    /* Positioning */
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    z-index: -1;
+
+    /* Dimensions */
+    width: 100%;
+    height: 8px;
+
+    /* Reset the appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    /* Get rid of the default border in Firefox/Opera. */
+    border: none;
+
+    /* Progress bar container for Firefox/IE10+ */
+    background-color: #333333;
+
+    /* Progress bar value for IE10+ */
+    color: #960F4E;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #333333;
+}
+
+progress::-webkit-progress-value {
+    background-color: #960F4E;
+}
+
+progress::-moz-progress-bar {
+    background-color: #960F4E;
+}
+
 
 
 /* If the screen size is x wide or more, set the font-size of <div> to 80px */
@@ -233,7 +310,7 @@ nav ul li:hover::after {
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #dddddd;
+    background: #960f4e3f;
 }
 
 /* Handle */
@@ -322,7 +399,7 @@ nav ul li:hover::after {
 footer {
     color: white;
     height: 10rem;
-    background-color: rgba(15, 150, 87);
+    background-color: #0f9657;
 }
 
 #BackToTopButton {
@@ -335,14 +412,14 @@ footer {
     z-index: 99;
     border: none;
     outline: none;
-    background-color: #0f9657;
+    background-color: #960F4E;
     color: white;
     cursor: pointer;
     border-radius: 20rem;
 }
 
 #BackToTopButton:hover {
-    background-color: #0a683c;
+    background-color: rgb(105, 13, 56);
 }
 
 /*animation element sliding left*/

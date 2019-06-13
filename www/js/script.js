@@ -9,6 +9,7 @@ $('ul.nav li.active').hover(function () {
 // });
 
 var onScreen = false;
+var velvet = "#960F4E";
 
 function openMobile(x) {
     x.classList.toggle("change");
@@ -84,6 +85,22 @@ $(document).ready(function () {
     var toggled = true;
     //$('ul.names').css('list-style','none');
 
+    //progress indicator
+    var winHeight = $(window).height(),
+        docHeight = $(document).height(),
+        progressBar = $('progress'),
+        max, value;
+
+    /* Set the max scrollable area */
+    max = docHeight - winHeight;
+    progressBar.attr('max', max);
+
+    $(document).on('scroll', function () {
+        value = $(window).scrollTop();
+        progressBar.attr('value', value);
+    });
+
+
     var cards = document.getElementsByClassName('cardContainer');
     $(cards).hover(function () {
         var t = $(this).attr('target');
@@ -120,7 +137,7 @@ $(document).ready(function () {
                 "left": ($(window).scrollTop() / 100) + "%"
             });
             $('.cont').css({
-                "background-color": color + 0 + $(window).scrollTop() / 1000
+                "background-color": color + 0 + $(window).scrollTop() / 700
             })
             //$('.cont').css("opacity", 0 + $(window).scrollTop() / 1000)
             if ($(window).scrollTop() / 256 < 2) {
