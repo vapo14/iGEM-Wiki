@@ -4,10 +4,19 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: headerFont;
+    src: url(/fonts/Cove/Coves\ Bold.otf)
+}
 
 @font-face {
     font-family: vapoFont;
-    src: url(/fonts/NotoSans/NotoSansJP-Regular.otf)
+    src: url(/fonts/Cove/Coves\ Light.otf)
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(/fonts/Roboto/Roboto-Light.ttf)
 }
 
 
@@ -25,6 +34,7 @@ body {
 p {
     font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
+    color: #808080;
 }
 
 a,
@@ -32,10 +42,16 @@ a:hover {
     margin-right: -10px;
     text-decoration: none !important;
     color: white;
+    font-weight: 100;
 }
 
 header {
     margin-bottom: 10rem;
+}
+
+h3 {
+    font-family: vapoFont;
+    font-size: 3rem;
 }
 
 #bannersection {
@@ -76,9 +92,10 @@ video {
 }
 
 .mainHeader {
+    font-family: headerFont;
     color: white;
     font-size: calc(40px + (120 - 14) * ((100vw - 300px) / (1200 - 300)));
-    font-weight: 100;
+    text-transform: uppercase;
 }
 
 .navbar {
@@ -215,7 +232,6 @@ progress::-moz-progress-bar {
 .brand {
     font-size: 3rem;
     margin-right: 0;
-    font-weight: 300;
     transform: translateX(-100rem);
     animation: slideIn .5s forwards;
 }
