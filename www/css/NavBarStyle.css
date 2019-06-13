@@ -5,11 +5,17 @@
 }
 
 
+@font-face {
+    font-family: vapoFont;
+    src: url(/fonts/NotoSans/NotoSansJP-Regular.otf)
+}
+
 
 html {
     font-size: 10px;
-    font-family: "Roboto Cn", sans-serif;
+    font-family: vapoFont;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -29,11 +35,50 @@ a:hover {
 }
 
 header {
-    height: 100rem;
-    padding-top: 10rem;
     margin-bottom: 10rem;
-    background: linear-gradient(to bottom, rgba(15, 150, 87, 0.78), rgba(0, 0, 0, 0.3)), url(../img/vert.jpg);
+}
+
+#bannersection {
+    background: linear-gradient(to bottom, #960f4e, #960f4e4b, rgba(100, 100, 100, 0.3));
+    background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 100vh;
+}
+
+/* SE PUEDE RECORTAR EL VIDEO CON JS: [maybe]
+    if (VidHeight > ViewPortHeight) 
+        VidHeight -= ViewPortHeight - VidHeight;
+ */
+
+.bannercontent {
+    display: table-cell;
+    vertical-align: middle;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 0 3%;
+}
+
+video {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    object-fit: cover;
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+}
+
+.mainHeader {
+    color: white;
+    font-size: calc(40px + (120 - 14) * ((100vw - 300px) / (1200 - 300)));
+    font-weight: 100;
 }
 
 .navbar {
@@ -42,25 +87,22 @@ header {
 
 
 nav {
-    /* top: 2rem;
-    left: 5%; */
+    font-weight: 600;
     height: 6rem;
-    border-radius: 40px;
     display: flex;
     padding-left: -20px;
     justify-content: space-between;
     align-items: center;
     text-transform: uppercase;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     background-color: transparent;
-    z-index: 2;
+    z-index: 99;
     width: 100%;
 }
 
 /*----------------MOBILE NAVBAR--------------------------*/
 
 #VertNav {
-    border-radius: 30px;
     position: fixed;
     padding-top: 12rem;
     padding-bottom: 5rem;
@@ -75,15 +117,84 @@ nav {
     overflow-y: scroll;
 }
 
+.hamb {
+    display: inline-block;
+    cursor: pointer;
+}
 
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+/*---------------------------READING POSITION INDICATOR----------------------------*/
+progress {
+    /* Positioning */
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    z-index: -1;
+
+    /* Dimensions */
+    width: 100%;
+    height: 8px;
+
+    /* Reset the appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    /* Get rid of the default border in Firefox/Opera. */
+    border: none;
+
+    /* Progress bar container for Firefox/IE10+ */
+    background-color: #333333;
+
+    /* Progress bar value for IE10+ */
+    color: #960F4E;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #333333;
+}
+
+progress::-webkit-progress-value {
+    background-color: #960F4E;
+}
+
+progress::-moz-progress-bar {
+    background-color: #960F4E;
+}
 
 
 
 /* If the screen size is x wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 1265px) {
+@media screen and (min-width: 1280px) {
     nav li {
         padding: 0;
         margin: 0;
+        font-size: 1.6rem;
     }
 
     .brand {
@@ -97,12 +208,13 @@ nav {
 }
 
 
-.navbar-toggler-icon {
+/* .navbar-toggler-icon {
     background-image: url("../img/ham\ white.png");
-}
+} */
 
 .brand {
     font-size: 3rem;
+    margin-right: 0;
     font-weight: 300;
     transform: translateX(-100rem);
     animation: slideIn .5s forwards;
@@ -198,19 +310,17 @@ nav ul li:hover::after {
 
 /* Track */
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
-    border-radius: .5rem;
+    background: #960f4e3f;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: rgb(15, 150, 87);
-    border-radius: 10px;
+    background: #333333;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(8, 73, 43);
+    background: #1b1b1b;
 }
 
 /*----------------------------------*/
@@ -248,9 +358,9 @@ nav ul li:hover::after {
 
 .side-content {
     cursor: pointer;
-    left: 13rem;
+    left: 12rem;
     padding-top: 0;
-    margin-top: -7rem;
+    margin-top: -5.5rem;
 }
 
 /* 
@@ -271,7 +381,7 @@ nav ul li:hover::after {
 } */
 
 .PageTitle h1 {
-    padding-top: 30%;
+    padding-top: 10%;
 }
 
 /*-----------TEAM PAGE ------------------*/
@@ -289,5 +399,202 @@ nav ul li:hover::after {
 footer {
     color: white;
     height: 10rem;
-    background-color: rgba(15, 150, 87);
+    background-color: #0f9657;
+}
+
+#BackToTopButton {
+    width: 5rem;
+    height: 5rem;
+    display: none;
+    position: fixed;
+    bottom: 5rem;
+    right: 3rem;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #960F4E;
+    color: white;
+    cursor: pointer;
+    border-radius: 20rem;
+}
+
+#BackToTopButton:hover {
+    background-color: rgb(105, 13, 56);
+}
+
+/*animation element sliding left*/
+
+.animation-element.slide-left {
+    opacity: 0;
+    -moz-transition: all 500ms linear;
+    -webkit-transition: all 500ms linear;
+    -o-transition: all 500ms linear;
+    transition: all 500ms linear;
+    -moz-transform: translate3d(-100px, 0px, 0px);
+    -webkit-transform: translate3d(-100px, 0px, 0px);
+    -o-transform: translate(-100px, 0px);
+    -ms-transform: translate(-100px, 0px);
+    transform: translate3d(-100px, 0px, 0px);
+}
+
+.animation-element.slide-left.in-view {
+    opacity: 1;
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.animation-element.slide-right {
+    opacity: 0;
+    -moz-transition: all 500ms linear;
+    -webkit-transition: all 500ms linear;
+    -o-transition: all 500ms linear;
+    transition: all 500ms linear;
+    -moz-transform: translate3d(100px, 0px, 0px);
+    -webkit-transform: translate3d(100px, 0px, 0px);
+    -o-transform: translate(100px, 0px);
+    -ms-transform: translate(100px, 0px);
+    transform: translate3d(100px, 0px, 0px);
+}
+
+.animation-element.slide-right.in-view {
+    opacity: 1;
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+}
+
+
+/*animation slide left styled for cards*/
+
+.animation-element.slide-left.cardContent {
+    float: left;
+    width: 100%;
+    margin: 0% 1.5% 3% 1.5%;
+    padding: 15px;
+}
+
+.animation-element.slide-left.cardContent:hover,
+.animation-element.slide-left.cardContent:active {
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+/*animation slide right styled for cards*/
+
+.animation-element.slide-right.cardContent {
+    float: left;
+    width: 100%;
+    margin: 0% 1.5% 3% 1.5%;
+    padding: 15px;
+}
+
+.animation-element.slide-right.cardContent:hover,
+.animation-element.slide-right.cardContent:active {
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+/*----------------------------INDEX TITLE ANIMATION--------------------------------*/
+.MainPageContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+    font-size: 80px;
+    line-height: auto;
+    color: #ecf0f1;
+}
+
+.content__container {
+    font-weight: 600;
+    overflow: hidden;
+    height: 110px;
+    padding: 0 40px;
+}
+
+/* .content__container:before {
+    content: '[';
+    left: 0;
+}
+
+.content__container:after {
+    content: ']';
+    position: absolute;
+    right: 0;
+} */
+
+.content__container:after,
+.content__container:before {
+    position: absolute;
+    top: 0;
+    color: #16a085;
+    font-size: 42px;
+    line-height: 40px;
+    -webkit-animation-name: opacity;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: opacity;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.content__container__text {
+    display: inline;
+    float: left;
+    margin: 0;
+}
+
+.content__container__list {
+    margin-top: 0;
+    padding-left: 110px;
+    text-align: left;
+    list-style: none;
+    animation-name: change;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+.content__container__list__item {
+    line-height: auto;
+    margin: 0;
+}
+
+
+@keyframes opacity {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes change {
+
+    0%,
+    12.66% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    16.66%,
+    29.32% {
+        transform: translate3d(0, -33%, 0);
+    }
+
+    33.32%,
+    45.98%,
+    100% {
+        transform: translate3d(0, -66%, 0);
+    }
 }

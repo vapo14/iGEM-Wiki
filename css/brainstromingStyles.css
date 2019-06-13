@@ -1,10 +1,194 @@
-.brainstorming-main-content {
-    padding-top: 10rem;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 200;
+header {
+    padding: 0;
+    cursor: default;
+    background: none;
+    height: 100%;
 }
 
+#bannersection {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 100vh;
+}
+
+.bannercontent {
+    display: table-cell;
+    vertical-align: middle;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 0 3%;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+    filter: blur(0px);
+}
+
+
+/*-----------------------------------HEADER ANIMATION------------------------------*/
+svg.intro {
+    width: 100%;
+    height: 50rem;
+    margin-bottom: 15rem;
+}
+
+svg.intro .text {
+    display: none;
+}
+
+svg.intro.go .text {
+    margin-top: 10rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: block;
+}
+
+svg.intro.go .text-stroke {
+    fill: none;
+    stroke: #0fe782;
+    stroke-width: 4.5px;
+    stroke-dashoffset: -200;
+    stroke-dasharray: 200;
+    stroke-linecap: butt;
+    stroke-linejoin: round;
+    animation: dash 5s forwards;
+}
+
+svg.intro.go .text-stroke:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+svg.intro.go .text-stroke:nth-child(3) {
+    animation-delay: 0.9s;
+}
+
+svg.intro.go .text-stroke-2 {
+    stroke: #ffffff;
+    animation-delay: .5s;
+}
+
+svg.intro.go .text-stroke:nth-child(5) {
+    animation-delay: .5s;
+}
+
+svg.intro.go .text-stroke:nth-child(6) {
+    animation-delay: .8s;
+}
+
+@keyframes dash {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+
 .description-text {
-    margin-bottom: 20%;
+    margin-top: 150%;
+}
+
+#InitialIdeas {
+    color: white;
+    font-size: 10vw;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+
+h2 {
+    font-family: vapoFont;
+    font-size: 5rem;
+    color: #960F4E;
+}
+
+#FinalDecision {
+    font-family: vapoFont;
+    margin-top: 8rem;
+    font-size: 10rem;
+    color: #0f9657;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+}
+
+/* .BrainHeader {
+    width: 100%;
+    height: 50rem;
+    margin-bottom: 15rem;
+    background: linear-gradient(to bottom, rgba(15, 150, 87, 0.78), rgba(0, 0, 0, 0.3)), url(../img/vertda.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+
+/*---------------ZIGZAG TIMELINE----------------------------------*/
+.timeline {
+    position: relative;
+    padding: 8rem 0 0 0;
+    margin-top: 22px;
+    list-style: none;
+}
+
+.timeline :nth-child(2) {
+    margin-top: 5rem;
+}
+
+.timeline :nth-child(3) {
+    margin-top: 14rem;
+}
+
+.timeline :nth-child(4) {
+    margin-top: 20rem;
+}
+
+.timeline-image {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 3rem;
+    border: 7px solid #0f9657c7;
+    border-radius: 100%;
+    box-shadow: 0 0 5px #2ee992c7;
+    width: 300px;
+    height: 300px;
+}
+
+.timeline-body p {
+    text-align: justify;
+    margin-bottom: 0;
+    color: #808080;
+}
+
+/*-----------------------SLIDE LEFT ANIMATION--------------------------*/
+
+.animation-element {
+    position: relative;
+}
+
+/*----------------------------Desktop CONTENT---------------------------*/
+
+/*----------------------------MOBILE CONTENT---------------------------*/
+#brainMobileContent img {
+    height: 200px;
+    width: 200px;
+}
+
+#brainMobileContent p {
+    text-align: justify;
+    margin-bottom: 0;
+    color: #808080;
+}
+
+#brainMobileContent h2 {
+    padding-top: 5rem;
 }
