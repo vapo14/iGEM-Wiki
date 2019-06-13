@@ -19,7 +19,7 @@ $(function (){
     // ACCORDION TOGGLE 
     $(".safety-accordion").click(function(){
         var t = $(this).attr("target");
-        var c = $(this).children(0);
+        var c = $(this).children(".safety-spoiler");
 
         c.text() == "▼"? c.text("≡"): c.text("▼");
         $(t).slideToggle("0.5s");
