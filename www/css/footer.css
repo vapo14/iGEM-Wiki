@@ -13,10 +13,16 @@ footer div div.ft-tec {
     border-radius: 2rem 2rem 0 0;
 }
 
-.ft-tec h1 {
-    color: black;
-    font-size: 3.5rem;
-    font-family: 'Monterey', sans-serif;
+footer h1 {
+    color: #333333;
+    font-size: 7rem;
+    font-family: headerFont;
+}
+
+footer h2 {
+    color: #333333;
+    font-size: 5rem;
+    font-family: headerFont;
 }
 
 footer {
