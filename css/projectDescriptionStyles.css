@@ -24,7 +24,7 @@ header {
 }
 
 #bannersection {
-    background: linear-gradient(to bottom, #960f4e, #960f4e4b, rgba(100, 100, 100, 0.3)), url(/img/sphere.gif);
+    background: linear-gradient(to bottom, #960f4e, #960f4e4b, rgba(100, 100, 100, 0.3));
     background-size: cover;
     position: relative;
     display: table;
@@ -41,6 +41,11 @@ header {
     font-weight: normal;
     padding: 0 3%;
 }
+
+.descriptionContent {
+    margin-bottom: 5rem;
+}
+
 
 .descriptionTitle {
     padding-top: 8rem;
