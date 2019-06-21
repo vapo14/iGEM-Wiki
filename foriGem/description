@@ -1,0 +1,446 @@
+<html lang="en">
+
+<style>
+    #home_logo,
+    #sideMenu {
+        display: none;
+    }
+
+    #sideMenu,
+    #top_title,
+    .patrollink {
+        display: none;
+    }
+
+    #content,
+    #HQ_page {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background-color: white;
+        //font-size: 100% !important;
+    }
+
+    #content {
+        margin-top: -4rem;
+        overflow-y: hidden;
+    }
+
+    #globalWrapper,
+    #content,
+    #HQ_page,
+    #bodyContent,
+    #mw-content-text {
+        height: 100%;
+        width: 100%;
+    }
+    #globalWrapper{
+        padding-bottom: 0;
+        margin-bottom: -2rem;
+        overflow-y: hidden;
+    }
+
+    .mw-body {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+@font-face {
+    font-family: headerFont;
+    src: url(https://2019.igem.org/wiki/images/6/60/T--Tec-Chihuahua--cove.otf)
+}
+
+@font-face {
+    font-family: vapoFont;
+    src: url(https://2019.igem.org/wiki/images/6/64/T--Tec-Chihuahua--cove_light.otf)
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(https://2019.igem.org/wiki/images/a/a4/T--Tec-Chihuahua--roboto_light.ttf) format(truetype)
+}
+</style>
+
+<head>
+    <title>Verticillium</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title> Description | Verticillium </title>
+
+    <link rel="stylesheet"
+        href="https://2019.igem.org/wiki/index.php?title=Template:Tec-Chihuahua/BootstrapCSS&action=raw&ctype=text/css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://2019.igem.org/wiki/index.php?title=Template:Tec-Chihuahua/DescriptionCSS&action=raw&ctype=text/css" />
+</head>
+
+<link rel="stylesheet"
+    href="https://2019.igem.org/wiki/index.php?title=Template:Tec-Chihuahua/footerCSS&action=raw&ctype=text/css" />
+
+<body id="top" onresize="UpdateResponsive()">
+
+    <link rel="stylesheet"
+        href="https://2019.igem.org/wiki/index.php?title=Template:Tec-Chihuahua/NavBarStylesCSS&action=raw&ctype=text/css" />
+
+
+    <nav class="shadow navbar navbar-default navbar-expand-lg cont" id="accordion">
+        <h1 class="brand"><a href="https://2019.igem.org/Team:Tec-Chihuahua"><span>V</span>&#8209;tion</a></h1>
+        <div class="hamb navbar-toggler" onclick="openMobile(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <div id="teamdropbtn" class="dropdown">
+                        <img src="https://2019.igem.org/wiki/images/1/10/T--Tec-Chihuahua--NavBarTeamIcon.png"
+                            width="15px" height="10px">
+                        <a class="dropbtn" href="">Team +</a>
+                        <div id="teamdropcontent" class="dropdown-content">
+                            <a href="teamMembers.html">Team Members</a>
+                            <a href="#">Collaborators</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <img src="https://2019.igem.org/wiki/images/3/3c/T--Tec-Chihuahua--NavBarProjectIcon.png"
+                            width="15px" height="10px">
+                        <a class="dropbtn" href="">Project +</a>
+                        <div class="dropdown-content">
+                            <a href="#">Description</a>
+                            <a href="#">Design</a>
+                            <a href="#">Experiments</a>
+                            <div class="dropdown">
+                                <a class="dropbtn" href="">Notebook +</a>
+                                <div class="dropdown-content side-content">
+                                    <a href="brainstorming.html"> Brainstroming </a>
+                                </div>
+                            </div>
+                            <a href="#">Contribution</a>
+                            <a href="#">Results</a>
+                            <a href="#">Demonstrate</a>
+                            <a href="#">Improve</a>
+                            <a href="#">Attributions</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <img src="https://2019.igem.org/wiki/images/6/6d/T--Tec-Chihuahua--NavBarPartsIcon.png"
+                            width="15px" height="10px">
+                        <a class="dropbtn" href="">Parts +</a>
+                        <div class="dropdown-content">
+                            <a href="#">Parts Overview</a>
+                            <a href="#">Basic Parts</a>
+                            <a href="#">Composite Parts</a>
+                            <a href="#">Part Collection</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="https://2019.igem.org/wiki/images/a/a2/T--Tec-Chihuahua--NavBarSafetyIcon.png"
+                        width="15px" height="10px">
+                    <a href="https://2019.igem.org/Team:Tec-Chihuahua/Safety">Safety</a>
+                </li>
+                <li>
+
+                    <div class="dropdown">
+                        <img src="https://2019.igem.org/wiki/images/e/e0/T--Tec-Chihuahua--NavBarHumanIcon.png"
+                            width="15px" height="10px">
+                        <a class="dropbtn" href="">Human Practices +</a>
+                        <div class="dropdown-content">
+                            <a href="#">Human Practices</a>
+                            <a href="educationEngagement.html">Education & Engagement</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- <li>
+                    <img src="img/1696684-university/png/012-medal.png" width="15px" height="10px">
+                    <a href="#">Awards</a>
+                </li> -->
+            </ul>
+        </div>
+        <progress value="0"></progress>
+    </nav>
+    <div class="collapse" id="VertNav">
+        <div class="container-fluid sc">
+            <ul style="list-style: none">
+                <li class="text-left">
+                    <img src="https://2019.igem.org/wiki/images/1/10/T--Tec-Chihuahua--NavBarTeamIcon.png" width="15px"
+                        height="10px">
+                    <a href="teamMembers.html">Team Members</a><br>
+                    &nbsp; &nbsp; <a href="#">Collaborators</a><br>
+                </li>
+                <li class="text-left">
+                    <img src="https://2019.igem.org/wiki/images/3/3c/T--Tec-Chihuahua--NavBarProjectIcon.png"
+                        width="15px" height="10px">
+                    <a href="#">Project</a><br>
+                    &nbsp; &nbsp; <a href="projectDescription.html">Description</a> <br>
+                    &nbsp; &nbsp; <a href="#">Design</a><br>
+                    &nbsp; &nbsp; <a href="#">Experiments</a><br>
+                    &nbsp; &nbsp; <a href="#">Notebook</a><br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; - <a href="brainstorming.html">Brainstorming</a><br>
+                    &nbsp; &nbsp; <a href="#">Contribution</a><br>
+                    &nbsp; &nbsp; <a href="#">Results</a><br>
+                    &nbsp; &nbsp; <a href="#">Demonstrate</a><br>
+                    &nbsp; &nbsp; <a href="#">Improve</a><br>
+                    &nbsp; &nbsp; <a href="#">Attributions</a><br>
+                </li>
+                <li class="text-left">
+                    <img src="https://2019.igem.org/wiki/images/6/6d/T--Tec-Chihuahua--NavBarPartsIcon.png" width="15px"
+                        height="10px">
+                    <a href="#">Parts Overview</a> <br>
+                    &nbsp; &nbsp;<a href="#">Basic Parts</a><br>
+                    &nbsp; &nbsp;<a href="#">Composite Parts</a><br>
+                    &nbsp; &nbsp;<a href="#">Part Collection</a><br>
+                </li>
+                <li class="text-left">
+                    <img src="https://2019.igem.org/wiki/images/a/a2/T--Tec-Chihuahua--NavBarSafetyIcon.png"
+                        width="15px" height="10px">
+                    <a href="#">Safety</a><br>
+                </li>
+                <li class="text-left">
+                    <img src="https://2019.igem.org/wiki/images/e/e0/T--Tec-Chihuahua--NavBarHumanIcon.png" width="15px"
+                        height="10px">
+                    <a href="#">Human Practices</a> <br>
+                    &nbsp; &nbsp;<a href="educationEngagement.html">Education & Engagement</a><br>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <button onclick="topFunction()" class="btn-sm" id="BackToTopButton" title="Go to top"><img
+            src="https://2019.igem.org/wiki/images/0/02/T--Tec-Chihuahua--arrowUPWhite.png" width="100%"
+            height="100%"></button>
+
+    <link rel="stylesheet" type="text/css"
+        href="https://2019.igem.org/wiki/index.php?title=Template:Tec-Chihuahua/DescriptionCSS&action=raw&ctype=text/css" />
+
+    <div class="descriptionPage">
+        <header>
+            <video autoplay muted loop id="myVideo">
+                <source src="https://2019.igem.org/wiki/images/b/b3/T--Tec-Chihuahua--description_header_test.mp4"
+                    type="video/mp4">
+                Your browser does not support HTML5 video.
+                </source></video>
+            <div id="bannersection">
+                <div class="bannercontent">
+                    <h1 class="mainHeader" style="font-family: headerFont">Description <br>&<br> inspiration</h1>
+                </div>
+            </div>
+        </header>
+
+
+        <div class="container shadow animation-element slide-left descriptionContent">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 style="font-family: vapoFont; font-size: 8rem; color: #960f4e">Inspiration</h2>
+                        <p class="text-justify" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: #808080;">
+                            When we first heard about iGEM, we also heard about the wonders of synthetic biology, and were more than inspired by the projects we read about. Learning about all the things that had been done only reaffirmed the notion that not even the sky was our limit. So what better idea than to use all these incredible tools to solve a real world issue in such a way that we could notice an impact in our own community?
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="hoverImageContainer text-center">
+                            <img src="https://via.placeholder.com/700x600" class="img-fluid">
+                            <div class="descriptionImageOverlay">
+                                <div class="descriptionImageOverlayText">
+                                    <h3>
+                                        IMAGE FOOT NOTE
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+            <a data-toggle="collapse" data-target="#inspirationContent" class="dots ReadMoreAnchor">
+                <span id="readMoreText1" style="font-family: vapoFont; font-size: 30px; color: #960f4e; margin-left: 1rem; margin-top: 2rem;">Read
+                    More</span>
+
+                <div class="dot"></div>
+            </a>
+                </div>
+                <div class="row">
+
+                    <div id="inspirationContent" class="collapse text-justify">
+                        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: #808080;">
+                            Our team is comprised of people who have lived most of their lives in the state of Chihuahua.
+                    Knowing our home and our people for so many years and in so many different aspects, we wanted to do
+                    something that would truly influence our community. We wanted to create a meaningful change in our
+                    surroundings. With this as our main focus, we launched into our brainstorming sessions. A topic that
+                    resurfaced throughout all the wild and countless ideas we considered, was agriculture.
+
+</p>
+                        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: #808080;">
+
+
+                           For our country, agriculture is one of the major economic activities. Besides being a leading agent
+                    in the job market, it fulfills the nutritional needs of millions of citizens, preserves natural
+                    environments, stimulates progress by improving the quality of life in rural areas, and has also been
+                    ingrained in our culture and traditions since the very beginning. The Mexican countryside counts
+                    itself among the 12 economies with the highest agricultural production on the world; employing 5.5
+                    million people and generating around 27 billion dollars annually. 1
+
+</p>
+<p style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: #808080;">
+
+                            Even before being aware of these impressive statistics, we already knew agriculture had a
+                    considerable impact in our country and state. Before being part of iGEM Tec-Chihuahua 2019, some of
+                    our team members had the chance to meet and work with people immersed in this area, others had
+                    developed small research projects in our school regarding agricultural issues, but all of us had
+                    some sort of experience with agriculture and its importance for the Mexican people.
+
+</p>
+                        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: #808080;">
+
+
+                            The interest, curiosity, and familiarity with this topic remained a constant throughout the first
+                    weeks we spent searching for that special cause we would focus our project on. Once we realized
+                    that, we began exploring what issues influenced this area the most so we could try and solve them.
+
+</p>
+                        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: #808080;">
+
+
+                            Looking further into it, we discovered that Verticillium dahliae is a fungus that affects a wide variety of crops all over the world. It results in great losses and is difficult to treat and control, given its broad range of hosts and defense mechanisms. Our state is one of the biggest cotton producers in the country, and Verticillium has been one of its top issues for several years. We are proud to say that our state holds the thirteenth place worldwide regarding cotton production, as well as the first place in the country, accounting for 72% of the whole national production.3 
+                        
+
+</p>
+
+<p style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: #808080;">
+
+Verticillium wilt is the most relevant issue for the different cotton producer regions in the world, since, when present, it usually results in the loss of 20% of the crops, as well as a significant decrease in the product’s quality. Even with the overwhelming production from our state, and the whole country, 50% of the national cotton demand is still imported. If we can effectively confront Verticillium wilt, our production levels would rise, along with the national offer. 6
+
+
+</p>
+
+<p style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: #808080;">
+
+Once we learned about this and heard just how much impact it represents to our community, we decided we would do something about it.
+
+</p>
+
+
+<p style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: #808080;">
+
+
+The fact that we found a problem people were concerned about, hasn’t been effectively solved, and affected a relevant cause for our population that could also escalate to a worldwide issue, was more than enough to fire up our motivation and led us to develop what today we call V-TION.
+
+</p>
+
+
+                        <a class="ReadMoreAnchor" data-toggle="collapse" data-target="#inspirationContent">
+                             <span style="font-family: vapoFont; font-size: 30px; color: #960f4e;">Read Less</span>
+                        </a>
+                    </div>
+                </div>
+        </div>
+
+
+        <div class="container shadow animation-element slide-right">
+                <div class="row" style="margin-top: 5rem; padding-bottom: 1rem">
+                    <div class="col-md-6">
+                        <div class="hoverImageContainer text-center">
+                            <img src="https://via.placeholder.com/700x600" class="img-fluid">
+                            <div class="descriptionImageOverlay">
+                                <div class="descriptionImageOverlayText">
+                                    <h3>
+                                        IMAGE FOOT NOTE
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h2>Description</h2>
+                        <p class="text-justify" style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: #808080;">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nemo exercitationem voluptate
+                            praesentium qui consectetur placeat illum? Alias error repellat molestias obcaecati ullam,
+                            distinctio, dolore consectetur odio modi nemo eum?
+                        </p>
+                    </div>
+                </div>
+                  <div class="row">
+                <a data-toggle="collapse" data-target="#descriptionContent" class="dots ReadMoreAnchor">
+                    <span style="font-family: vapoFont; font-size: 30px; color: #960f4e; margin-left: 1rem; margin-top: 2rem;" id="readMoreText2">Read
+                        More</span>
+
+                    <div class="dot"></div>
+                </a>
+            </div>
+                <div class="row">
+
+                    <div id="descriptionContent" class="collapse text-justify">
+                        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 22px; color: #808080;">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi perspiciatis iusto
+                            aspernatur
+                            doloribus et laborum, delectus quis qui dicta sapiente praesentium itaque tenetur soluta,
+                            numquam maiores vero! In, excepturi numquam. Lorem ipsum dolor sit amet consectetur
+                            adipisicing
+                            elit. Quas consequatur, necessitatibus quisquam fuga eum consequuntur architecto, incidunt,
+                            voluptatibus mollitia a ab nemo sed tenetur fugit! Sapiente dolorem quasi vero placeat?</p>
+                          <a class="ReadMoreAnchor" data-toggle="collapse" data-target="#descriptionContent">
+                        <span style="font-family: vapoFont; font-size: 30px; color: #960f4e;">Read Less</span>
+                    </a>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <link rel="stylesheet" type="text/css"
+        href="https://2019.igem.org/wiki/index.php?title=Template:Tec-Chihuahua/footerCSS&action=raw&ctype=text/css" />
+
+
+    <footer>
+        <div class="container-fluid sub-footer">
+            <div class="row bottomFooter">
+                <div class="col-md-12 text-center ft-tec">
+                    <h2>Tec-Chihuahua 2019 &copy;</h2>
+                    <!-- <a href="#top"><img src="../img/up-arrow.png" alt="top" title="ToTop" id="ft-img"></a> -->
+                </div>
+            </div>
+            <div class="row">
+                
+                <div class="container col-md-4">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 SocialLogos">
+
+                    <h2>Contact us!</h2>
+                    <a href="https://www.facebook.com/igemcuu/" target="_blank"><img src="https://2019.igem.org/wiki/images/d/d5/T--Tec-Chihuahua--facebookLogo.png"
+                            class="img-fluid">
+                    </a>
+                    <a href="https://www.instagram.com/igemtecchih/" target="_blank"><img src="https://2019.igem.org/wiki/images/4/44/T--Tec-Chihuahua--instaLogo.png"
+                            class="img-fluid"> </a>
+                    <a href="https://twitter.com/iGEM_TecChih?lang=en" target="_blank"><img src="https://2019.igem.org/wiki/images/3/35/T--Tec-Chihuahua--twitterLogo.png"
+                            class="img-fluid"> </a>
+                    <a href="mailto:igemtecchihuahua@gmail.com" target="_blank"><img src="https://2019.igem.org/wiki/images/1/1b/T--Tec-Chihuahua--gmailLogo.png"
+                            class="img-fluid">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script type="text/javascript"
+        src="https://2019.igem.org/wiki/index.php?title=Template:Tec-Chihuahua/Boostrap_js&action=raw&ctype=text/javascript">
+    </script>
+    <script type="text/javascript"
+        src="https://2019.igem.org/wiki/index.php?title=Template:Tec-Chihuahua/Popper&action=raw&ctype=text/javascript">
+    </script>
+    <script type="text/javascript"
+        src="https://2019.igem.org/wiki/index.php?title=Template:Tec-Chihuahua/JQuery&action=raw&ctype=text/javascript">
+    </script>
+    <script type="text/javascript"
+        src="https://2019.igem.org/wiki/index.php?title=Template:Tec-Chihuahua/script_js&action=raw&ctype=text/javascript">
+    </script>
+
+
+</body>
+
+</html>
