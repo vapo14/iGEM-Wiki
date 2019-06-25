@@ -24,7 +24,27 @@ function openMobile(x) {
 
 }
 
+var readmoretoggle1 = true;
+$(".ReadMoreAnchor").click(function () {
+    if (readmoretoggle1) {
+        $("#readMoreText1").hide()
+        readmoretoggle1 = false;
+    } else {
+        $("#readMoreText1").show()
+        readmoretoggle1 = true;
+    }
+});
 
+var readmoretoggle2 = true;
+$(".ReadMoreAnchor").click(function () {
+    if (readmoretoggle2) {
+        $("#readMoreText2").hide()
+        readmoretoggle2 = false;
+    } else {
+        $("#readMoreText2").show()
+        readmoretoggle2 = true;
+    }
+});
 
 // $('#navham').click(function () {
 //     $('#VertNav').toggle(500);
@@ -105,11 +125,10 @@ $(document).ready(function () {
     $(cards).hover(function () {
         var t = $(this).attr('target');
         $(t).stop();
-        if(toggled){
+        if (toggled) {
             $(t).fadeIn();
             toggled = false;
-        }
-        else{
+        } else {
             $(t).fadeOut();
             toggled = true;
         }
@@ -282,6 +301,6 @@ $(document).ready(function () {
     })
     //trigger our scroll event on initial load
     $(window).trigger('scroll');
-    
-    
+
+
 });

@@ -29,7 +29,7 @@ footer {
     /* border-radius: 3rem 3rem 0 0 !important; */
     height: 100%;
     min-height: 14rem !important;
-    background-image: linear-gradient(to bottom, #7ae9b5ad, #0f9657), url(/img/vert.jpg);
+    background: linear-gradient(#960f4e4b, #960f4e), url(/img/cotton.jpg );
     background-repeat: no-repeat;
     background-size: cover;
     bottom: 0 !important;
@@ -37,6 +37,7 @@ footer {
 }
 
 div.sub-footer {
+
     /* border-radius: 3rem 3rem 0 0 !important; */
     /* background-image: linear-gradient(to bottom, #6BBF59, rgba(15, 150, 87) ) ; */
 }
