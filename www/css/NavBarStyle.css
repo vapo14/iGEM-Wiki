@@ -11,11 +11,7 @@
 
 @font-face {
     font-family: vapoFont;
-<<<<<<< HEAD
-    src: url(/fonts/CocoGoose/Cocogoose\ Pro\ Light-trial.ttf)
-=======
     src: url(/fonts/Cove/Coves\ Light.otf)
->>>>>>> VAPO-branch
 }
 
 @font-face {
@@ -26,7 +22,7 @@
 
 html {
     font-size: 10px;
-    font-family: 'Roboto';
+    font-family: vapoFont;
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
@@ -37,12 +33,8 @@ body {
 
 p {
     font-size: 22px;
-<<<<<<< HEAD
-    font-family: 'Roboto';
-=======
     font-family: Arial, Helvetica, sans-serif;
     color: #808080;
->>>>>>> VAPO-branch
 }
 
 a,
@@ -103,10 +95,6 @@ video {
     font-family: headerFont;
     color: white;
     font-size: calc(40px + (120 - 14) * ((100vw - 300px) / (1200 - 300)));
-<<<<<<< HEAD
-    font-weight: 100;
-=======
->>>>>>> VAPO-branch
     text-transform: uppercase;
 }
 

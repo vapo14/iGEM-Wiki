@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: Roboto;
-    src: url(/fonts/Roboto/Roboto-Light.ttf)
+    src: url(/fonts/Roboto/Roboto-Light.ttf) format(truetype)
 }
 
 
@@ -94,7 +94,7 @@ video {
 .mainHeader {
     font-family: headerFont;
     color: white;
-    font-size: calc(40px + (120 - 14) * ((100vw - 300px) / (1200 - 300)));
+    font-size: calc(40px + (120 - 14) * ((80vw - 300px) / (1200 - 300)));
     text-transform: uppercase;
 }
 
