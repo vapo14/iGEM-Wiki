@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -13,12 +13,14 @@
     <link rel="stylesheet" href="https://2019.igem.org/Template:Tec-Chihuahua/safetyCSS?action=raw&ctype=text/css">
 </head>
 
-<body id="top" onresize="UpdateResponsive()">
+<body id="top" onresize="UpdateResponsive()" style="top : -3rem">
 <style>
 #sideMenu {
     display: none;
 }
-
+p{
+    font-size: 2rem;
+}
 #sideMenu,
 #top_title,
 .patrollink {
@@ -33,12 +35,16 @@
     background-color: white;
     font-size: 100% !important;
 }
-
+#mw-content-text:last-child{
+    margin-bottom: 0;
+}
 #content {
     margin-top: -4rem;
     overflow-y: hidden;
 }
-
+#globalWrapper{
+    padding-bottom: 0;
+}
 #globalWrapper,
 #content,
 #HQ_page,
@@ -46,7 +52,12 @@
 #mw-content-text {
     height: 100%;
     width: 100%;
+    
 }
+#HQ_page p{
+    font-size: 1.7rem;
+}
+
 .mw-body{
     overflow-x: hidden;
 }
@@ -64,6 +75,9 @@
 @font-face {
     font-family: Roboto;
     src: url(https://2019.igem.org/wiki/images/a/a4/T--Tec-Chihuahua--roboto_light.ttf) format(truetype)
+}
+.warning-content{
+    font-size: 2em;
 }
 </style>
 
@@ -202,7 +216,7 @@
         <div class="container">
            <div class="row">
             <h1 id="safety-important">
-                   <img src="/img/iconfinder_101_Warning_183533.png" alt="warning" class="warning"> Important! <img src="/img/ham.png" alt="closeable" class="close-menu">
+                   <img src="https://2019.igem.org/wiki/images/8/8a/T--Tec-Chihuahua--alert-icon.png" alt="warning" class="warning"> Important! <img src="https://2019.igem.org/wiki/images/f/fd/T--Tec-Chihuahua--ham.png" alt="x" class="close-menu">
             </h1>
             </div>
             <hr id="safety-bar">
@@ -242,7 +256,7 @@
     </div>
     <div class="safety-certificates">
         <div class="row safety">
-        <img src="/img/Canada-health-banner.png" alt="Flag of Canada" title="Flag of Canada" id="Flag-of-Canada"> 
+        <img src="https://2019.igem.org/wiki/images/5/5a/T--Tec-Chihuahua--Canada-Banner.png" alt="Flag of Canada" title="Flag of Canada" id="Flag-of-Canada"> 
         <p id="safety-certificates">
             Was able to provide the following courses:
         </p>
