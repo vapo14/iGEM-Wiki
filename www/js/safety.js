@@ -15,7 +15,7 @@ $(function (){
             $("#safety-courses").css({"margin-left":"20%","margin-right":"20%"});
         }
     }, 1000);
-
+//    $("#HQ_page p").css("font-size","2rem");
     // ACCORDION TOGGLE 
     $(".safety-accordion").click(function(){
         var t = $(this).attr("target");

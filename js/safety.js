@@ -37,10 +37,11 @@ $(function (){
         });
     
         $(".close-menu").click(function(){
-                $(".warning-content").toggle();
+                $("#safety-warning-jumbotron").toggle();
                 $("#safety-bar").toggle();
         });
        
         
     
 });
+//////////////////////
