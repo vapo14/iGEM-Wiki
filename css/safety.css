@@ -1,162 +1,3 @@
-/*
-@font-face{
-    font-family: Roboto;
-    src: url(/fonts/Roboto/Roboto-Regular.ttf);
-    
-}
-.safety-header {
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(to bottom, rgba(15, 150, 87, 0.726), rgba(0, 0, 0, .2)), url(/img/lab-safety.jpg);
-    background-size: cover;
-    background-position-y: 20%;
-}
-.safety-page{
-    position: relative;
-}
-.safety-alert{
-    border-radius: 20px;
-    border: 2px solid rgb(198, 73, 73);
-    margin: 2rem 0;
-    position: relative;
-    min-width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
-}
-.safety-title {
-    padding-top: 8rem;
-    font-family:  'Roboto', sans-serif;
-    color: white;
-    text-transform: uppercase;
-}
-#safety-courses li,.safety-alert div p{
-    font-size: 2rem;
-    color: black;
-    text-indent: 3rem;
-    font-family: 'Roboto', sans-serif;
-    text-align: justify;
-}
-.safety-alert div h1{
-    font-size: 4rem;
-    font-family: 'Roboto', sans-serif;
-
-}
-q.title-quote{
-    color: #ffffff;
-    font-family: 'Roboto', sans-serif !important;
-    font-size: 2rem;
-    margin-top: 4rem;
-    padding-bottom: 2rem;
-}
-.warning{
-   height: 5rem;
-   width: 5rem;
-   margin-bottom: 1rem;
-}
-.close-menu{
-    height: 3rem;
-    width: 3rem;
-    float: right;
-    margin: 1rem; 
-}
-.safety-certificates{
-    background-size: cover;
-    height: 100%;
-    width: calc(100% + 4rem);
-    margin-left: -2rem;
-    padding: 2rem;
-}
-#Flag-of-Canada{
-    min-width: 375px;
-    max-width: 80%;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    float: left;
-}
-#safety-certificates{
-    font-size: 3.5rem;
-    font-weight: 500;
-    text-align: center;
-    width: 100%;
-    margin-top: 2rem;
-}
-h1{
-    font-size: 4rem;
-}
-#safety-important{
-    width: 100%;
-}
-hr.safety-main-hr{
-    border-color: rgba(15, 150, 87, 0.78);
-    width: calc(100% + 4rem);
-    margin-left: -2rem;
-}
-p{
-    text-indent: 3rem;
-}
-.row.safety{
-    margin-bottom: 3rem;
-    flex-direction: column;
-
-}
-#safety-courses{
-    min-width: 60%;
-    display: inline;
-    margin-left: 20%;
-    margin-right: 20%;
-    list-style-type: "►";
-    list-style-position: inside;   
-}
-.safety-panel{
-   display: none;
-   background-color: #730f5d;
-   color: #ffffff;
-   font-size: 1.7rem;
-   padding: 1rem 2rem;
-   text-indent: 3rem;
-   font-family: 'Roboto', sans-serif;
-
-}
-.safety-panel p{
-    margin: 1rem 0rem;
-}
-.safety-accordion{
-    color: #ffffff;
-    font-size: 2.5rem;
-    width: 100%;
-    padding: 1rem;
-    margin-top: 2rem;
-
-    border: 2px solid rgb(80, 9, 64);
-    border-radius: 3px;
-    background-color: rgb(80, 9, 64);
-    cursor: pointer;
-    transition: .2s;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-}
-.safety-accordion:hover{
-    background: linear-gradient(to bottom,#730f5d, rgb(80, 9, 64),rgb(60, 9, 66));
-
-}
-.row.acc-images{
-    display: flex;
-    flex-direction: row;
-    flex-basis: content;
-    overflow: auto;
-    flex-wrap: nowrap;
-}
-.safety-acc-img{
-    height: 70%;
-    width: 70%;
-    margin: 1rem;
-
-}
-#safety-cc-license{
-    color: black;
-    font-size: 1rem;
-} */
 body {
     color: #000000;
 }
@@ -345,3 +186,103 @@ div.shadowed-card{
     box-shadow: 0 0.5rem 15px 0 rgba(0, 0, 0, 0.2);
     
 }
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -moz-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 1rem;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: black;
+    font-size: 2rem;
+    padding: 1rem 1.5rem;
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color:black;
+    font-size: 2rem;
+    padding: 1rem 1.5rem;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -moz-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  .slideshow-img{
+      margin-left: 10%;
+      margin-right: 10%;
+      width: 80%;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
