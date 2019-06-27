@@ -27,17 +27,26 @@ body {
     color: white;
     text-transform: uppercase;
 }
-#safety-courses li,.safety-alert div p{
+.safety-alert div p{
     font-size: 2rem;
     color: black;
     text-indent: 3rem;
 /*    font-family: 'Roboto', sans-serif;*/
     text-align: justify;
 }
+#safety-courses li{
+    color:white;
+    font-size: 2rem;
+    text-indent: 3rem;
+    text-align: justify
+}
 .safety-alert div h1{
     font-size: 4rem;
 /*    font-family: 'Roboto', sans-serif;*/
 
+}
+a.snowflake:hover{
+    color: #000000;
 }
 q.title-quote{
     color: #ffffff;
@@ -120,7 +129,8 @@ font-size: 2rem;
     margin-left: 20%;
     margin-right: 20%;
     list-style-type: "►";
-    list-style-position: inside;   
+    list-style-position: inside; 
+    color: white;  
 }
 .safety-panel{
    display: none;

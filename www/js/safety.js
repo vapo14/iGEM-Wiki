@@ -24,11 +24,11 @@ $(function (){
 
         if( c.text() == "▼"){
             c.text("≡");
-            $(t).slideIn();
+            $(t).slideDown();
         }
         else{
             c.text("▼");
-            $(t).slideOut();
+            $(t).slideUp();
         }
     });
 
