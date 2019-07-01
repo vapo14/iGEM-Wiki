@@ -1,4 +1,9 @@
 .scrollDownButton {
+    opacity: .25;
+    transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -webkit-transition: opacity .5s ease-in-out;
+    cursor: pointer;
     position: absolute;
     bottom: 0;
     height: 10%;
@@ -9,6 +14,11 @@
     font-size: 3rem;
     line-height: 4rem;
 }
+
+.scrollDownButton:hover{
+    opacity: .8;
+}
+
 
 #arrowImage {
     -webkit-transform: rotate(180deg);
@@ -66,3 +76,4 @@
     right: 0;
     background: linear-gradient( #961f0f8e, #ff660038);
 }
+

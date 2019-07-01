@@ -2,16 +2,22 @@
 
 <header style="margin-bottom: 0">
     <div class="headerContainer">
+
+        <!-- Video de fondo -->
         <video autoplay muted loop id="YerFondo">
             <source src="img/YaraFondo.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
         </video>
+
+        <!-- Título -->
         <div id="bannersection">
             <div class="bannercontent">
-                <h1 class="mainHeader">Education and Engagement</h1>
+                <h1 class="mainHeader">Education and Public Engagement</h1>
             </div>
         </div>
-        <a class="scrollDownButton">
+
+        <!-- Boton pa abajo -->
+        <a class="scrollDownButton" id="btnFade" href="#carousel-mariano">
             <img src="img/arrowUP.png" id="arrowImage">
         </a>
     </div>
@@ -19,7 +25,8 @@
 <!-- Carousel 1 -->
 <div class="eventSection">
 
-    <div id="demo" class="carousel slide" data-ride="carousel" style="position: relative; height: 100%;">
+    <div id="carousel-mariano" class="carousel slide" data-ride="carousel" style="position: relative; height: 100%;">
+
         <!-- Info Overlay -->
         <div class="carousel-header">
             <h1>Visits to Mariano Valenzuela Elementary Schoool</h1>
@@ -48,10 +55,10 @@
             </div>
         </div>
         <!-- Left and right controls -->
-        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <a class="carousel-control-prev" href="#carousel-mariano" data-slide="prev">
             <span class="carousel-control-prev-icon"></span>
         </a>
-        <a class="carousel-control-next" href="#demo" data-slide="next">
+        <a class="carousel-control-next" href="#carousel-mariano" data-slide="next">
             <span class="carousel-control-next-icon"></span>
         </a>
 

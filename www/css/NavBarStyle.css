@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: Roboto;
-    src: url(/fonts/Roboto/Roboto-Light.ttf)
+    src: url(/fonts/Roboto/Roboto-Light.ttf) format(truetype)
 }
 
 
@@ -63,7 +63,7 @@ h3 {
 }
 
 #bannersection {
-    background: linear-gradient(to bottom, #960f4e, #960f4e4b, rgba(100, 100, 100, 0.3));
+    background: linear-gradient(to bottom, rgb(150, 15, 78), rgba(116, 12, 60, 0.822),rgba(85, 9, 45, 0.432), rgba(61, 6, 32, 0.137), rgba(0, 0, 0, 0));
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -102,7 +102,7 @@ video {
 .mainHeader {
     font-family: headerFont;
     color: white;
-    font-size: calc(40px + (120 - 14) * ((100vw - 300px) / (1200 - 300)));
+    font-size: calc(40px + (120 - 14) * ((80vw - 300px) / (1200 - 300)));
     text-transform: uppercase;
 }
 
