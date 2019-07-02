@@ -1,0 +1,285 @@
+
+<html lang="en">
+
+    <head>
+        <title>Verticillium</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+        <title>  | Verticillium </title>
+    
+        <link rel="stylesheet" href="https://2019.igem.org/Template:Tec-Chihuahua/BootstrapCSS?action=raw&ctype=text/css">
+        <link rel="stylesheet" href="https://2019.igem.org/Template:Tec-Chihuahua/safetyCSS?action=raw&ctype=text/css">
+    </head>
+    
+    <body id="top" onresize="UpdateResponsive()" style="top : -3rem">
+    <style>
+    #sideMenu {
+        display: none;
+    }
+    p{
+        font-size: 2rem;
+    }
+    #sideMenu,
+    #top_title,
+    .patrollink {
+        display: none;
+    }
+    #HQ_page h1, #HQ_page h2, #HQ_page h3, #HQ_page h4{
+        font-style: inherit;
+        font-weight: inherit;
+        color: inherit;
+        margin: inherit;
+    }
+    #content,
+    #HQ_page {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background-color: white;
+        font-size: 100% !important;
+    }
+    #mw-content-text:last-child{
+        margin-bottom: 0;
+    }
+    #content {
+        margin-top: -4rem;
+        overflow-y: hidden;
+    }
+    #globalWrapper{
+        padding-bottom: 0;
+    }
+    #globalWrapper,
+    #content,
+    #HQ_page,
+    #bodyContent,
+    #mw-content-text {
+        height: 100%;
+        width: 100%;
+        
+    }
+    #HQ_page p{
+        font-size: 2rem;
+    }
+    
+    .mw-body{
+        overflow-x: hidden;
+    }
+    
+    @font-face {
+        font-family: headerFont;
+        src: url(https://2019.igem.org/wiki/images/6/60/T--Tec-Chihuahua--cove.otf)
+    }
+    
+    @font-face {
+        font-family: vapoFont;
+        src: url(https://2019.igem.org/wiki/images/6/64/T--Tec-Chihuahua--cove_light.otf)
+    }
+    
+    @font-face {
+        font-family: Roboto;
+        src: url(https://2019.igem.org/wiki/images/a/a4/T--Tec-Chihuahua--roboto_light.ttf) format(truetype)
+    }
+    .warning-content{
+        font-size: 2em;
+    }
+    </style>
+    
+        <link rel="stylesheet" href="https://2019.igem.org/wiki/index.php?title=Template:Tec-Chihuahua/NavBarStylesCSS&action=raw&ctype=text/css">
+    
+    
+    <nav class="shadow navbar navbar-default navbar-expand-lg cont" id="accordion">
+        <h1 class="brand"><a href="https://2019.igem.org/Team:Tec-Chihuahua"><span>V</span>&#8209;tion</a></h1>
+        <div class="hamb navbar-toggler" onclick="openMobile(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <div id="teamdropbtn" class="dropdown">
+                        <img src="https://2019.igem.org/wiki/images/1/10/T--Tec-Chihuahua--NavBarTeamIcon.png" width="15px" height="10px">
+                        <a class="dropbtn" href="">Team +</a>
+                        <div id="teamdropcontent" class="dropdown-content">
+                            <a href="teamMembers.html">Team Members</a>
+                            <a href="#">Collaborators</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <img src="https://2019.igem.org/wiki/images/3/3c/T--Tec-Chihuahua--NavBarProjectIcon.png" width="15px" height="10px">
+                        <a class="dropbtn" href="">Project +</a>
+                        <div class="dropdown-content">
+                            <a href="https://2019.igem.org/Team:Tec-Chihuahua/Description">Description</a>
+                            <a href="#">Design</a>
+                            <a href="#">Experiments</a>
+                            <div class="dropdown">
+                                <a class="dropbtn" href="">Notebook</a>
+                                <div class="dropdown-content side-content">
+                                    <a href="brainstorming.html"> Brainstroming </a>
+                                </div>
+                            </div>
+                            <a href="#">Contribution</a>
+                            <a href="#">Results</a>
+                            <a href="#">Demonstrate</a>
+                            <a href="#">Improve</a>
+                            <a href="#">Attributions</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <img src="https://2019.igem.org/wiki/images/6/6d/T--Tec-Chihuahua--NavBarPartsIcon.png" width="15px" height="10px">
+                        <a class="dropbtn" href="">Parts +</a>
+                        <div class="dropdown-content">
+                            <a href="#">Parts Overview</a>
+                            <a href="#">Basic Parts</a>
+                            <a href="#">Composite Parts</a>
+                            <a href="#">Part Collection</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="https://2019.igem.org/wiki/images/a/a2/T--Tec-Chihuahua--NavBarSafetyIcon.png" width="15px" height="10px">
+                    <a href="#">Safety</a>
+                </li>
+                <li>
+    
+                    <div class="dropdown">
+                        <img src="https://2019.igem.org/wiki/images/e/e0/T--Tec-Chihuahua--NavBarHumanIcon.png" width="15px" height="10px">
+                        <a class="dropbtn" href="">Human Practices +</a>
+                        <div class="dropdown-content">
+                            <a href="#">Human Practices</a>
+                            <a href="educationEngagement.html">Education & Engagement</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- <li>
+                    <img src="img/1696684-university/png/012-medal.png" width="15px" height="10px">
+                    <a href="#">Awards</a>
+                </li> -->
+            </ul>
+        </div>
+        <progress value="0"></progress>
+    </nav>
+    <div class="collapse" id="VertNav">
+        <div class="container-fluid sc">
+            <ul style="list-style: none">
+                <li class="text-left">
+                    <img src="img/1696684-university/png/030-discuss.png" width="15px" height="10px">
+                    <a href="teamMembers.html">Team Members</a><br>
+                    &nbsp; &nbsp; <a href="#">Collaborators</a><br>
+                </li>
+                <li class="text-left">
+                    <img src="img/1696684-university/png/043-documents.png" width="15px" height="10px">
+                    <a href="#">Project</a><br>
+                    &nbsp; &nbsp; <a href="projectDescription.html">Description</a> <br>
+                    &nbsp; &nbsp; <a href="#">Design</a><br>
+                    &nbsp; &nbsp; <a href="#">Experiments</a><br>
+                    &nbsp; &nbsp; <a href="#">Notebook</a><br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; - <a href="brainstorming.html">Brainstorming</a><br>
+                    &nbsp; &nbsp; <a href="#">Contribution</a><br>
+                    &nbsp; &nbsp; <a href="#">Results</a><br>
+                    &nbsp; &nbsp; <a href="#">Demonstrate</a><br>
+                    &nbsp; &nbsp; <a href="#">Improve</a><br>
+                    &nbsp; &nbsp; <a href="#">Attributions</a><br>
+                </li>
+                <li class="text-left">
+                    <img src="img/1696684-university/png/041-telescope.png" width="15px" height="10px">
+                    <a href="#">Parts Overview</a> <br>
+                    &nbsp; &nbsp;<a href="#">Basic Parts</a><br>
+                    &nbsp; &nbsp;<a href="#">Composite Parts</a><br>
+                    &nbsp; &nbsp;<a href="#">Part Collection</a><br>
+                </li>
+                <li class="text-left">
+                    <img src="img/1696684-university/png/018-test tubes.png" width="15px" height="10px">
+                    <a href="#">Safety</a><br>
+                </li>
+                <li class="text-left">
+                    <img src="img/1696684-university/png/020-mask.png" width="15px" height="10px">
+                    <a href="#">Human Practices</a> <br>
+                    &nbsp; &nbsp;<a href="educationEngagement.html">Education & Engagement</a><br>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <button onclick="topFunction()" class="btn-sm" id="BackToTopButton" title="Go to top"><img src="https://2019.igem.org/wiki/images/0/02/T--Tec-Chihuahua--arrowUPWhite.png"
+            width="100%" height="100%"></button>
+    
+        
+
+
+
+        
+    <link rel="stylesheet" type="text/css" href="https://2019.igem.org/wiki/index.php?title=Template:Tec-Chihuahua/footerCSS&action=raw&ctype=text/css" />
+    
+    <footer>
+        <div class="container-fluid sub-footer">
+            <div class="row bottomFooter">
+                <div class="col-md-12 text-center ft-tec">
+                    <h2>Tec-Chihuahua 2019 &copy;</h2>
+                    <!-- <a href="#top"><img src="../img/up-arrow.png" alt="top" title="ToTop" id="ft-img"></a> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="container col-md-4" id="cr-credit">
+                   <!-- <p class="ft-copy">
+                        Icons made by
+                        <a href="https://www.freepik.com/?__hstc=57440181.a4705a2f790e7ee82354874a54a61f45.1558628777312.1558628777312.1558628777312.1&__hssc=57440181.8.1558628777313&__hsfp=56113731"
+                            title="Freepik">
+                            Freepik
+                        </a>
+                        <span class="ft-nani"> </span>
+                        from
+                        <a href="https://www.flaticon.com/" title="Flaticon">
+                            www.flaticon.com
+                        </a>
+                        <span class="ft-nani"> </span>
+                        is licensed by
+                        <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
+                            target="_blank">
+                            CC 3.0
+                        </a>
+                    </p>
+                    <p class="ft-copy">
+                        Made with help from <a href="https://www.chartjs.org"><span class="ft-nani">Chart.js</span></a>
+                    </p>   -->
+                </div>
+               <!-- <div class="container col-md-4">
+                    <img src="../img/SnapGeneLogo.png" alt="SnapGeneLogo" class="logo" id="SNAPGENELOGO">
+                    <img src="/img/MathWorks_Logo.png" alt="SnapGeneLogo" class="logo" id="SNAPGENELOGO">
+                    <img src="../img/SnapGeneLogo.png" alt="SnapGeneLogo" class="logo" id="SNAPGENELOGO">
+                    <img src="../img/SnapGeneLogo.png" alt="SnapGeneLogo" class="logo" id="SNAPGENELOGO">
+                </div> -->
+            </div>
+            <div class="row">
+                <div class="col-md-6 SocialLogos">
+    
+                    <h2>Contact us!</h2>
+                    <a href="https://www.facebook.com/igemcuu/" target="_blank"><img src="https://2019.igem.org/wiki/images/d/d5/T--Tec-Chihuahua--facebookLogo.png" class="img-fluid">
+                    </a>
+                    <a href="https://www.instagram.com/igemtecchih/" target="_blank"><img src="https://2019.igem.org/wiki/images/4/44/T--Tec-Chihuahua--instaLogo.png"> </a>
+                    <a href="https://twitter.com/iGEM_TecChih?lang=en" target="_blank"><img src="https://2019.igem.org/wiki/images/3/35/T--Tec-Chihuahua--twitterLogo.png"
+                            class="img-fluid"> </a>
+                    <a href="mailto:igemtecchihuahua@gmail.com" target="_blank"><img src="https://2019.igem.org/wiki/images/1/1b/T--Tec-Chihuahua--gmailLogo.png" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+        <script src="https://2019.igem.org/wiki/index.php?title=Template:Tec-Chihuahua/JQuery&action=raw&ctype=text/javascript"></script>
+        <script src="https://2019.igem.org/wiki/index.php?title=Template:Tec-Chihuahua/Popper&action=raw&ctype=text/javascript"></script>
+        <script src="https://2019.igem.org/wiki/index.php?title=Template:Tec-Chihuahua/Boostrap_js&action=raw&ctype=text/javascript"></script>
+       
+        
+     <script src="https://2019.igem.org/wiki/index.php?title=Template:Tec-Chihuahua/script_js&action=raw&ctype=text/javascript"></script>
+    </body>
+    
+    </html>
+    
