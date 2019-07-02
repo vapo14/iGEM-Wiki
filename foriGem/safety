@@ -26,7 +26,12 @@ p{
 .patrollink {
     display: none;
 }
-
+#HQ_page h1, #HQ_page h2, #HQ_page h3, #HQ_page h4{
+    font-style: unset;
+    font-weight: unset;
+    color: unset;
+    margin: unset;
+}
 #content,
 #HQ_page {
     width: 100%;
@@ -55,7 +60,7 @@ p{
     
 }
 #HQ_page p{
-    font-size: 1.7rem;
+    font-size: 2rem;
 }
 
 .mw-body{
@@ -462,16 +467,16 @@ p{
      
                         </p>
                         <div class="row acc-images">
-                            <img src="/img/portrait_placeolder.png" alt="img" class="safety-acc-img">
-                            <img src="/img/portrait_placeolder.png" alt="img" class="safety-acc-img">
-                            <img src="/img/portrait_placeolder.png" alt="img" class="safety-acc-img">
-                            <img src="/img/portrait_placeolder.png" alt="img" class="safety-acc-img">
+                            <img src="https://2019.igem.org/wiki/images/e/e4/T--Tec-Chihuahua--portrait-placeholder.png" alt="img" class="safety-acc-img">
+                            <img src="https://2019.igem.org/wiki/images/e/e4/T--Tec-Chihuahua--portrait-placeholder.png" alt="img" class="safety-acc-img">
+                            <img src="https://2019.igem.org/wiki/images/e/e4/T--Tec-Chihuahua--portrait-placeholder.png" alt="img" class="safety-acc-img">
+                            <img src="https://2019.igem.org/wiki/images/e/e4/T--Tec-Chihuahua--portrait-placeholder.png" alt="img" class="safety-acc-img">
                         </div>
                          <p>
                              Our personal belongings must stay away from the lab when handling infectious materials to prevent any contamination.
                          </p>
                          <div class="row acc-images">
-                                <img src="/img/portrait_placeolder.png" alt="img" class="safety-acc-img">
+                                <img src="https://2019.igem.org/wiki/images/e/e4/T--Tec-Chihuahua--portrait-placeholder.png" alt="img" class="safety-acc-img">
                          </div>
                          <p>
                                 The personal protective equipment was always removed when leaving the lab,  as it should not be taken outside unless it's appropriately packed and sealed.. The disposable equipment was properly discarded, and the rest was arranged in its designed place. 
@@ -479,7 +484,7 @@ p{
     
                             </p>
                             <div class="row acc-images">
-                                   <img src="/img/portrait_placeolder.png" alt="img" class="safety-acc-img">
+                                   <img src="https://2019.igem.org/wiki/images/e/e4/T--Tec-Chihuahua--portrait-placeholder.png" alt="img" class="safety-acc-img">
                             </div>
                             <p>
                                 We thoroughly washed our hands when entering the lab and after leaving it. Additionally we always disinfected our hands with 70% ethanol, before and after putting on the gloves. 
@@ -488,7 +493,7 @@ p{
     
                             </p>
                             <div class="row acc-images">
-                                   <img src="/img/portrait_placeolder.png" alt="img" class="safety-acc-img">
+                                   <img src="https://2019.igem.org/wiki/images/e/e4/T--Tec-Chihuahua--portrait-placeholder.png" alt="img" class="safety-acc-img">
                             </div>
                 </div>
     
@@ -500,9 +505,9 @@ p{
                        <p> Our lab is equipped with 3 autoclaves: Tuttnauer 2340M, All American pressure steam sterilizer 25x, 110v and Autoclave vertical AESA, CV3. The autoclave is a strong heated container using high pressures and temperatures for steam sterilization.
                         </p>
                     <div class="row acc-images">
-                        <img src="/img/portrait_placeolder.png" alt="img" class="safety-acc-img">
-                        <img src="/img/portrait_placeolder.png" alt="img" class="safety-acc-img">
-                        <img src="/img/portrait_placeolder.png" alt="img" class="safety-acc-img">
+                        <img src="https://2019.igem.org/wiki/images/e/e4/T--Tec-Chihuahua--portrait-placeholder.png" alt="img" class="safety-acc-img">
+                        <img src="https://2019.igem.org/wiki/images/e/e4/T--Tec-Chihuahua--portrait-placeholder.png" alt="img" class="safety-acc-img">
+                        <img src="https://2019.igem.org/wiki/images/e/e4/T--Tec-Chihuahua--portrait-placeholder.png" alt="img" class="safety-acc-img">
                     </div>
                 </div>
      <!-- / -->
@@ -517,10 +522,10 @@ p{
     
                         </p>
                     <div class="row acc-images">
-                        <img src="/img/portrait_placeolder.png" alt="img" class="safety-acc-img">
-                        <img src="/img/portrait_placeolder.png" alt="img" class="safety-acc-img">
-                        <img src="/img/portrait_placeolder.png" alt="img" class="safety-acc-img">
-                        <img src="/img/portrait_placeolder.png" alt="img" class="safety-acc-img">
+                        <img src="https://2019.igem.org/wiki/images/e/e4/T--Tec-Chihuahua--portrait-placeholder.png" alt="img" class="safety-acc-img">
+                        <img src="https://2019.igem.org/wiki/images/e/e4/T--Tec-Chihuahua--portrait-placeholder.png" alt="img" class="safety-acc-img">
+                        <img src="https://2019.igem.org/wiki/images/e/e4/T--Tec-Chihuahua--portrait-placeholder.png" alt="img" class="safety-acc-img">
+                        <img src="https://2019.igem.org/wiki/images/e/e4/T--Tec-Chihuahua--portrait-placeholder.png" alt="img" class="safety-acc-img">
                     </div>
                 </div>
      <!-- / -->
@@ -536,10 +541,10 @@ p{
                        <p>Laboratory waste is usually classified into four types depending on their nature, and each of them should be disposed accordingly in order to avoid accidents or contamination. Non-solid biological wastes, such as fluids, go in a yellow hermetic bottle, while solid biological wastes should be disposed in a yellow bag. Sharp objects must be disposed in a thick red plastic bottle. Objects and materials that were in contact with bacteria or any kind of infectious agent should be disposed in a red bag. These last two options were how the waste generated during our experiments was disposed of, since we only worked with waste of that nature. 
                         </p>
                         <div class="row acc-images">
-                            <img src="/img/portrait_placeolder.png" alt="img" class="safety-acc-img">
-                            <img src="/img/portrait_placeolder.png" alt="img" class="safety-acc-img">
-                            <img src="/img/portrait_placeolder.png" alt="img" class="safety-acc-img">
-                            <img src="/img/portrait_placeolder.png" alt="img" class="safety-acc-img">
+                            <img src="https://2019.igem.org/wiki/images/e/e4/T--Tec-Chihuahua--portrait-placeholder.png" alt="img" class="safety-acc-img">
+                            <img src="https://2019.igem.org/wiki/images/e/e4/T--Tec-Chihuahua--portrait-placeholder.png" alt="img" class="safety-acc-img">
+                            <img src="https://2019.igem.org/wiki/images/e/e4/T--Tec-Chihuahua--portrait-placeholder.png" alt="img" class="safety-acc-img">
+                            <img src="https://2019.igem.org/wiki/images/e/e4/T--Tec-Chihuahua--portrait-placeholder.png" alt="img" class="safety-acc-img">
                         </div>
                 </div>
     <!-- \ -->
@@ -552,9 +557,9 @@ p{
     
                 </p>
             <div class="row acc-images">
-                <img src="/img/portrait_placeolder.png" alt="img" class="safety-acc-img">
-                <img src="/img/portrait_placeolder.png" alt="img" class="safety-acc-img">
-                <img src="/img/portrait_placeolder.png" alt="img" class="safety-acc-img">
+                <img src="https://2019.igem.org/wiki/images/e/e4/T--Tec-Chihuahua--portrait-placeholder.png" alt="img" class="safety-acc-img">
+                <img src="https://2019.igem.org/wiki/images/e/e4/T--Tec-Chihuahua--portrait-placeholder.png" alt="img" class="safety-acc-img">
+                <img src="https://2019.igem.org/wiki/images/e/e4/T--Tec-Chihuahua--portrait-placeholder.png" alt="img" class="safety-acc-img">
             </div>
         </div>
     <!-- / -->
