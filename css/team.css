@@ -1,0 +1,18 @@
+.team_info{
+    width:100%;
+    padding: 1rem;
+}
+
+.vert_index{
+    float: left;
+    margin: 0;
+    height: 100%;
+}
+
+.team_cards{
+    float: right;
+    height: 100%;
+    margin: 1rem;
+    box-shadow: 5px 5px #333333;
+
+}

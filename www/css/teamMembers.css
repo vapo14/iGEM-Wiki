@@ -47,6 +47,15 @@ div.characterCard#accordion {
     z-index: 3;
 }
 
+.c .card-link:hover {
+    background: linear-gradient(to top, #C0D684, #62C370, rgba(15, 150, 87, 0.78), #6bbf59, #EDDBAF, #f3e9d2);
+    animation: sidebar 25s linear infinite;
+    animation-direction: alternate;
+    transform: scale(1.05);
+    z-index: 3;
+}
+
+
 .titleH {
 
     border-bottom: 3px solid #DCC17B;
@@ -192,13 +201,20 @@ h2.modal-title {
 }
 
 .row.col-md-12.c {
-    padding-left: 15%;
-    padding-right: 15%;
+    width: 100%;
+    margin-left: 6.25%;
+    margin-right: 6.25%;
+    padding: 0;
+ 
 }
 
 .row.col-md-12.b {
     padding-left: 3%;
     padding-right: 3%;
+}
+#accordion2{
+    margin-left: 16.5%;
+    margin-right: 16.5%;
 }
 
 #obo {
@@ -208,7 +224,7 @@ h2.modal-title {
 .sidebarL {
     float: left;
     height: calc(auto + 100px);
-    width: 100%;
+    width: 98%;
     margin-top: 1rem;
     padding: 0;
     border-radius: 0px 15px 15px 0px;
@@ -241,7 +257,7 @@ h2.modal-title {
 }
 
 .carousel-caption h1 {
-    font-family: 'Monterey', sans-serif;
+    font-family: 'headerFont';
     font-size: 7rem;
 }
 
